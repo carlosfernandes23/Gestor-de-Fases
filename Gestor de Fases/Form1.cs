@@ -85,7 +85,7 @@ namespace Gestor_de_Fases
             Panelmenu.Height = 100;
             PanelMenuPedido.Height = 50;
             menuExpandido = !menuExpandido;
-
+            AbrirFormNoPainel(new CL());
         }
 
         private void ButtonDAP_Click(object sender, EventArgs e)
@@ -93,10 +93,10 @@ namespace Gestor_de_Fases
             Panelmenu.Height = 100;
             PanelMenuPedido.Height = 50;
             menuExpandido = !menuExpandido;
-
+            AbrirFormNoPainel(new DAP());
         }
 
-        
+
 
     }
 }

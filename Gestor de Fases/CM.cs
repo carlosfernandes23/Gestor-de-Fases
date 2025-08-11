@@ -22,37 +22,72 @@ namespace Gestor_de_Fases
 
         }
 
+        private void CloseAll()
+        {
+            CloseConjBolt();
+            BuchasClose();
+            VaraoClose();
+            CloseConjAcss();
+        }
+
         private void cbConjunto_SelectedIndexChanged(object sender, EventArgs e)
         {
+            CloseAll();
             OpenConjBolt();
-
         }
 
         private void cbAncoragem_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CloseConjBolt();
+            CloseAll();
 
-            if (cbAncoragem.Text.Contains("Bucha Metálica") || cbAncoragem.Text.Contains("Bucha Quimica")) 
+            if (cbAncoragem.Text.Contains("Bucha Metálica"))
             {
                 ConfigurarPosicoesBucha();
+                ButtonAddAncor.Text = "Adicionar Bucha Metálica";
                 BuchasOpen();
             }
-            else if (cbAncoragem.Text.Contains("Varão Roscado") || cbAncoragem.Text.Contains("Varão Nervorado"))
+            else if (cbAncoragem.Text.Contains("Bucha Quimica"))
+            {
+                ConfigurarPosicoesBucha();
+                ButtonAddAncor.Text = "Adicionar Bucha Quimica";
+                BuchasOpen();
+            }
+            else if (cbAncoragem.Text.Contains("Varão Roscado"))
             {
                 ConfigurarPosicoesVarao();
+                ButtonAddAncor.Text = "Adicionar Varão Roscado";
+                VaraoOpen();
+            }
+            else if (cbAncoragem.Text.Contains("Varão Nervorado"))
+            {
+                ConfigurarPosicoesVarao();
+                ButtonAddAncor.Text = "Adicionar Varão Nervorado";
                 VaraoOpen();
             }
             else
             {
-                BuchasClose();
-                VaraoClose();
+                CloseAll();
             }
         }
 
         private void cbConector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CloseConjBolt();
+            CloseAll();
         }
+
+        private void buttonAcess_Click(object sender, EventArgs e)
+        {
+            CloseAll();
+            OpenConjAcss();
+        }
+      
+        private void OpenConjBolt() => SetConjBoltVisibility(true);
+
+        private void CloseConjBolt() => SetConjBoltVisibility(false);
+
+        private void OpenConjAcss() => SetConjAcssVisibility(true);
+
+        private void CloseConjAcss() => SetConjAcssVisibility(false);
 
         private void ConfigurarPosicoesConjBolt()
         {
@@ -157,52 +192,48 @@ namespace Gestor_de_Fases
             ButtonAddConj.Visible = visible;
         }
 
-        private void OpenConjBolt() => SetConjBoltVisibility(true);
-
-        private void CloseConjBolt() => SetConjBoltVisibility(false);
-
         private void ConfigurarPosicoesVarao()
         {
-            labelDiametroAncor.Location = new Point(35, 230);
-            labelCompAncor.Location = new Point(135, 230);
-            labelQtdAncor.Location = new Point(285, 230);
-            labelClasseAncor.Location = new Point(385, 230);
-            labelNormaAncor.Location = new Point(595, 230);
-            labelReqEspncor.Location = new Point(805, 230);
-            labelMarcaAncor.Location = new Point(990, 230);
-            labelObsAncor.Location = new Point(1085, 230);
+            labelDiametroAncor.Location = new Point(35, 190);
+            labelCompAncor.Location = new Point(135, 190);
+            labelQtdAncor.Location = new Point(285, 190);
+            labelClasseAncor.Location = new Point(385, 190);
+            labelNormaAncor.Location = new Point(595, 190);
+            labelReqEspncor.Location = new Point(805, 190);
+            labelMarcaAncor.Location = new Point(990, 190);
+            labelObsAncor.Location = new Point(1085, 190);
 
-            cbDiametroAncor.Location = new Point(20, 260);
-            cbCompAncor.Location = new Point(125, 260);
-            tbqtdAncor.Location = new Point(260, 260);
-            cbClasseAncor.Location = new Point(345, 260);
-            cbNormaAncor.Location = new Point(490, 260);
-            tbReqespAncor.Location = new Point(770, 260);
-            tbMarcaAncor.Location = new Point(940, 260);
-            obsAcor.Location = new Point(1085, 260);
+            cbDiametroAncor.Location = new Point(20, 220);
+            cbCompAncor.Location = new Point(125, 220);
+            tbqtdAncor.Location = new Point(260, 220);
+            cbClasseAncor.Location = new Point(345, 220);
+            cbNormaAncor.Location = new Point(490, 220);
+            tbReqespAncor.Location = new Point(770, 220);
+            tbMarcaAncor.Location = new Point(940, 220);
+            obsAcor.Location = new Point(1085, 220);
 
-            ButtonAddAncor.Location = new Point(1130, 260);
+            ButtonAddAncor.Location = new Point(1130, 220);
         }
 
         private void ConfigurarPosicoesBucha()
         {
-            labelDiametroAncor.Location = new Point(35, 230);
-            labelQtdAncor.Location = new Point(150, 230);
-            labelClasseAncor.Location = new Point(250, 230);
-            labelNormaAncor.Location = new Point(460, 230);
-            labelReqEspncor.Location = new Point(670, 230);
-            labelMarcaAncor.Location = new Point(855, 230);
-            labelObsAncor.Location = new Point(950, 230);
+            labelDiametroAncor.Location = new Point(35, 190);
+            labelQtdAncor.Location = new Point(150, 190);
+            labelClasseAncor.Location = new Point(250, 190);
+            labelNormaAncor.Location = new Point(460, 190);
+            labelReqEspncor.Location = new Point(670, 190);
+            labelMarcaAncor.Location = new Point(855, 190);
+            labelObsAncor.Location = new Point(950, 190);
 
-            cbDiametroAncor.Location = new Point(20, 260);
-            tbqtdAncor.Location = new Point(125, 260);
-            cbClasseAncor.Location = new Point(210, 260);
-            cbNormaAncor.Location = new Point(355, 260);
-            tbReqespAncor.Location = new Point(635, 260);
-            tbMarcaAncor.Location = new Point(805, 260);
-            obsAcor.Location = new Point(950, 260);
+            cbDiametroAncor.Location = new Point(20, 220);
+            tbqtdAncor.Location = new Point(125, 220);
+            cbClasseAncor.Location = new Point(210, 220);
+            cbNormaAncor.Location = new Point(355, 220);
+            tbReqespAncor.Location = new Point(635, 220);
+            tbMarcaAncor.Location = new Point(805, 220);
+            obsAcor.Location = new Point(950, 220);
 
-            ButtonAddAncor.Location = new Point(995, 260);
+            ButtonAddAncor.Location = new Point(995, 220);
         }
 
         private void SetAncoragemVisibility(bool mostrar, bool mostrarCompr = false)
@@ -235,7 +266,52 @@ namespace Gestor_de_Fases
 
         private void VaraoOpen() => SetAncoragemVisibility(true, true);
 
-        private void VaraoClose() => SetAncoragemVisibility(false);
+        private void VaraoClose() => SetAncoragemVisibility(false);               
 
+        private void SetConjAcssVisibility(bool visible)
+        {
+            ConfigauraPosicoesAcessorio();
+
+            labelqtdAcss.Visible = visible;
+            labelPerfilAcss.Visible = visible;
+            labelNormalAcss.Visible = visible;
+            labelCompAcss.Visible = visible;
+            labelCertfAcss.Visible = visible;
+            labelReqEAcss.Visible = visible;
+            labelMarcaAcss.Visible = visible;
+
+            tbQtdAcss.Visible = visible;
+            tbPerfilAcss.Visible = visible;
+            tbNormalAcss.Visible = visible;
+            tbCompAcss.Visible = visible;
+            cbCertificadoAcss.Visible = visible;
+            tbReqEAcss.Visible = visible;
+            tbMarcalAcss.Visible = visible;
+
+            ButtonAddAcss.Visible = visible;
+        }
+
+        private void ConfigauraPosicoesAcessorio()
+        {
+            labelqtdAcss.Location = new Point(35, 190);
+            labelPerfilAcss.Location = new Point(200, 190);
+            labelNormalAcss.Location = new Point(420, 190);
+            labelCompAcss.Location = new Point(570, 190);
+            labelCertfAcss.Location = new Point(700, 190);
+            labelReqEAcss.Location = new Point(825, 190);
+            labelMarcaAcss.Location = new Point(1015, 190);
+
+            tbQtdAcss.Location = new Point(13, 220);
+            tbPerfilAcss.Location = new Point(100, 220); 
+            tbNormalAcss.Location = new Point(360, 220);
+            tbCompAcss.Location = new Point(545, 220);
+            cbCertificadoAcss.Location = new Point(690, 220);
+            tbReqEAcss.Location = new Point(785, 220);
+            tbMarcalAcss.Location = new Point(970, 220);
+
+            ButtonAddAcss.Location = new Point(1115, 220);
+        }
+
+        
     }
 }

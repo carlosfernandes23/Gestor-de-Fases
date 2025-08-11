@@ -134,7 +134,7 @@
             this.cbFamiliaMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbFamiliaMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbFamiliaMaterial.ItemHeight = 30;
-            this.cbFamiliaMaterial.Location = new System.Drawing.Point(15, 200);
+            this.cbFamiliaMaterial.Location = new System.Drawing.Point(18, 142);
             this.cbFamiliaMaterial.Name = "cbFamiliaMaterial";
             this.cbFamiliaMaterial.Size = new System.Drawing.Size(180, 36);
             this.cbFamiliaMaterial.TabIndex = 14;
@@ -144,7 +144,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(70, 170);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(73, 112);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(50, 20);
             this.guna2HtmlLabel2.TabIndex = 13;
@@ -162,7 +162,7 @@
             this.cbMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbMaterial.ItemHeight = 30;
-            this.cbMaterial.Location = new System.Drawing.Point(210, 200);
+            this.cbMaterial.Location = new System.Drawing.Point(213, 142);
             this.cbMaterial.Name = "cbMaterial";
             this.cbMaterial.Size = new System.Drawing.Size(180, 36);
             this.cbMaterial.TabIndex = 16;
@@ -172,7 +172,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(270, 170);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(273, 112);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(55, 20);
             this.guna2HtmlLabel4.TabIndex = 15;
@@ -183,7 +183,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(230, 255);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(233, 197);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(94, 20);
             this.guna2HtmlLabel7.TabIndex = 23;
@@ -203,7 +203,7 @@
             this.tbComp.Image = null;
             this.tbComp.ImageExpand = new System.Drawing.Point(0, 0);
             this.tbComp.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbComp.Location = new System.Drawing.Point(222, 285);
+            this.tbComp.Location = new System.Drawing.Point(225, 227);
             this.tbComp.Margin = new System.Windows.Forms.Padding(4);
             this.tbComp.Multiline = false;
             this.tbComp.Name = "tbComp";
@@ -225,7 +225,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(444, 170);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(447, 112);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(74, 20);
             this.guna2HtmlLabel3.TabIndex = 25;
@@ -245,7 +245,7 @@
             this.tbEspessura.Image = null;
             this.tbEspessura.ImageExpand = new System.Drawing.Point(0, 0);
             this.tbEspessura.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbEspessura.Location = new System.Drawing.Point(405, 200);
+            this.tbEspessura.Location = new System.Drawing.Point(408, 142);
             this.tbEspessura.Margin = new System.Windows.Forms.Padding(4);
             this.tbEspessura.Multiline = false;
             this.tbEspessura.Name = "tbEspessura";
@@ -277,7 +277,7 @@
             this.cbcertificado.Items.AddRange(new object[] {
             "2,2",
             "3,1"});
-            this.cbcertificado.Location = new System.Drawing.Point(575, 200);
+            this.cbcertificado.Location = new System.Drawing.Point(578, 142);
             this.cbcertificado.Name = "cbcertificado";
             this.cbcertificado.Size = new System.Drawing.Size(85, 36);
             this.cbcertificado.StartIndex = 0;
@@ -289,7 +289,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(580, 170);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(583, 112);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(74, 20);
             this.guna2HtmlLabel5.TabIndex = 26;
@@ -311,7 +311,7 @@
             "Calandrado",
             "Cortado",
             "Cortado e Quinado"});
-            this.cbOperacao.Location = new System.Drawing.Point(680, 200);
+            this.cbOperacao.Location = new System.Drawing.Point(683, 142);
             this.cbOperacao.Name = "cbOperacao";
             this.cbOperacao.Size = new System.Drawing.Size(163, 36);
             this.cbOperacao.StartIndex = 0;
@@ -323,7 +323,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(720, 170);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(723, 112);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(69, 20);
             this.guna2HtmlLabel6.TabIndex = 28;
@@ -334,7 +334,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(20, 255);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(23, 197);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(179, 20);
             this.guna2HtmlLabel8.TabIndex = 31;
@@ -354,7 +354,7 @@
             this.tbRal.Image = null;
             this.tbRal.ImageExpand = new System.Drawing.Point(0, 0);
             this.tbRal.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbRal.Location = new System.Drawing.Point(15, 285);
+            this.tbRal.Location = new System.Drawing.Point(18, 227);
             this.tbRal.Margin = new System.Windows.Forms.Padding(4);
             this.tbRal.Multiline = false;
             this.tbRal.Name = "tbRal";
@@ -376,7 +376,7 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(375, 255);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(378, 197);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(53, 20);
             this.guna2HtmlLabel9.TabIndex = 33;
@@ -396,7 +396,7 @@
             this.tbLargura.Image = null;
             this.tbLargura.ImageExpand = new System.Drawing.Point(0, 0);
             this.tbLargura.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbLargura.Location = new System.Drawing.Point(352, 285);
+            this.tbLargura.Location = new System.Drawing.Point(355, 227);
             this.tbLargura.Margin = new System.Windows.Forms.Padding(4);
             this.tbLargura.Multiline = false;
             this.tbLargura.Name = "tbLargura";
@@ -418,7 +418,7 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(495, 255);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(498, 197);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(31, 20);
             this.guna2HtmlLabel10.TabIndex = 35;
@@ -438,7 +438,7 @@
             this.tbQtd.Image = null;
             this.tbQtd.ImageExpand = new System.Drawing.Point(0, 0);
             this.tbQtd.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbQtd.Location = new System.Drawing.Point(482, 285);
+            this.tbQtd.Location = new System.Drawing.Point(485, 227);
             this.tbQtd.Margin = new System.Windows.Forms.Padding(4);
             this.tbQtd.Multiline = false;
             this.tbQtd.Name = "tbQtd";
@@ -460,7 +460,7 @@
             this.Pesoliquido.BackColor = System.Drawing.Color.Transparent;
             this.Pesoliquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.Pesoliquido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Pesoliquido.Location = new System.Drawing.Point(565, 295);
+            this.Pesoliquido.Location = new System.Drawing.Point(568, 237);
             this.Pesoliquido.Name = "Pesoliquido";
             this.Pesoliquido.Size = new System.Drawing.Size(38, 20);
             this.Pesoliquido.TabIndex = 36;
@@ -476,7 +476,7 @@
             this.ButtonAddPerfilCP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddPerfilCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddPerfilCP.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddPerfilCP.Location = new System.Drawing.Point(680, 265);
+            this.ButtonAddPerfilCP.Location = new System.Drawing.Point(683, 207);
             this.ButtonAddPerfilCP.Name = "ButtonAddPerfilCP";
             this.ButtonAddPerfilCP.Size = new System.Drawing.Size(163, 56);
             this.ButtonAddPerfilCP.TabIndex = 37;
