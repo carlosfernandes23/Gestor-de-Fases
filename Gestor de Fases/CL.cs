@@ -16,5 +16,10 @@ namespace Gestor_de_Fases
         {
             InitializeComponent();
         }
+
+        private void CL_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

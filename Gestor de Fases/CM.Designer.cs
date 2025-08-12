@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbObs = new CuoreUI.Controls.cuiTextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Datematerialemobra = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -37,44 +36,26 @@
             this.cbDiametroBolt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelDiamBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelqdBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbqtdBolt = new CuoreUI.Controls.cuiTextBox();
             this.cbClasseBolt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelclasseBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbNormaBolt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelnormalBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelmarcaBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbMarcaBolt = new CuoreUI.Controls.cuiTextBox();
             this.obsBolt = new CuoreUI.Controls.cuiCheckbox();
             this.labelobsBolt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbLocalD = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonAddBolt = new WiLBiT.WiLBiTButton();
             this.ButtonAddNut = new WiLBiT.WiLBiTButton();
-            this.labelobsNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.obsNut = new CuoreUI.Controls.cuiCheckbox();
-            this.labelmarcaNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbMarcaNut = new CuoreUI.Controls.cuiTextBox();
             this.cbNormaNut = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelnormalNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbClasseNut = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelclasseNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labelqdNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbqtdNut = new CuoreUI.Controls.cuiTextBox();
             this.cbDiametroNut = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelDiamNut = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonAddWasher = new WiLBiT.WiLBiTButton();
-            this.labelobsWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.obsWasher = new CuoreUI.Controls.cuiCheckbox();
-            this.labelmarcaWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbMarcaWasher = new CuoreUI.Controls.cuiTextBox();
             this.cbNormaWasher = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelnormalWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbClasseWasher = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelclasseWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labelqdWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbqtdWasher = new CuoreUI.Controls.cuiTextBox();
             this.cbDiametroWasher = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelDiamWasher = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonAddConj = new WiLBiT.WiLBiTButton();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbConjunto = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -87,66 +68,42 @@
             this.cbClasseAncor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelClasseAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelQtdAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbqtdAncor = new CuoreUI.Controls.cuiTextBox();
             this.cbCompAncor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelCompAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbDiametroAncor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelDiametroAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelReqEspncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbReqespAncor = new CuoreUI.Controls.cuiTextBox();
             this.labelMarcaAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbMarcaAncor = new CuoreUI.Controls.cuiTextBox();
             this.labelObsAncor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.obsAcor = new CuoreUI.Controls.cuiCheckbox();
             this.ButtonAddAncor = new WiLBiT.WiLBiTButton();
             this.labelPerfilAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelReqEAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbReqEAcss = new CuoreUI.Controls.cuiTextBox();
             this.labelqtdAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbQtdAcss = new CuoreUI.Controls.cuiTextBox();
             this.labelCompAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbCompAcss = new CuoreUI.Controls.cuiTextBox();
             this.cbCertificadoAcss = new Guna.UI2.WinForms.Guna2ComboBox();
             this.labelCertfAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelMarcaAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbMarcalAcss = new CuoreUI.Controls.cuiTextBox();
             this.labelNormalAcss = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbNormalAcss = new CuoreUI.Controls.cuiTextBox();
-            this.tbPerfilAcss = new CuoreUI.Controls.cuiTextBox();
             this.ButtonAddAcss = new WiLBiT.WiLBiTButton();
             this.buttonAcess = new WiLBiT.WiLBiTButton();
+            this.tbQtdAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbPerfilAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbNormalAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbCompAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbReqEAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbMarcalAcss = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbqtdAncor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbReqespAncor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbMarcaAncor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbqtdBolt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbqtdWasher = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbqtdNut = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbMarcaWasher = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbMarcaNut = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbMarcaBolt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbObs = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
-            // 
-            // tbObs
-            // 
-            this.tbObs.BackColor = System.Drawing.Color.White;
-            this.tbObs.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.Content = "";
-            this.tbObs.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbObs.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbObs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbObs.Image = null;
-            this.tbObs.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbObs.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbObs.Location = new System.Drawing.Point(240, 40);
-            this.tbObs.Margin = new System.Windows.Forms.Padding(4);
-            this.tbObs.Multiline = false;
-            this.tbObs.Name = "tbObs";
-            this.tbObs.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.Padding = new System.Windows.Forms.Padding(16, 9, 16, 0);
-            this.tbObs.PasswordChar = false;
-            this.tbObs.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbObs.PlaceholderText = "Nª da Obra";
-            this.tbObs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbObs.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbObs.Size = new System.Drawing.Size(411, 35);
-            this.tbObs.TabIndex = 14;
-            this.tbObs.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbObs.UnderlinedStyle = true;
             // 
             // guna2HtmlLabel1
             // 
@@ -161,10 +118,12 @@
             // 
             // Datematerialemobra
             // 
+            this.Datematerialemobra.BorderColor = System.Drawing.Color.White;
             this.Datematerialemobra.BorderRadius = 8;
             this.Datematerialemobra.Checked = true;
-            this.Datematerialemobra.FillColor = System.Drawing.Color.Silver;
-            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Datematerialemobra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Datematerialemobra.ForeColor = System.Drawing.Color.White;
             this.Datematerialemobra.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Datematerialemobra.Location = new System.Drawing.Point(20, 40);
             this.Datematerialemobra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -197,7 +156,7 @@
             this.cbComprimentoBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbComprimentoBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbComprimentoBolt.ItemHeight = 30;
-            this.cbComprimentoBolt.Location = new System.Drawing.Point(120, 613);
+            this.cbComprimentoBolt.Location = new System.Drawing.Point(118, 343);
             this.cbComprimentoBolt.Name = "cbComprimentoBolt";
             this.cbComprimentoBolt.Size = new System.Drawing.Size(125, 36);
             this.cbComprimentoBolt.TabIndex = 20;
@@ -209,7 +168,7 @@
             this.labelCompBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelCompBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCompBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCompBolt.Location = new System.Drawing.Point(130, 583);
+            this.labelCompBolt.Location = new System.Drawing.Point(128, 313);
             this.labelCompBolt.Name = "labelCompBolt";
             this.labelCompBolt.Size = new System.Drawing.Size(94, 20);
             this.labelCompBolt.TabIndex = 19;
@@ -228,7 +187,7 @@
             this.cbDiametroBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbDiametroBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbDiametroBolt.ItemHeight = 30;
-            this.cbDiametroBolt.Location = new System.Drawing.Point(15, 613);
+            this.cbDiametroBolt.Location = new System.Drawing.Point(13, 343);
             this.cbDiametroBolt.Name = "cbDiametroBolt";
             this.cbDiametroBolt.Size = new System.Drawing.Size(98, 36);
             this.cbDiametroBolt.TabIndex = 18;
@@ -240,7 +199,7 @@
             this.labelDiamBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelDiamBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelDiamBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelDiamBolt.Location = new System.Drawing.Point(30, 583);
+            this.labelDiamBolt.Location = new System.Drawing.Point(28, 313);
             this.labelDiamBolt.Name = "labelDiamBolt";
             this.labelDiamBolt.Size = new System.Drawing.Size(64, 20);
             this.labelDiamBolt.TabIndex = 17;
@@ -252,44 +211,12 @@
             this.labelqdBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelqdBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelqdBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelqdBolt.Location = new System.Drawing.Point(280, 583);
+            this.labelqdBolt.Location = new System.Drawing.Point(278, 313);
             this.labelqdBolt.Name = "labelqdBolt";
             this.labelqdBolt.Size = new System.Drawing.Size(31, 20);
             this.labelqdBolt.TabIndex = 37;
             this.labelqdBolt.Text = "Qtd.";
             this.labelqdBolt.Visible = false;
-            // 
-            // tbqtdBolt
-            // 
-            this.tbqtdBolt.BackColor = System.Drawing.Color.White;
-            this.tbqtdBolt.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.Content = "";
-            this.tbqtdBolt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbqtdBolt.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbqtdBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbqtdBolt.Image = null;
-            this.tbqtdBolt.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbqtdBolt.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbqtdBolt.Location = new System.Drawing.Point(255, 613);
-            this.tbqtdBolt.Margin = new System.Windows.Forms.Padding(4);
-            this.tbqtdBolt.Multiline = false;
-            this.tbqtdBolt.Name = "tbqtdBolt";
-            this.tbqtdBolt.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbqtdBolt.PasswordChar = false;
-            this.tbqtdBolt.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdBolt.PlaceholderText = "Nª da Obra";
-            this.tbqtdBolt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbqtdBolt.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbqtdBolt.Size = new System.Drawing.Size(80, 36);
-            this.tbqtdBolt.TabIndex = 36;
-            this.tbqtdBolt.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbqtdBolt.UnderlinedStyle = true;
-            this.tbqtdBolt.Visible = false;
             // 
             // cbClasseBolt
             // 
@@ -303,7 +230,7 @@
             this.cbClasseBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbClasseBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbClasseBolt.ItemHeight = 30;
-            this.cbClasseBolt.Location = new System.Drawing.Point(340, 613);
+            this.cbClasseBolt.Location = new System.Drawing.Point(338, 343);
             this.cbClasseBolt.Name = "cbClasseBolt";
             this.cbClasseBolt.Size = new System.Drawing.Size(139, 36);
             this.cbClasseBolt.TabIndex = 39;
@@ -315,7 +242,7 @@
             this.labelclasseBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelclasseBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelclasseBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelclasseBolt.Location = new System.Drawing.Point(380, 583);
+            this.labelclasseBolt.Location = new System.Drawing.Point(378, 313);
             this.labelclasseBolt.Name = "labelclasseBolt";
             this.labelclasseBolt.Size = new System.Drawing.Size(49, 20);
             this.labelclasseBolt.TabIndex = 38;
@@ -334,7 +261,7 @@
             this.cbNormaBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNormaBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbNormaBolt.ItemHeight = 30;
-            this.cbNormaBolt.Location = new System.Drawing.Point(485, 613);
+            this.cbNormaBolt.Location = new System.Drawing.Point(483, 343);
             this.cbNormaBolt.Name = "cbNormaBolt";
             this.cbNormaBolt.Size = new System.Drawing.Size(275, 36);
             this.cbNormaBolt.TabIndex = 41;
@@ -346,7 +273,7 @@
             this.labelnormalBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelnormalBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelnormalBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelnormalBolt.Location = new System.Drawing.Point(590, 583);
+            this.labelnormalBolt.Location = new System.Drawing.Point(588, 313);
             this.labelnormalBolt.Name = "labelnormalBolt";
             this.labelnormalBolt.Size = new System.Drawing.Size(49, 20);
             this.labelnormalBolt.TabIndex = 40;
@@ -358,44 +285,12 @@
             this.labelmarcaBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelmarcaBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmarcaBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmarcaBolt.Location = new System.Drawing.Point(810, 583);
+            this.labelmarcaBolt.Location = new System.Drawing.Point(808, 313);
             this.labelmarcaBolt.Name = "labelmarcaBolt";
             this.labelmarcaBolt.Size = new System.Drawing.Size(45, 20);
             this.labelmarcaBolt.TabIndex = 43;
             this.labelmarcaBolt.Text = "Marca";
             this.labelmarcaBolt.Visible = false;
-            // 
-            // tbMarcaBolt
-            // 
-            this.tbMarcaBolt.BackColor = System.Drawing.Color.White;
-            this.tbMarcaBolt.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.Content = "";
-            this.tbMarcaBolt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMarcaBolt.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbMarcaBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbMarcaBolt.Image = null;
-            this.tbMarcaBolt.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbMarcaBolt.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbMarcaBolt.Location = new System.Drawing.Point(765, 613);
-            this.tbMarcaBolt.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMarcaBolt.Multiline = false;
-            this.tbMarcaBolt.Name = "tbMarcaBolt";
-            this.tbMarcaBolt.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbMarcaBolt.PasswordChar = false;
-            this.tbMarcaBolt.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaBolt.PlaceholderText = "Nª da Obra";
-            this.tbMarcaBolt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbMarcaBolt.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbMarcaBolt.Size = new System.Drawing.Size(140, 36);
-            this.tbMarcaBolt.TabIndex = 42;
-            this.tbMarcaBolt.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbMarcaBolt.UnderlinedStyle = true;
-            this.tbMarcaBolt.Visible = false;
             // 
             // obsBolt
             // 
@@ -407,7 +302,7 @@
             this.obsBolt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.obsBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.obsBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.obsBolt.Location = new System.Drawing.Point(915, 613);
+            this.obsBolt.Location = new System.Drawing.Point(913, 343);
             this.obsBolt.MinimumSize = new System.Drawing.Size(16, 16);
             this.obsBolt.Name = "obsBolt";
             this.obsBolt.OutlineStyle = true;
@@ -427,7 +322,7 @@
             this.labelobsBolt.BackColor = System.Drawing.Color.Transparent;
             this.labelobsBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelobsBolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelobsBolt.Location = new System.Drawing.Point(915, 583);
+            this.labelobsBolt.Location = new System.Drawing.Point(913, 313);
             this.labelobsBolt.Name = "labelobsBolt";
             this.labelobsBolt.Size = new System.Drawing.Size(31, 20);
             this.labelobsBolt.TabIndex = 45;
@@ -473,9 +368,9 @@
             this.ButtonAddBolt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddBolt.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddBolt.Location = new System.Drawing.Point(965, 608);
+            this.ButtonAddBolt.Location = new System.Drawing.Point(963, 338);
             this.ButtonAddBolt.Name = "ButtonAddBolt";
-            this.ButtonAddBolt.Size = new System.Drawing.Size(160, 40);
+            this.ButtonAddBolt.Size = new System.Drawing.Size(160, 38);
             this.ButtonAddBolt.TabIndex = 48;
             this.ButtonAddBolt.Text = "Adicionar Parafusos";
             this.ButtonAddBolt.UseVisualStyleBackColor = false;
@@ -491,25 +386,13 @@
             this.ButtonAddNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddNut.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddNut.Location = new System.Drawing.Point(965, 688);
+            this.ButtonAddNut.Location = new System.Drawing.Point(963, 384);
             this.ButtonAddNut.Name = "ButtonAddNut";
-            this.ButtonAddNut.Size = new System.Drawing.Size(160, 40);
+            this.ButtonAddNut.Size = new System.Drawing.Size(160, 38);
             this.ButtonAddNut.TabIndex = 63;
             this.ButtonAddNut.Text = "Adicionar Porca";
             this.ButtonAddNut.UseVisualStyleBackColor = false;
             this.ButtonAddNut.Visible = false;
-            // 
-            // labelobsNut
-            // 
-            this.labelobsNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelobsNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelobsNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelobsNut.Location = new System.Drawing.Point(915, 658);
-            this.labelobsNut.Name = "labelobsNut";
-            this.labelobsNut.Size = new System.Drawing.Size(31, 20);
-            this.labelobsNut.TabIndex = 62;
-            this.labelobsNut.Text = "Obs";
-            this.labelobsNut.Visible = false;
             // 
             // obsNut
             // 
@@ -521,7 +404,7 @@
             this.obsNut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.obsNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.obsNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.obsNut.Location = new System.Drawing.Point(915, 688);
+            this.obsNut.Location = new System.Drawing.Point(913, 384);
             this.obsNut.MinimumSize = new System.Drawing.Size(16, 16);
             this.obsNut.Name = "obsNut";
             this.obsNut.OutlineStyle = true;
@@ -536,50 +419,6 @@
             this.obsNut.UncheckedSymbolColor = System.Drawing.Color.Empty;
             this.obsNut.Visible = false;
             // 
-            // labelmarcaNut
-            // 
-            this.labelmarcaNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelmarcaNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelmarcaNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmarcaNut.Location = new System.Drawing.Point(810, 658);
-            this.labelmarcaNut.Name = "labelmarcaNut";
-            this.labelmarcaNut.Size = new System.Drawing.Size(45, 20);
-            this.labelmarcaNut.TabIndex = 60;
-            this.labelmarcaNut.Text = "Marca";
-            this.labelmarcaNut.Visible = false;
-            // 
-            // tbMarcaNut
-            // 
-            this.tbMarcaNut.BackColor = System.Drawing.Color.White;
-            this.tbMarcaNut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.Content = "";
-            this.tbMarcaNut.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMarcaNut.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbMarcaNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbMarcaNut.Image = null;
-            this.tbMarcaNut.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbMarcaNut.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbMarcaNut.Location = new System.Drawing.Point(765, 688);
-            this.tbMarcaNut.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMarcaNut.Multiline = false;
-            this.tbMarcaNut.Name = "tbMarcaNut";
-            this.tbMarcaNut.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbMarcaNut.PasswordChar = false;
-            this.tbMarcaNut.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaNut.PlaceholderText = "Nª da Obra";
-            this.tbMarcaNut.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbMarcaNut.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbMarcaNut.Size = new System.Drawing.Size(140, 36);
-            this.tbMarcaNut.TabIndex = 59;
-            this.tbMarcaNut.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbMarcaNut.UnderlinedStyle = true;
-            this.tbMarcaNut.Visible = false;
-            // 
             // cbNormaNut
             // 
             this.cbNormaNut.BackColor = System.Drawing.Color.Transparent;
@@ -592,24 +431,12 @@
             this.cbNormaNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNormaNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbNormaNut.ItemHeight = 30;
-            this.cbNormaNut.Location = new System.Drawing.Point(485, 688);
+            this.cbNormaNut.Location = new System.Drawing.Point(483, 384);
             this.cbNormaNut.Name = "cbNormaNut";
             this.cbNormaNut.Size = new System.Drawing.Size(275, 36);
             this.cbNormaNut.TabIndex = 58;
             this.cbNormaNut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbNormaNut.Visible = false;
-            // 
-            // labelnormalNut
-            // 
-            this.labelnormalNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelnormalNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelnormalNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelnormalNut.Location = new System.Drawing.Point(590, 658);
-            this.labelnormalNut.Name = "labelnormalNut";
-            this.labelnormalNut.Size = new System.Drawing.Size(49, 20);
-            this.labelnormalNut.TabIndex = 57;
-            this.labelnormalNut.Text = "Norma";
-            this.labelnormalNut.Visible = false;
             // 
             // cbClasseNut
             // 
@@ -623,68 +450,12 @@
             this.cbClasseNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbClasseNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbClasseNut.ItemHeight = 30;
-            this.cbClasseNut.Location = new System.Drawing.Point(340, 688);
+            this.cbClasseNut.Location = new System.Drawing.Point(338, 384);
             this.cbClasseNut.Name = "cbClasseNut";
             this.cbClasseNut.Size = new System.Drawing.Size(139, 36);
             this.cbClasseNut.TabIndex = 56;
             this.cbClasseNut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbClasseNut.Visible = false;
-            // 
-            // labelclasseNut
-            // 
-            this.labelclasseNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelclasseNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelclasseNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelclasseNut.Location = new System.Drawing.Point(380, 658);
-            this.labelclasseNut.Name = "labelclasseNut";
-            this.labelclasseNut.Size = new System.Drawing.Size(49, 20);
-            this.labelclasseNut.TabIndex = 55;
-            this.labelclasseNut.Text = "Classe";
-            this.labelclasseNut.Visible = false;
-            // 
-            // labelqdNut
-            // 
-            this.labelqdNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelqdNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelqdNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelqdNut.Location = new System.Drawing.Point(280, 658);
-            this.labelqdNut.Name = "labelqdNut";
-            this.labelqdNut.Size = new System.Drawing.Size(31, 20);
-            this.labelqdNut.TabIndex = 54;
-            this.labelqdNut.Text = "Qtd.";
-            this.labelqdNut.Visible = false;
-            // 
-            // tbqtdNut
-            // 
-            this.tbqtdNut.BackColor = System.Drawing.Color.White;
-            this.tbqtdNut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.Content = "";
-            this.tbqtdNut.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbqtdNut.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbqtdNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbqtdNut.Image = null;
-            this.tbqtdNut.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbqtdNut.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbqtdNut.Location = new System.Drawing.Point(255, 688);
-            this.tbqtdNut.Margin = new System.Windows.Forms.Padding(4);
-            this.tbqtdNut.Multiline = false;
-            this.tbqtdNut.Name = "tbqtdNut";
-            this.tbqtdNut.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbqtdNut.PasswordChar = false;
-            this.tbqtdNut.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdNut.PlaceholderText = "Nª da Obra";
-            this.tbqtdNut.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbqtdNut.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbqtdNut.Size = new System.Drawing.Size(80, 36);
-            this.tbqtdNut.TabIndex = 53;
-            this.tbqtdNut.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbqtdNut.UnderlinedStyle = true;
-            this.tbqtdNut.Visible = false;
             // 
             // cbDiametroNut
             // 
@@ -698,24 +469,12 @@
             this.cbDiametroNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbDiametroNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbDiametroNut.ItemHeight = 30;
-            this.cbDiametroNut.Location = new System.Drawing.Point(15, 688);
+            this.cbDiametroNut.Location = new System.Drawing.Point(13, 384);
             this.cbDiametroNut.Name = "cbDiametroNut";
             this.cbDiametroNut.Size = new System.Drawing.Size(98, 36);
             this.cbDiametroNut.TabIndex = 50;
             this.cbDiametroNut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbDiametroNut.Visible = false;
-            // 
-            // labelDiamNut
-            // 
-            this.labelDiamNut.BackColor = System.Drawing.Color.Transparent;
-            this.labelDiamNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelDiamNut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelDiamNut.Location = new System.Drawing.Point(30, 658);
-            this.labelDiamNut.Name = "labelDiamNut";
-            this.labelDiamNut.Size = new System.Drawing.Size(64, 20);
-            this.labelDiamNut.TabIndex = 49;
-            this.labelDiamNut.Text = "Diametro";
-            this.labelDiamNut.Visible = false;
             // 
             // ButtonAddWasher
             // 
@@ -727,25 +486,13 @@
             this.ButtonAddWasher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddWasher.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddWasher.Location = new System.Drawing.Point(965, 768);
+            this.ButtonAddWasher.Location = new System.Drawing.Point(963, 429);
             this.ButtonAddWasher.Name = "ButtonAddWasher";
-            this.ButtonAddWasher.Size = new System.Drawing.Size(160, 40);
+            this.ButtonAddWasher.Size = new System.Drawing.Size(160, 38);
             this.ButtonAddWasher.TabIndex = 78;
             this.ButtonAddWasher.Text = "Adicionar Anilha";
             this.ButtonAddWasher.UseVisualStyleBackColor = false;
             this.ButtonAddWasher.Visible = false;
-            // 
-            // labelobsWasher
-            // 
-            this.labelobsWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelobsWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelobsWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelobsWasher.Location = new System.Drawing.Point(915, 743);
-            this.labelobsWasher.Name = "labelobsWasher";
-            this.labelobsWasher.Size = new System.Drawing.Size(31, 20);
-            this.labelobsWasher.TabIndex = 77;
-            this.labelobsWasher.Text = "Obs";
-            this.labelobsWasher.Visible = false;
             // 
             // obsWasher
             // 
@@ -757,7 +504,7 @@
             this.obsWasher.Cursor = System.Windows.Forms.Cursors.Hand;
             this.obsWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.obsWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.obsWasher.Location = new System.Drawing.Point(915, 773);
+            this.obsWasher.Location = new System.Drawing.Point(913, 426);
             this.obsWasher.MinimumSize = new System.Drawing.Size(16, 16);
             this.obsWasher.Name = "obsWasher";
             this.obsWasher.OutlineStyle = true;
@@ -772,50 +519,6 @@
             this.obsWasher.UncheckedSymbolColor = System.Drawing.Color.Empty;
             this.obsWasher.Visible = false;
             // 
-            // labelmarcaWasher
-            // 
-            this.labelmarcaWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelmarcaWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelmarcaWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmarcaWasher.Location = new System.Drawing.Point(810, 743);
-            this.labelmarcaWasher.Name = "labelmarcaWasher";
-            this.labelmarcaWasher.Size = new System.Drawing.Size(45, 20);
-            this.labelmarcaWasher.TabIndex = 75;
-            this.labelmarcaWasher.Text = "Marca";
-            this.labelmarcaWasher.Visible = false;
-            // 
-            // tbMarcaWasher
-            // 
-            this.tbMarcaWasher.BackColor = System.Drawing.Color.White;
-            this.tbMarcaWasher.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.Content = "";
-            this.tbMarcaWasher.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMarcaWasher.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbMarcaWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbMarcaWasher.Image = null;
-            this.tbMarcaWasher.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbMarcaWasher.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbMarcaWasher.Location = new System.Drawing.Point(765, 773);
-            this.tbMarcaWasher.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMarcaWasher.Multiline = false;
-            this.tbMarcaWasher.Name = "tbMarcaWasher";
-            this.tbMarcaWasher.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbMarcaWasher.PasswordChar = false;
-            this.tbMarcaWasher.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaWasher.PlaceholderText = "Nª da Obra";
-            this.tbMarcaWasher.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbMarcaWasher.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbMarcaWasher.Size = new System.Drawing.Size(140, 36);
-            this.tbMarcaWasher.TabIndex = 74;
-            this.tbMarcaWasher.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbMarcaWasher.UnderlinedStyle = true;
-            this.tbMarcaWasher.Visible = false;
-            // 
             // cbNormaWasher
             // 
             this.cbNormaWasher.BackColor = System.Drawing.Color.Transparent;
@@ -828,24 +531,12 @@
             this.cbNormaWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNormaWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbNormaWasher.ItemHeight = 30;
-            this.cbNormaWasher.Location = new System.Drawing.Point(485, 773);
+            this.cbNormaWasher.Location = new System.Drawing.Point(483, 426);
             this.cbNormaWasher.Name = "cbNormaWasher";
             this.cbNormaWasher.Size = new System.Drawing.Size(275, 36);
             this.cbNormaWasher.TabIndex = 73;
             this.cbNormaWasher.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbNormaWasher.Visible = false;
-            // 
-            // labelnormalWasher
-            // 
-            this.labelnormalWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelnormalWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelnormalWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelnormalWasher.Location = new System.Drawing.Point(590, 743);
-            this.labelnormalWasher.Name = "labelnormalWasher";
-            this.labelnormalWasher.Size = new System.Drawing.Size(49, 20);
-            this.labelnormalWasher.TabIndex = 72;
-            this.labelnormalWasher.Text = "Norma";
-            this.labelnormalWasher.Visible = false;
             // 
             // cbClasseWasher
             // 
@@ -859,68 +550,12 @@
             this.cbClasseWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbClasseWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbClasseWasher.ItemHeight = 30;
-            this.cbClasseWasher.Location = new System.Drawing.Point(340, 773);
+            this.cbClasseWasher.Location = new System.Drawing.Point(338, 426);
             this.cbClasseWasher.Name = "cbClasseWasher";
             this.cbClasseWasher.Size = new System.Drawing.Size(139, 36);
             this.cbClasseWasher.TabIndex = 71;
             this.cbClasseWasher.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbClasseWasher.Visible = false;
-            // 
-            // labelclasseWasher
-            // 
-            this.labelclasseWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelclasseWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelclasseWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelclasseWasher.Location = new System.Drawing.Point(380, 743);
-            this.labelclasseWasher.Name = "labelclasseWasher";
-            this.labelclasseWasher.Size = new System.Drawing.Size(49, 20);
-            this.labelclasseWasher.TabIndex = 70;
-            this.labelclasseWasher.Text = "Classe";
-            this.labelclasseWasher.Visible = false;
-            // 
-            // labelqdWasher
-            // 
-            this.labelqdWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelqdWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelqdWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelqdWasher.Location = new System.Drawing.Point(280, 743);
-            this.labelqdWasher.Name = "labelqdWasher";
-            this.labelqdWasher.Size = new System.Drawing.Size(31, 20);
-            this.labelqdWasher.TabIndex = 69;
-            this.labelqdWasher.Text = "Qtd.";
-            this.labelqdWasher.Visible = false;
-            // 
-            // tbqtdWasher
-            // 
-            this.tbqtdWasher.BackColor = System.Drawing.Color.White;
-            this.tbqtdWasher.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.Content = "";
-            this.tbqtdWasher.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbqtdWasher.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbqtdWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbqtdWasher.Image = null;
-            this.tbqtdWasher.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbqtdWasher.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbqtdWasher.Location = new System.Drawing.Point(255, 773);
-            this.tbqtdWasher.Margin = new System.Windows.Forms.Padding(4);
-            this.tbqtdWasher.Multiline = false;
-            this.tbqtdWasher.Name = "tbqtdWasher";
-            this.tbqtdWasher.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbqtdWasher.PasswordChar = false;
-            this.tbqtdWasher.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdWasher.PlaceholderText = "Nª da Obra";
-            this.tbqtdWasher.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbqtdWasher.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbqtdWasher.Size = new System.Drawing.Size(80, 36);
-            this.tbqtdWasher.TabIndex = 68;
-            this.tbqtdWasher.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbqtdWasher.UnderlinedStyle = true;
-            this.tbqtdWasher.Visible = false;
             // 
             // cbDiametroWasher
             // 
@@ -934,24 +569,12 @@
             this.cbDiametroWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbDiametroWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbDiametroWasher.ItemHeight = 30;
-            this.cbDiametroWasher.Location = new System.Drawing.Point(15, 773);
+            this.cbDiametroWasher.Location = new System.Drawing.Point(13, 426);
             this.cbDiametroWasher.Name = "cbDiametroWasher";
             this.cbDiametroWasher.Size = new System.Drawing.Size(98, 36);
             this.cbDiametroWasher.TabIndex = 65;
             this.cbDiametroWasher.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbDiametroWasher.Visible = false;
-            // 
-            // labelDiamWasher
-            // 
-            this.labelDiamWasher.BackColor = System.Drawing.Color.Transparent;
-            this.labelDiamWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelDiamWasher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelDiamWasher.Location = new System.Drawing.Point(30, 743);
-            this.labelDiamWasher.Name = "labelDiamWasher";
-            this.labelDiamWasher.Size = new System.Drawing.Size(64, 20);
-            this.labelDiamWasher.TabIndex = 64;
-            this.labelDiamWasher.Text = "Diametro";
-            this.labelDiamWasher.Visible = false;
             // 
             // ButtonAddConj
             // 
@@ -963,9 +586,9 @@
             this.ButtonAddConj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddConj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddConj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.ButtonAddConj.Location = new System.Drawing.Point(1140, 608);
+            this.ButtonAddConj.Location = new System.Drawing.Point(1138, 337);
             this.ButtonAddConj.Name = "ButtonAddConj";
-            this.ButtonAddConj.Size = new System.Drawing.Size(88, 200);
+            this.ButtonAddConj.Size = new System.Drawing.Size(90, 150);
             this.ButtonAddConj.TabIndex = 79;
             this.ButtonAddConj.Text = "Adicionar Conjunto";
             this.ButtonAddConj.UseVisualStyleBackColor = false;
@@ -1039,6 +662,7 @@
             this.cbAncoragem.TabIndex = 84;
             this.cbAncoragem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbAncoragem.SelectedIndexChanged += new System.EventHandler(this.cbAncoragem_SelectedIndexChanged);
+            this.cbAncoragem.Click += new System.EventHandler(this.cbAncoragem_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -1087,7 +711,7 @@
             this.cbNormaAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNormaAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbNormaAncor.ItemHeight = 30;
-            this.cbNormaAncor.Location = new System.Drawing.Point(486, 526);
+            this.cbNormaAncor.Location = new System.Drawing.Point(484, 264);
             this.cbNormaAncor.Name = "cbNormaAncor";
             this.cbNormaAncor.Size = new System.Drawing.Size(275, 36);
             this.cbNormaAncor.TabIndex = 96;
@@ -1099,7 +723,7 @@
             this.labelNormaAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelNormaAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelNormaAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelNormaAncor.Location = new System.Drawing.Point(591, 496);
+            this.labelNormaAncor.Location = new System.Drawing.Point(589, 234);
             this.labelNormaAncor.Name = "labelNormaAncor";
             this.labelNormaAncor.Size = new System.Drawing.Size(49, 20);
             this.labelNormaAncor.TabIndex = 95;
@@ -1118,7 +742,7 @@
             this.cbClasseAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbClasseAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbClasseAncor.ItemHeight = 30;
-            this.cbClasseAncor.Location = new System.Drawing.Point(341, 526);
+            this.cbClasseAncor.Location = new System.Drawing.Point(339, 264);
             this.cbClasseAncor.Name = "cbClasseAncor";
             this.cbClasseAncor.Size = new System.Drawing.Size(140, 36);
             this.cbClasseAncor.TabIndex = 94;
@@ -1130,7 +754,7 @@
             this.labelClasseAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelClasseAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelClasseAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelClasseAncor.Location = new System.Drawing.Point(381, 496);
+            this.labelClasseAncor.Location = new System.Drawing.Point(379, 234);
             this.labelClasseAncor.Name = "labelClasseAncor";
             this.labelClasseAncor.Size = new System.Drawing.Size(49, 20);
             this.labelClasseAncor.TabIndex = 93;
@@ -1142,44 +766,12 @@
             this.labelQtdAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelQtdAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelQtdAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelQtdAncor.Location = new System.Drawing.Point(281, 496);
+            this.labelQtdAncor.Location = new System.Drawing.Point(279, 234);
             this.labelQtdAncor.Name = "labelQtdAncor";
             this.labelQtdAncor.Size = new System.Drawing.Size(31, 20);
             this.labelQtdAncor.TabIndex = 92;
             this.labelQtdAncor.Text = "Qtd.";
             this.labelQtdAncor.Visible = false;
-            // 
-            // tbqtdAncor
-            // 
-            this.tbqtdAncor.BackColor = System.Drawing.Color.White;
-            this.tbqtdAncor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.Content = "";
-            this.tbqtdAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbqtdAncor.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbqtdAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbqtdAncor.Image = null;
-            this.tbqtdAncor.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbqtdAncor.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbqtdAncor.Location = new System.Drawing.Point(256, 526);
-            this.tbqtdAncor.Margin = new System.Windows.Forms.Padding(4);
-            this.tbqtdAncor.Multiline = false;
-            this.tbqtdAncor.Name = "tbqtdAncor";
-            this.tbqtdAncor.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbqtdAncor.PasswordChar = false;
-            this.tbqtdAncor.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbqtdAncor.PlaceholderText = "Nª da Obra";
-            this.tbqtdAncor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbqtdAncor.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbqtdAncor.Size = new System.Drawing.Size(80, 36);
-            this.tbqtdAncor.TabIndex = 91;
-            this.tbqtdAncor.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbqtdAncor.UnderlinedStyle = true;
-            this.tbqtdAncor.Visible = false;
             // 
             // cbCompAncor
             // 
@@ -1193,7 +785,7 @@
             this.cbCompAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbCompAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbCompAncor.ItemHeight = 30;
-            this.cbCompAncor.Location = new System.Drawing.Point(121, 527);
+            this.cbCompAncor.Location = new System.Drawing.Point(119, 265);
             this.cbCompAncor.Name = "cbCompAncor";
             this.cbCompAncor.Size = new System.Drawing.Size(125, 36);
             this.cbCompAncor.TabIndex = 90;
@@ -1205,7 +797,7 @@
             this.labelCompAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelCompAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCompAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCompAncor.Location = new System.Drawing.Point(131, 497);
+            this.labelCompAncor.Location = new System.Drawing.Point(129, 235);
             this.labelCompAncor.Name = "labelCompAncor";
             this.labelCompAncor.Size = new System.Drawing.Size(94, 20);
             this.labelCompAncor.TabIndex = 89;
@@ -1224,7 +816,7 @@
             this.cbDiametroAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbDiametroAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbDiametroAncor.ItemHeight = 30;
-            this.cbDiametroAncor.Location = new System.Drawing.Point(17, 527);
+            this.cbDiametroAncor.Location = new System.Drawing.Point(15, 265);
             this.cbDiametroAncor.Name = "cbDiametroAncor";
             this.cbDiametroAncor.Size = new System.Drawing.Size(98, 36);
             this.cbDiametroAncor.TabIndex = 88;
@@ -1236,7 +828,7 @@
             this.labelDiametroAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelDiametroAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelDiametroAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelDiametroAncor.Location = new System.Drawing.Point(32, 497);
+            this.labelDiametroAncor.Location = new System.Drawing.Point(30, 235);
             this.labelDiametroAncor.Name = "labelDiametroAncor";
             this.labelDiametroAncor.Size = new System.Drawing.Size(64, 20);
             this.labelDiametroAncor.TabIndex = 87;
@@ -1248,95 +840,31 @@
             this.labelReqEspncor.BackColor = System.Drawing.Color.Transparent;
             this.labelReqEspncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelReqEspncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelReqEspncor.Location = new System.Drawing.Point(801, 496);
+            this.labelReqEspncor.Location = new System.Drawing.Point(799, 234);
             this.labelReqEspncor.Name = "labelReqEspncor";
             this.labelReqEspncor.Size = new System.Drawing.Size(94, 20);
             this.labelReqEspncor.TabIndex = 98;
             this.labelReqEspncor.Text = "Req. Especial";
             this.labelReqEspncor.Visible = false;
             // 
-            // tbReqespAncor
-            // 
-            this.tbReqespAncor.BackColor = System.Drawing.Color.White;
-            this.tbReqespAncor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.Content = "";
-            this.tbReqespAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbReqespAncor.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbReqespAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbReqespAncor.Image = null;
-            this.tbReqespAncor.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbReqespAncor.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbReqespAncor.Location = new System.Drawing.Point(766, 526);
-            this.tbReqespAncor.Margin = new System.Windows.Forms.Padding(4);
-            this.tbReqespAncor.Multiline = false;
-            this.tbReqespAncor.Name = "tbReqespAncor";
-            this.tbReqespAncor.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbReqespAncor.PasswordChar = false;
-            this.tbReqespAncor.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqespAncor.PlaceholderText = "Nª da Obra";
-            this.tbReqespAncor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbReqespAncor.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbReqespAncor.Size = new System.Drawing.Size(166, 36);
-            this.tbReqespAncor.TabIndex = 97;
-            this.tbReqespAncor.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbReqespAncor.UnderlinedStyle = true;
-            this.tbReqespAncor.Visible = false;
-            // 
             // labelMarcaAncor
             // 
             this.labelMarcaAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelMarcaAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelMarcaAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelMarcaAncor.Location = new System.Drawing.Point(986, 496);
+            this.labelMarcaAncor.Location = new System.Drawing.Point(984, 234);
             this.labelMarcaAncor.Name = "labelMarcaAncor";
             this.labelMarcaAncor.Size = new System.Drawing.Size(45, 20);
             this.labelMarcaAncor.TabIndex = 100;
             this.labelMarcaAncor.Text = "Marca";
             this.labelMarcaAncor.Visible = false;
             // 
-            // tbMarcaAncor
-            // 
-            this.tbMarcaAncor.BackColor = System.Drawing.Color.White;
-            this.tbMarcaAncor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.Content = "";
-            this.tbMarcaAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMarcaAncor.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbMarcaAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbMarcaAncor.Image = null;
-            this.tbMarcaAncor.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbMarcaAncor.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbMarcaAncor.Location = new System.Drawing.Point(936, 526);
-            this.tbMarcaAncor.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMarcaAncor.Multiline = false;
-            this.tbMarcaAncor.Name = "tbMarcaAncor";
-            this.tbMarcaAncor.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbMarcaAncor.PasswordChar = false;
-            this.tbMarcaAncor.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcaAncor.PlaceholderText = "Nª da Obra";
-            this.tbMarcaAncor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbMarcaAncor.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbMarcaAncor.Size = new System.Drawing.Size(140, 36);
-            this.tbMarcaAncor.TabIndex = 99;
-            this.tbMarcaAncor.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbMarcaAncor.UnderlinedStyle = true;
-            this.tbMarcaAncor.Visible = false;
-            // 
             // labelObsAncor
             // 
             this.labelObsAncor.BackColor = System.Drawing.Color.Transparent;
             this.labelObsAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelObsAncor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelObsAncor.Location = new System.Drawing.Point(1081, 496);
+            this.labelObsAncor.Location = new System.Drawing.Point(1079, 234);
             this.labelObsAncor.Name = "labelObsAncor";
             this.labelObsAncor.Size = new System.Drawing.Size(31, 20);
             this.labelObsAncor.TabIndex = 102;
@@ -1353,7 +881,7 @@
             this.obsAcor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.obsAcor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.obsAcor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.obsAcor.Location = new System.Drawing.Point(1081, 526);
+            this.obsAcor.Location = new System.Drawing.Point(1079, 264);
             this.obsAcor.MinimumSize = new System.Drawing.Size(16, 16);
             this.obsAcor.Name = "obsAcor";
             this.obsAcor.OutlineStyle = true;
@@ -1378,9 +906,9 @@
             this.ButtonAddAncor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddAncor.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddAncor.Location = new System.Drawing.Point(1126, 523);
+            this.ButtonAddAncor.Location = new System.Drawing.Point(1124, 261);
             this.ButtonAddAncor.Name = "ButtonAddAncor";
-            this.ButtonAddAncor.Size = new System.Drawing.Size(214, 40);
+            this.ButtonAddAncor.Size = new System.Drawing.Size(200, 38);
             this.ButtonAddAncor.TabIndex = 103;
             this.ButtonAddAncor.Text = "Adicionar Ancoragem";
             this.ButtonAddAncor.UseVisualStyleBackColor = false;
@@ -1391,7 +919,7 @@
             this.labelPerfilAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelPerfilAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelPerfilAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelPerfilAcss.Location = new System.Drawing.Point(200, 190);
+            this.labelPerfilAcss.Location = new System.Drawing.Point(203, 160);
             this.labelPerfilAcss.Name = "labelPerfilAcss";
             this.labelPerfilAcss.Size = new System.Drawing.Size(36, 20);
             this.labelPerfilAcss.TabIndex = 104;
@@ -1403,132 +931,36 @@
             this.labelReqEAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelReqEAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelReqEAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelReqEAcss.Location = new System.Drawing.Point(825, 190);
+            this.labelReqEAcss.Location = new System.Drawing.Point(828, 160);
             this.labelReqEAcss.Name = "labelReqEAcss";
             this.labelReqEAcss.Size = new System.Drawing.Size(94, 20);
             this.labelReqEAcss.TabIndex = 107;
             this.labelReqEAcss.Text = "Req. Especial";
             this.labelReqEAcss.Visible = false;
             // 
-            // tbReqEAcss
-            // 
-            this.tbReqEAcss.BackColor = System.Drawing.Color.White;
-            this.tbReqEAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.Content = "";
-            this.tbReqEAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbReqEAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbReqEAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbReqEAcss.Image = null;
-            this.tbReqEAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbReqEAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbReqEAcss.Location = new System.Drawing.Point(785, 218);
-            this.tbReqEAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbReqEAcss.Multiline = false;
-            this.tbReqEAcss.Name = "tbReqEAcss";
-            this.tbReqEAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbReqEAcss.PasswordChar = false;
-            this.tbReqEAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbReqEAcss.PlaceholderText = "Nª da Obra";
-            this.tbReqEAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbReqEAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbReqEAcss.Size = new System.Drawing.Size(176, 36);
-            this.tbReqEAcss.TabIndex = 106;
-            this.tbReqEAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbReqEAcss.UnderlinedStyle = true;
-            this.tbReqEAcss.Visible = false;
-            // 
             // labelqtdAcss
             // 
             this.labelqtdAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelqtdAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelqtdAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelqtdAcss.Location = new System.Drawing.Point(35, 190);
+            this.labelqtdAcss.Location = new System.Drawing.Point(38, 160);
             this.labelqtdAcss.Name = "labelqtdAcss";
             this.labelqtdAcss.Size = new System.Drawing.Size(31, 20);
             this.labelqtdAcss.TabIndex = 109;
             this.labelqtdAcss.Text = "Qtd.";
             this.labelqtdAcss.Visible = false;
             // 
-            // tbQtdAcss
-            // 
-            this.tbQtdAcss.BackColor = System.Drawing.Color.White;
-            this.tbQtdAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.Content = "";
-            this.tbQtdAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbQtdAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbQtdAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbQtdAcss.Image = null;
-            this.tbQtdAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbQtdAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbQtdAcss.Location = new System.Drawing.Point(13, 220);
-            this.tbQtdAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbQtdAcss.Multiline = false;
-            this.tbQtdAcss.Name = "tbQtdAcss";
-            this.tbQtdAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbQtdAcss.PasswordChar = false;
-            this.tbQtdAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbQtdAcss.PlaceholderText = "Nª da Obra";
-            this.tbQtdAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbQtdAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbQtdAcss.Size = new System.Drawing.Size(80, 36);
-            this.tbQtdAcss.TabIndex = 108;
-            this.tbQtdAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbQtdAcss.UnderlinedStyle = true;
-            this.tbQtdAcss.Visible = false;
-            // 
             // labelCompAcss
             // 
             this.labelCompAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelCompAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCompAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCompAcss.Location = new System.Drawing.Point(570, 190);
+            this.labelCompAcss.Location = new System.Drawing.Point(573, 160);
             this.labelCompAcss.Name = "labelCompAcss";
             this.labelCompAcss.Size = new System.Drawing.Size(94, 20);
             this.labelCompAcss.TabIndex = 111;
             this.labelCompAcss.Text = "Comprimento";
             this.labelCompAcss.Visible = false;
-            // 
-            // tbCompAcss
-            // 
-            this.tbCompAcss.BackColor = System.Drawing.Color.White;
-            this.tbCompAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.Content = "";
-            this.tbCompAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCompAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbCompAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbCompAcss.Image = null;
-            this.tbCompAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbCompAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbCompAcss.Location = new System.Drawing.Point(546, 218);
-            this.tbCompAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCompAcss.Multiline = false;
-            this.tbCompAcss.Name = "tbCompAcss";
-            this.tbCompAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbCompAcss.PasswordChar = false;
-            this.tbCompAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbCompAcss.PlaceholderText = "Nª da Obra";
-            this.tbCompAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbCompAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbCompAcss.Size = new System.Drawing.Size(140, 36);
-            this.tbCompAcss.TabIndex = 110;
-            this.tbCompAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbCompAcss.UnderlinedStyle = true;
-            this.tbCompAcss.Visible = false;
             // 
             // cbCertificadoAcss
             // 
@@ -1545,7 +977,7 @@
             this.cbCertificadoAcss.Items.AddRange(new object[] {
             "2,2",
             "3,1"});
-            this.cbCertificadoAcss.Location = new System.Drawing.Point(693, 218);
+            this.cbCertificadoAcss.Location = new System.Drawing.Point(705, 183);
             this.cbCertificadoAcss.Name = "cbCertificadoAcss";
             this.cbCertificadoAcss.Size = new System.Drawing.Size(85, 36);
             this.cbCertificadoAcss.StartIndex = 0;
@@ -1558,7 +990,7 @@
             this.labelCertfAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelCertfAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCertfAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCertfAcss.Location = new System.Drawing.Point(700, 188);
+            this.labelCertfAcss.Location = new System.Drawing.Point(703, 158);
             this.labelCertfAcss.Name = "labelCertfAcss";
             this.labelCertfAcss.Size = new System.Drawing.Size(74, 20);
             this.labelCertfAcss.TabIndex = 112;
@@ -1570,120 +1002,24 @@
             this.labelMarcaAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelMarcaAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelMarcaAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelMarcaAcss.Location = new System.Drawing.Point(1015, 188);
+            this.labelMarcaAcss.Location = new System.Drawing.Point(1018, 158);
             this.labelMarcaAcss.Name = "labelMarcaAcss";
             this.labelMarcaAcss.Size = new System.Drawing.Size(45, 20);
             this.labelMarcaAcss.TabIndex = 115;
             this.labelMarcaAcss.Text = "Marca";
             this.labelMarcaAcss.Visible = false;
             // 
-            // tbMarcalAcss
-            // 
-            this.tbMarcalAcss.BackColor = System.Drawing.Color.White;
-            this.tbMarcalAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.Content = "";
-            this.tbMarcalAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMarcalAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbMarcalAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbMarcalAcss.Image = null;
-            this.tbMarcalAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbMarcalAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbMarcalAcss.Location = new System.Drawing.Point(969, 218);
-            this.tbMarcalAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMarcalAcss.Multiline = false;
-            this.tbMarcalAcss.Name = "tbMarcalAcss";
-            this.tbMarcalAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbMarcalAcss.PasswordChar = false;
-            this.tbMarcalAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbMarcalAcss.PlaceholderText = "Nª da Obra";
-            this.tbMarcalAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbMarcalAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbMarcalAcss.Size = new System.Drawing.Size(140, 36);
-            this.tbMarcalAcss.TabIndex = 114;
-            this.tbMarcalAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbMarcalAcss.UnderlinedStyle = true;
-            this.tbMarcalAcss.Visible = false;
-            // 
             // labelNormalAcss
             // 
             this.labelNormalAcss.BackColor = System.Drawing.Color.Transparent;
             this.labelNormalAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelNormalAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelNormalAcss.Location = new System.Drawing.Point(420, 191);
+            this.labelNormalAcss.Location = new System.Drawing.Point(423, 161);
             this.labelNormalAcss.Name = "labelNormalAcss";
             this.labelNormalAcss.Size = new System.Drawing.Size(49, 20);
             this.labelNormalAcss.TabIndex = 116;
             this.labelNormalAcss.Text = "Norma";
             this.labelNormalAcss.Visible = false;
-            // 
-            // tbNormalAcss
-            // 
-            this.tbNormalAcss.BackColor = System.Drawing.Color.White;
-            this.tbNormalAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.Content = "";
-            this.tbNormalAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbNormalAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbNormalAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbNormalAcss.Image = null;
-            this.tbNormalAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbNormalAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbNormalAcss.Location = new System.Drawing.Point(361, 218);
-            this.tbNormalAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbNormalAcss.Multiline = false;
-            this.tbNormalAcss.Name = "tbNormalAcss";
-            this.tbNormalAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbNormalAcss.PasswordChar = false;
-            this.tbNormalAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbNormalAcss.PlaceholderText = "Nª da Obra";
-            this.tbNormalAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbNormalAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbNormalAcss.Size = new System.Drawing.Size(177, 36);
-            this.tbNormalAcss.TabIndex = 117;
-            this.tbNormalAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbNormalAcss.UnderlinedStyle = true;
-            this.tbNormalAcss.Visible = false;
-            // 
-            // tbPerfilAcss
-            // 
-            this.tbPerfilAcss.BackColor = System.Drawing.Color.White;
-            this.tbPerfilAcss.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.Content = "";
-            this.tbPerfilAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPerfilAcss.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.FocusImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.Font = new System.Drawing.Font("SansSerif", 10F);
-            this.tbPerfilAcss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbPerfilAcss.Image = null;
-            this.tbPerfilAcss.ImageExpand = new System.Drawing.Point(0, 0);
-            this.tbPerfilAcss.ImageOffset = new System.Drawing.Point(0, 0);
-            this.tbPerfilAcss.Location = new System.Drawing.Point(103, 218);
-            this.tbPerfilAcss.Margin = new System.Windows.Forms.Padding(4);
-            this.tbPerfilAcss.Multiline = false;
-            this.tbPerfilAcss.Name = "tbPerfilAcss";
-            this.tbPerfilAcss.NormalImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.Padding = new System.Windows.Forms.Padding(16, 10, 16, 0);
-            this.tbPerfilAcss.PasswordChar = false;
-            this.tbPerfilAcss.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.tbPerfilAcss.PlaceholderText = "Nª da Obra";
-            this.tbPerfilAcss.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbPerfilAcss.Rounding = new System.Windows.Forms.Padding(10);
-            this.tbPerfilAcss.Size = new System.Drawing.Size(250, 36);
-            this.tbPerfilAcss.TabIndex = 118;
-            this.tbPerfilAcss.TextOffset = new System.Drawing.Size(0, 0);
-            this.tbPerfilAcss.UnderlinedStyle = true;
-            this.tbPerfilAcss.Visible = false;
             // 
             // ButtonAddAcss
             // 
@@ -1695,13 +1031,14 @@
             this.ButtonAddAcss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddAcss.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddAcss.Location = new System.Drawing.Point(1116, 214);
+            this.ButtonAddAcss.Location = new System.Drawing.Point(1124, 179);
             this.ButtonAddAcss.Name = "ButtonAddAcss";
-            this.ButtonAddAcss.Size = new System.Drawing.Size(180, 40);
+            this.ButtonAddAcss.Size = new System.Drawing.Size(180, 38);
             this.ButtonAddAcss.TabIndex = 119;
             this.ButtonAddAcss.Text = "Adicionar";
             this.ButtonAddAcss.UseVisualStyleBackColor = false;
             this.ButtonAddAcss.Visible = false;
+            this.ButtonAddAcss.Click += new System.EventHandler(this.ButtonAddAcss_Click);
             // 
             // buttonAcess
             // 
@@ -1721,41 +1058,463 @@
             this.buttonAcess.UseVisualStyleBackColor = false;
             this.buttonAcess.Click += new System.EventHandler(this.buttonAcess_Click);
             // 
+            // tbQtdAcss
+            // 
+            this.tbQtdAcss.BackColor = System.Drawing.Color.White;
+            this.tbQtdAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbQtdAcss.BorderRadius = 10;
+            this.tbQtdAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbQtdAcss.DefaultText = "";
+            this.tbQtdAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbQtdAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbQtdAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbQtdAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbQtdAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbQtdAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbQtdAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbQtdAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbQtdAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbQtdAcss.Location = new System.Drawing.Point(20, 184);
+            this.tbQtdAcss.Name = "tbQtdAcss";
+            this.tbQtdAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbQtdAcss.PlaceholderText = "";
+            this.tbQtdAcss.SelectedText = "";
+            this.tbQtdAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbQtdAcss.Size = new System.Drawing.Size(80, 35);
+            this.tbQtdAcss.TabIndex = 121;
+            this.tbQtdAcss.Visible = false;
+            // 
+            // tbPerfilAcss
+            // 
+            this.tbPerfilAcss.BackColor = System.Drawing.Color.White;
+            this.tbPerfilAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbPerfilAcss.BorderRadius = 10;
+            this.tbPerfilAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPerfilAcss.DefaultText = "";
+            this.tbPerfilAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPerfilAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPerfilAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbPerfilAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbPerfilAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbPerfilAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbPerfilAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbPerfilAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbPerfilAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbPerfilAcss.Location = new System.Drawing.Point(106, 184);
+            this.tbPerfilAcss.Name = "tbPerfilAcss";
+            this.tbPerfilAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbPerfilAcss.PlaceholderText = "";
+            this.tbPerfilAcss.SelectedText = "";
+            this.tbPerfilAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbPerfilAcss.Size = new System.Drawing.Size(250, 35);
+            this.tbPerfilAcss.TabIndex = 122;
+            this.tbPerfilAcss.Visible = false;
+            // 
+            // tbNormalAcss
+            // 
+            this.tbNormalAcss.BackColor = System.Drawing.Color.White;
+            this.tbNormalAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbNormalAcss.BorderRadius = 10;
+            this.tbNormalAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbNormalAcss.DefaultText = "";
+            this.tbNormalAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbNormalAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbNormalAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbNormalAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbNormalAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbNormalAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbNormalAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbNormalAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbNormalAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbNormalAcss.Location = new System.Drawing.Point(366, 184);
+            this.tbNormalAcss.Name = "tbNormalAcss";
+            this.tbNormalAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbNormalAcss.PlaceholderText = "";
+            this.tbNormalAcss.SelectedText = "";
+            this.tbNormalAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbNormalAcss.Size = new System.Drawing.Size(175, 35);
+            this.tbNormalAcss.TabIndex = 123;
+            this.tbNormalAcss.Visible = false;
+            // 
+            // tbCompAcss
+            // 
+            this.tbCompAcss.BackColor = System.Drawing.Color.White;
+            this.tbCompAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbCompAcss.BorderRadius = 10;
+            this.tbCompAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbCompAcss.DefaultText = "";
+            this.tbCompAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbCompAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbCompAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbCompAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbCompAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbCompAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbCompAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbCompAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbCompAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbCompAcss.Location = new System.Drawing.Point(551, 184);
+            this.tbCompAcss.Name = "tbCompAcss";
+            this.tbCompAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbCompAcss.PlaceholderText = "";
+            this.tbCompAcss.SelectedText = "";
+            this.tbCompAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbCompAcss.Size = new System.Drawing.Size(140, 35);
+            this.tbCompAcss.TabIndex = 124;
+            this.tbCompAcss.Visible = false;
+            // 
+            // tbReqEAcss
+            // 
+            this.tbReqEAcss.BackColor = System.Drawing.Color.White;
+            this.tbReqEAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqEAcss.BorderRadius = 10;
+            this.tbReqEAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbReqEAcss.DefaultText = "";
+            this.tbReqEAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbReqEAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbReqEAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqEAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqEAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqEAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqEAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbReqEAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbReqEAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqEAcss.Location = new System.Drawing.Point(797, 184);
+            this.tbReqEAcss.Name = "tbReqEAcss";
+            this.tbReqEAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqEAcss.PlaceholderText = "";
+            this.tbReqEAcss.SelectedText = "";
+            this.tbReqEAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqEAcss.Size = new System.Drawing.Size(175, 35);
+            this.tbReqEAcss.TabIndex = 125;
+            this.tbReqEAcss.Visible = false;
+            // 
+            // tbMarcalAcss
+            // 
+            this.tbMarcalAcss.BackColor = System.Drawing.Color.White;
+            this.tbMarcalAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcalAcss.BorderRadius = 10;
+            this.tbMarcalAcss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMarcalAcss.DefaultText = "";
+            this.tbMarcalAcss.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMarcalAcss.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMarcalAcss.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcalAcss.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcalAcss.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcalAcss.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcalAcss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbMarcalAcss.ForeColor = System.Drawing.Color.Black;
+            this.tbMarcalAcss.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcalAcss.Location = new System.Drawing.Point(978, 184);
+            this.tbMarcalAcss.Name = "tbMarcalAcss";
+            this.tbMarcalAcss.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcalAcss.PlaceholderText = "";
+            this.tbMarcalAcss.SelectedText = "";
+            this.tbMarcalAcss.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcalAcss.Size = new System.Drawing.Size(140, 35);
+            this.tbMarcalAcss.TabIndex = 126;
+            this.tbMarcalAcss.Visible = false;
+            // 
+            // tbqtdAncor
+            // 
+            this.tbqtdAncor.BackColor = System.Drawing.Color.White;
+            this.tbqtdAncor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdAncor.BorderRadius = 10;
+            this.tbqtdAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbqtdAncor.DefaultText = "";
+            this.tbqtdAncor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbqtdAncor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbqtdAncor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdAncor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdAncor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdAncor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbqtdAncor.ForeColor = System.Drawing.Color.Black;
+            this.tbqtdAncor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdAncor.Location = new System.Drawing.Point(253, 266);
+            this.tbqtdAncor.Name = "tbqtdAncor";
+            this.tbqtdAncor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdAncor.PlaceholderText = "";
+            this.tbqtdAncor.SelectedText = "";
+            this.tbqtdAncor.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdAncor.Size = new System.Drawing.Size(80, 35);
+            this.tbqtdAncor.TabIndex = 127;
+            this.tbqtdAncor.Visible = false;
+            // 
+            // tbReqespAncor
+            // 
+            this.tbReqespAncor.BackColor = System.Drawing.Color.White;
+            this.tbReqespAncor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqespAncor.BorderRadius = 10;
+            this.tbReqespAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbReqespAncor.DefaultText = "";
+            this.tbReqespAncor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbReqespAncor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbReqespAncor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqespAncor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqespAncor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqespAncor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqespAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbReqespAncor.ForeColor = System.Drawing.Color.Black;
+            this.tbReqespAncor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqespAncor.Location = new System.Drawing.Point(765, 265);
+            this.tbReqespAncor.Name = "tbReqespAncor";
+            this.tbReqespAncor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbReqespAncor.PlaceholderText = "";
+            this.tbReqespAncor.SelectedText = "";
+            this.tbReqespAncor.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbReqespAncor.Size = new System.Drawing.Size(165, 35);
+            this.tbReqespAncor.TabIndex = 128;
+            this.tbReqespAncor.Visible = false;
+            // 
+            // tbMarcaAncor
+            // 
+            this.tbMarcaAncor.BackColor = System.Drawing.Color.White;
+            this.tbMarcaAncor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaAncor.BorderRadius = 10;
+            this.tbMarcaAncor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMarcaAncor.DefaultText = "";
+            this.tbMarcaAncor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMarcaAncor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMarcaAncor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaAncor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaAncor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaAncor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaAncor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbMarcaAncor.ForeColor = System.Drawing.Color.Black;
+            this.tbMarcaAncor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaAncor.Location = new System.Drawing.Point(936, 266);
+            this.tbMarcaAncor.Name = "tbMarcaAncor";
+            this.tbMarcaAncor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaAncor.PlaceholderText = "";
+            this.tbMarcaAncor.SelectedText = "";
+            this.tbMarcaAncor.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaAncor.Size = new System.Drawing.Size(140, 35);
+            this.tbMarcaAncor.TabIndex = 129;
+            this.tbMarcaAncor.Visible = false;
+            // 
+            // tbqtdBolt
+            // 
+            this.tbqtdBolt.BackColor = System.Drawing.Color.White;
+            this.tbqtdBolt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdBolt.BorderRadius = 10;
+            this.tbqtdBolt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbqtdBolt.DefaultText = "";
+            this.tbqtdBolt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbqtdBolt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbqtdBolt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdBolt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdBolt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdBolt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbqtdBolt.ForeColor = System.Drawing.Color.Black;
+            this.tbqtdBolt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdBolt.Location = new System.Drawing.Point(252, 344);
+            this.tbqtdBolt.Name = "tbqtdBolt";
+            this.tbqtdBolt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdBolt.PlaceholderText = "";
+            this.tbqtdBolt.SelectedText = "";
+            this.tbqtdBolt.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdBolt.Size = new System.Drawing.Size(80, 35);
+            this.tbqtdBolt.TabIndex = 130;
+            this.tbqtdBolt.Visible = false;
+            // 
+            // tbqtdWasher
+            // 
+            this.tbqtdWasher.BackColor = System.Drawing.Color.White;
+            this.tbqtdWasher.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdWasher.BorderRadius = 10;
+            this.tbqtdWasher.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbqtdWasher.DefaultText = "";
+            this.tbqtdWasher.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbqtdWasher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbqtdWasher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdWasher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdWasher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdWasher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbqtdWasher.ForeColor = System.Drawing.Color.Black;
+            this.tbqtdWasher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdWasher.Location = new System.Drawing.Point(252, 427);
+            this.tbqtdWasher.Name = "tbqtdWasher";
+            this.tbqtdWasher.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdWasher.PlaceholderText = "";
+            this.tbqtdWasher.SelectedText = "";
+            this.tbqtdWasher.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdWasher.Size = new System.Drawing.Size(80, 35);
+            this.tbqtdWasher.TabIndex = 131;
+            this.tbqtdWasher.Visible = false;
+            // 
+            // tbqtdNut
+            // 
+            this.tbqtdNut.BackColor = System.Drawing.Color.White;
+            this.tbqtdNut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdNut.BorderRadius = 10;
+            this.tbqtdNut.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbqtdNut.DefaultText = "";
+            this.tbqtdNut.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbqtdNut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbqtdNut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdNut.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdNut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdNut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbqtdNut.ForeColor = System.Drawing.Color.Black;
+            this.tbqtdNut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdNut.Location = new System.Drawing.Point(252, 385);
+            this.tbqtdNut.Name = "tbqtdNut";
+            this.tbqtdNut.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbqtdNut.PlaceholderText = "";
+            this.tbqtdNut.SelectedText = "";
+            this.tbqtdNut.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbqtdNut.Size = new System.Drawing.Size(80, 35);
+            this.tbqtdNut.TabIndex = 132;
+            this.tbqtdNut.Visible = false;
+            // 
+            // tbMarcaWasher
+            // 
+            this.tbMarcaWasher.BackColor = System.Drawing.Color.White;
+            this.tbMarcaWasher.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaWasher.BorderRadius = 10;
+            this.tbMarcaWasher.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMarcaWasher.DefaultText = "";
+            this.tbMarcaWasher.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMarcaWasher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMarcaWasher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaWasher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaWasher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaWasher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaWasher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbMarcaWasher.ForeColor = System.Drawing.Color.Black;
+            this.tbMarcaWasher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaWasher.Location = new System.Drawing.Point(767, 427);
+            this.tbMarcaWasher.Name = "tbMarcaWasher";
+            this.tbMarcaWasher.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaWasher.PlaceholderText = "";
+            this.tbMarcaWasher.SelectedText = "";
+            this.tbMarcaWasher.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaWasher.Size = new System.Drawing.Size(140, 35);
+            this.tbMarcaWasher.TabIndex = 133;
+            this.tbMarcaWasher.Visible = false;
+            // 
+            // tbMarcaNut
+            // 
+            this.tbMarcaNut.BackColor = System.Drawing.Color.White;
+            this.tbMarcaNut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaNut.BorderRadius = 10;
+            this.tbMarcaNut.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMarcaNut.DefaultText = "";
+            this.tbMarcaNut.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMarcaNut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMarcaNut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaNut.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaNut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaNut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaNut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbMarcaNut.ForeColor = System.Drawing.Color.Black;
+            this.tbMarcaNut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaNut.Location = new System.Drawing.Point(767, 384);
+            this.tbMarcaNut.Name = "tbMarcaNut";
+            this.tbMarcaNut.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaNut.PlaceholderText = "";
+            this.tbMarcaNut.SelectedText = "";
+            this.tbMarcaNut.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaNut.Size = new System.Drawing.Size(140, 35);
+            this.tbMarcaNut.TabIndex = 134;
+            this.tbMarcaNut.Visible = false;
+            // 
+            // tbMarcaBolt
+            // 
+            this.tbMarcaBolt.BackColor = System.Drawing.Color.White;
+            this.tbMarcaBolt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaBolt.BorderRadius = 10;
+            this.tbMarcaBolt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMarcaBolt.DefaultText = "";
+            this.tbMarcaBolt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMarcaBolt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMarcaBolt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaBolt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaBolt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaBolt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaBolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbMarcaBolt.ForeColor = System.Drawing.Color.Black;
+            this.tbMarcaBolt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaBolt.Location = new System.Drawing.Point(767, 343);
+            this.tbMarcaBolt.Name = "tbMarcaBolt";
+            this.tbMarcaBolt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbMarcaBolt.PlaceholderText = "";
+            this.tbMarcaBolt.SelectedText = "";
+            this.tbMarcaBolt.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbMarcaBolt.Size = new System.Drawing.Size(140, 35);
+            this.tbMarcaBolt.TabIndex = 135;
+            this.tbMarcaBolt.Visible = false;
+            // 
+            // tbObs
+            // 
+            this.tbObs.BackColor = System.Drawing.Color.White;
+            this.tbObs.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbObs.BorderRadius = 10;
+            this.tbObs.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbObs.DefaultText = "";
+            this.tbObs.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbObs.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbObs.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbObs.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbObs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbObs.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbObs.ForeColor = System.Drawing.Color.Black;
+            this.tbObs.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbObs.Location = new System.Drawing.Point(240, 40);
+            this.tbObs.Name = "tbObs";
+            this.tbObs.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbObs.PlaceholderText = "";
+            this.tbObs.SelectedText = "";
+            this.tbObs.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbObs.Size = new System.Drawing.Size(415, 35);
+            this.tbObs.TabIndex = 136;
+            // 
             // CM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1352, 837);
+            this.ClientSize = new System.Drawing.Size(1340, 514);
+            this.Controls.Add(this.tbObs);
+            this.Controls.Add(this.tbMarcaBolt);
+            this.Controls.Add(this.tbMarcaNut);
+            this.Controls.Add(this.tbMarcaWasher);
+            this.Controls.Add(this.tbqtdNut);
+            this.Controls.Add(this.tbqtdWasher);
+            this.Controls.Add(this.tbqtdBolt);
+            this.Controls.Add(this.tbMarcaAncor);
+            this.Controls.Add(this.tbReqespAncor);
+            this.Controls.Add(this.tbqtdAncor);
+            this.Controls.Add(this.tbMarcalAcss);
+            this.Controls.Add(this.tbReqEAcss);
+            this.Controls.Add(this.tbCompAcss);
+            this.Controls.Add(this.tbNormalAcss);
+            this.Controls.Add(this.tbPerfilAcss);
+            this.Controls.Add(this.tbQtdAcss);
             this.Controls.Add(this.buttonAcess);
             this.Controls.Add(this.ButtonAddAcss);
-            this.Controls.Add(this.tbPerfilAcss);
-            this.Controls.Add(this.tbNormalAcss);
             this.Controls.Add(this.labelNormalAcss);
             this.Controls.Add(this.labelMarcaAcss);
-            this.Controls.Add(this.tbMarcalAcss);
             this.Controls.Add(this.cbCertificadoAcss);
             this.Controls.Add(this.labelCertfAcss);
             this.Controls.Add(this.labelCompAcss);
-            this.Controls.Add(this.tbCompAcss);
             this.Controls.Add(this.labelqtdAcss);
-            this.Controls.Add(this.tbQtdAcss);
             this.Controls.Add(this.labelReqEAcss);
-            this.Controls.Add(this.tbReqEAcss);
             this.Controls.Add(this.labelPerfilAcss);
             this.Controls.Add(this.ButtonAddAncor);
             this.Controls.Add(this.labelObsAncor);
             this.Controls.Add(this.obsAcor);
             this.Controls.Add(this.labelMarcaAncor);
-            this.Controls.Add(this.tbMarcaAncor);
             this.Controls.Add(this.labelReqEspncor);
-            this.Controls.Add(this.tbReqespAncor);
             this.Controls.Add(this.cbNormaAncor);
             this.Controls.Add(this.labelNormaAncor);
             this.Controls.Add(this.cbClasseAncor);
             this.Controls.Add(this.labelClasseAncor);
             this.Controls.Add(this.labelQtdAncor);
-            this.Controls.Add(this.tbqtdAncor);
             this.Controls.Add(this.cbCompAncor);
             this.Controls.Add(this.labelCompAncor);
             this.Controls.Add(this.cbDiametroAncor);
@@ -1768,49 +1527,30 @@
             this.Controls.Add(this.guna2HtmlLabel15);
             this.Controls.Add(this.ButtonAddConj);
             this.Controls.Add(this.ButtonAddWasher);
-            this.Controls.Add(this.labelobsWasher);
             this.Controls.Add(this.obsWasher);
-            this.Controls.Add(this.labelmarcaWasher);
-            this.Controls.Add(this.tbMarcaWasher);
             this.Controls.Add(this.cbNormaWasher);
-            this.Controls.Add(this.labelnormalWasher);
             this.Controls.Add(this.cbClasseWasher);
-            this.Controls.Add(this.labelclasseWasher);
-            this.Controls.Add(this.labelqdWasher);
-            this.Controls.Add(this.tbqtdWasher);
             this.Controls.Add(this.cbDiametroWasher);
-            this.Controls.Add(this.labelDiamWasher);
             this.Controls.Add(this.ButtonAddNut);
-            this.Controls.Add(this.labelobsNut);
             this.Controls.Add(this.obsNut);
-            this.Controls.Add(this.labelmarcaNut);
-            this.Controls.Add(this.tbMarcaNut);
             this.Controls.Add(this.cbNormaNut);
-            this.Controls.Add(this.labelnormalNut);
             this.Controls.Add(this.cbClasseNut);
-            this.Controls.Add(this.labelclasseNut);
-            this.Controls.Add(this.labelqdNut);
-            this.Controls.Add(this.tbqtdNut);
             this.Controls.Add(this.cbDiametroNut);
-            this.Controls.Add(this.labelDiamNut);
             this.Controls.Add(this.ButtonAddBolt);
             this.Controls.Add(this.cbLocalD);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.labelobsBolt);
             this.Controls.Add(this.obsBolt);
             this.Controls.Add(this.labelmarcaBolt);
-            this.Controls.Add(this.tbMarcaBolt);
             this.Controls.Add(this.cbNormaBolt);
             this.Controls.Add(this.labelnormalBolt);
             this.Controls.Add(this.cbClasseBolt);
             this.Controls.Add(this.labelclasseBolt);
             this.Controls.Add(this.labelqdBolt);
-            this.Controls.Add(this.tbqtdBolt);
             this.Controls.Add(this.cbComprimentoBolt);
             this.Controls.Add(this.labelCompBolt);
             this.Controls.Add(this.cbDiametroBolt);
             this.Controls.Add(this.labelDiamBolt);
-            this.Controls.Add(this.tbObs);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.Datematerialemobra);
             this.Controls.Add(this.label4);
@@ -1824,8 +1564,6 @@
         }
 
         #endregion
-
-        private CuoreUI.Controls.cuiTextBox tbObs;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DateTimePicker Datematerialemobra;
         private Guna.UI2.WinForms.Guna2HtmlLabel label4;
@@ -1834,44 +1572,26 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbDiametroBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelDiamBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelqdBolt;
-        private CuoreUI.Controls.cuiTextBox tbqtdBolt;
         private Guna.UI2.WinForms.Guna2ComboBox cbClasseBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelclasseBolt;
         private Guna.UI2.WinForms.Guna2ComboBox cbNormaBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelnormalBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelmarcaBolt;
-        private CuoreUI.Controls.cuiTextBox tbMarcaBolt;
         private CuoreUI.Controls.cuiCheckbox obsBolt;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelobsBolt;
         private Guna.UI2.WinForms.Guna2ComboBox cbLocalD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private WiLBiT.WiLBiTButton ButtonAddBolt;
         private WiLBiT.WiLBiTButton ButtonAddNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelobsNut;
         private CuoreUI.Controls.cuiCheckbox obsNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelmarcaNut;
-        private CuoreUI.Controls.cuiTextBox tbMarcaNut;
         private Guna.UI2.WinForms.Guna2ComboBox cbNormaNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelnormalNut;
         private Guna.UI2.WinForms.Guna2ComboBox cbClasseNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelclasseNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelqdNut;
-        private CuoreUI.Controls.cuiTextBox tbqtdNut;
         private Guna.UI2.WinForms.Guna2ComboBox cbDiametroNut;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelDiamNut;
         private WiLBiT.WiLBiTButton ButtonAddWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelobsWasher;
         private CuoreUI.Controls.cuiCheckbox obsWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelmarcaWasher;
-        private CuoreUI.Controls.cuiTextBox tbMarcaWasher;
         private Guna.UI2.WinForms.Guna2ComboBox cbNormaWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelnormalWasher;
         private Guna.UI2.WinForms.Guna2ComboBox cbClasseWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelclasseWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelqdWasher;
-        private CuoreUI.Controls.cuiTextBox tbqtdWasher;
         private Guna.UI2.WinForms.Guna2ComboBox cbDiametroWasher;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelDiamWasher;
         private WiLBiT.WiLBiTButton ButtonAddConj;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2ComboBox cbConjunto;
@@ -1884,33 +1604,40 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbClasseAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelClasseAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelQtdAncor;
-        private CuoreUI.Controls.cuiTextBox tbqtdAncor;
         private Guna.UI2.WinForms.Guna2ComboBox cbCompAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelCompAncor;
         private Guna.UI2.WinForms.Guna2ComboBox cbDiametroAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelDiametroAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelReqEspncor;
-        private CuoreUI.Controls.cuiTextBox tbReqespAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelMarcaAncor;
-        private CuoreUI.Controls.cuiTextBox tbMarcaAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelObsAncor;
         private CuoreUI.Controls.cuiCheckbox obsAcor;
         private WiLBiT.WiLBiTButton ButtonAddAncor;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelPerfilAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelReqEAcss;
-        private CuoreUI.Controls.cuiTextBox tbReqEAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelqtdAcss;
-        private CuoreUI.Controls.cuiTextBox tbQtdAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelCompAcss;
-        private CuoreUI.Controls.cuiTextBox tbCompAcss;
         private Guna.UI2.WinForms.Guna2ComboBox cbCertificadoAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelCertfAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelMarcaAcss;
-        private CuoreUI.Controls.cuiTextBox tbMarcalAcss;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelNormalAcss;
-        private CuoreUI.Controls.cuiTextBox tbNormalAcss;
-        private CuoreUI.Controls.cuiTextBox tbPerfilAcss;
         private WiLBiT.WiLBiTButton ButtonAddAcss;
         private WiLBiT.WiLBiTButton buttonAcess;
+        private Guna.UI2.WinForms.Guna2TextBox tbQtdAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbPerfilAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbNormalAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbCompAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbReqEAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbMarcalAcss;
+        private Guna.UI2.WinForms.Guna2TextBox tbqtdAncor;
+        private Guna.UI2.WinForms.Guna2TextBox tbReqespAncor;
+        private Guna.UI2.WinForms.Guna2TextBox tbMarcaAncor;
+        private Guna.UI2.WinForms.Guna2TextBox tbqtdBolt;
+        private Guna.UI2.WinForms.Guna2TextBox tbqtdWasher;
+        private Guna.UI2.WinForms.Guna2TextBox tbqtdNut;
+        private Guna.UI2.WinForms.Guna2TextBox tbMarcaWasher;
+        private Guna.UI2.WinForms.Guna2TextBox tbMarcaNut;
+        private Guna.UI2.WinForms.Guna2TextBox tbMarcaBolt;
+        private Guna.UI2.WinForms.Guna2TextBox tbObs;
     }
 }

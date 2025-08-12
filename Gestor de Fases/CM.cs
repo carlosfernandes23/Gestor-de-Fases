@@ -25,60 +25,66 @@ namespace Gestor_de_Fases
         private void CloseAll()
         {
             CloseConjBolt();
-            BuchasClose();
-            VaraoClose();
-            CloseConjAcss();
+            VaraoeBuchasClose();
+            CloseConjAcss();            
         }
 
         private void cbConjunto_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbAncoragem.SelectedIndex = -1;
+            cbConector.SelectedIndex = -1;
             CloseAll();
-            OpenConjBolt();
+            OpenConjBolt();           
         }
 
         private void cbAncoragem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CloseAll();
+        {            
+            CloseAll();           
 
             if (cbAncoragem.Text.Contains("Bucha Metálica"))
             {
-                ConfigurarPosicoesBucha();
+                ConfigurarPosicoesVaraoeBucha();
                 ButtonAddAncor.Text = "Adicionar Bucha Metálica";
-                BuchasOpen();
+                VaraoeBuchasOpen();                
             }
             else if (cbAncoragem.Text.Contains("Bucha Quimica"))
             {
-                ConfigurarPosicoesBucha();
+                ConfigurarPosicoesVaraoeBucha();
                 ButtonAddAncor.Text = "Adicionar Bucha Quimica";
-                BuchasOpen();
+                VaraoeBuchasOpen();                
             }
             else if (cbAncoragem.Text.Contains("Varão Roscado"))
             {
-                ConfigurarPosicoesVarao();
+                ConfigurarPosicoesVaraoeBucha();
                 ButtonAddAncor.Text = "Adicionar Varão Roscado";
-                VaraoOpen();
+                VaraoeBuchasOpen();                
             }
             else if (cbAncoragem.Text.Contains("Varão Nervorado"))
             {
-                ConfigurarPosicoesVarao();
+                ConfigurarPosicoesVaraoeBucha();
                 ButtonAddAncor.Text = "Adicionar Varão Nervorado";
-                VaraoOpen();
+                VaraoeBuchasOpen();              
             }
             else
             {
-                CloseAll();
+                CloseAll();               
             }
         }
 
         private void cbConector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CloseAll();
+            cbConjunto.SelectedIndex = -1;
+            cbAncoragem.SelectedIndex = -1;
+            CloseAll();            
         }
 
         private void buttonAcess_Click(object sender, EventArgs e)
         {
+            cbConjunto.SelectedIndex = -1;
+            cbAncoragem.SelectedIndex = -1;
+            cbConector.SelectedIndex = -1;
             CloseAll();
-            OpenConjAcss();
+            OpenConjAcss();           
         }
       
         private void OpenConjBolt() => SetConjBoltVisibility(true);
@@ -107,37 +113,23 @@ namespace Gestor_de_Fases
             tbMarcaBolt.Location = new Point(760, 175);
             obsBolt.Location = new Point(910, 175);
 
-            labelDiamNut.Location = new Point(25, 220);
-            labelqdNut.Location = new Point(275, 220);
-            labelclasseNut.Location = new Point(375, 220);
-            labelnormalNut.Location = new Point(585, 220);
-            labelmarcaNut.Location = new Point(805, 220);
-            labelobsNut.Location = new Point(910, 220);
+            cbDiametroNut.Location = new Point(10, 225);
+            tbqtdNut.Location = new Point(250, 225);
+            cbClasseNut.Location = new Point(335, 225);
+            cbNormaNut.Location = new Point(480, 225);
+            tbMarcaNut.Location = new Point(760, 225);
+            obsNut.Location = new Point(910, 225);
 
-            cbDiametroNut.Location = new Point(10, 250);
-            tbqtdNut.Location = new Point(250, 250);
-            cbClasseNut.Location = new Point(335, 250);
-            cbNormaNut.Location = new Point(480, 250);
-            tbMarcaNut.Location = new Point(760, 250);
-            obsNut.Location = new Point(910, 250);
-
-            labelDiamWasher.Location = new Point(25, 305);
-            labelqdWasher.Location = new Point(275, 305);
-            labelclasseWasher.Location = new Point(375, 305);
-            labelnormalWasher.Location = new Point(585, 305);
-            labelmarcaWasher.Location = new Point(805, 305);
-            labelobsWasher.Location = new Point(910, 305);
-
-            cbDiametroWasher.Location = new Point(10, 335);
-            tbqtdWasher.Location = new Point(250, 335);
-            cbClasseWasher.Location = new Point(335, 335);
-            cbNormaWasher.Location = new Point(480, 335);
-            tbMarcaWasher.Location = new Point(760, 335);
-            obsWasher.Location = new Point(910, 335);
+            cbDiametroWasher.Location = new Point(10, 275);
+            tbqtdWasher.Location = new Point(250, 275);
+            cbClasseWasher.Location = new Point(335, 275);
+            cbNormaWasher.Location = new Point(480, 275);
+            tbMarcaWasher.Location = new Point(760, 275);
+            obsWasher.Location = new Point(910, 275);
 
             ButtonAddBolt.Location = new Point(960, 170);
-            ButtonAddNut.Location = new Point(960, 250);
-            ButtonAddWasher.Location = new Point(960, 330);
+            ButtonAddNut.Location = new Point(960, 225);
+            ButtonAddWasher.Location = new Point(960, 275);
             ButtonAddConj.Location = new Point(1135, 170);
         }
 
@@ -160,12 +152,6 @@ namespace Gestor_de_Fases
             tbMarcaBolt.Visible = visible;
             obsBolt.Visible = visible;
 
-            labelDiamNut.Visible = visible;
-            labelqdNut.Visible = visible;
-            labelclasseNut.Visible = visible;
-            labelnormalNut.Visible = visible;
-            labelmarcaNut.Visible = visible;
-            labelobsNut.Visible = visible;
             cbDiametroNut.Visible = visible;
             tbqtdNut.Visible = visible;
             cbClasseNut.Visible = visible;
@@ -173,12 +159,6 @@ namespace Gestor_de_Fases
             tbMarcaNut.Visible = visible;
             obsNut.Visible = visible;
 
-            labelDiamWasher.Visible = visible;
-            labelqdWasher.Visible = visible;
-            labelclasseWasher.Visible = visible;
-            labelnormalWasher.Visible = visible;
-            labelmarcaWasher.Visible = visible;
-            labelobsWasher.Visible = visible;
             cbDiametroWasher.Visible = visible;
             tbqtdWasher.Visible = visible;
             cbClasseWasher.Visible = visible;
@@ -192,7 +172,7 @@ namespace Gestor_de_Fases
             ButtonAddConj.Visible = visible;
         }
 
-        private void ConfigurarPosicoesVarao()
+        private void ConfigurarPosicoesVaraoeBucha()
         {
             labelDiametroAncor.Location = new Point(35, 190);
             labelCompAncor.Location = new Point(135, 190);
@@ -213,32 +193,12 @@ namespace Gestor_de_Fases
             obsAcor.Location = new Point(1085, 220);
 
             ButtonAddAncor.Location = new Point(1130, 220);
-        }
+        }      
 
-        private void ConfigurarPosicoesBucha()
-        {
-            labelDiametroAncor.Location = new Point(35, 190);
-            labelQtdAncor.Location = new Point(150, 190);
-            labelClasseAncor.Location = new Point(250, 190);
-            labelNormaAncor.Location = new Point(460, 190);
-            labelReqEspncor.Location = new Point(670, 190);
-            labelMarcaAncor.Location = new Point(855, 190);
-            labelObsAncor.Location = new Point(950, 190);
-
-            cbDiametroAncor.Location = new Point(20, 220);
-            tbqtdAncor.Location = new Point(125, 220);
-            cbClasseAncor.Location = new Point(210, 220);
-            cbNormaAncor.Location = new Point(355, 220);
-            tbReqespAncor.Location = new Point(635, 220);
-            tbMarcaAncor.Location = new Point(805, 220);
-            obsAcor.Location = new Point(950, 220);
-
-            ButtonAddAncor.Location = new Point(995, 220);
-        }
-
-        private void SetAncoragemVisibility(bool mostrar, bool mostrarCompr = false)
+        private void SetAncoragemVisibility(bool mostrar)
         {
             labelDiametroAncor.Visible = mostrar;
+            labelCompAncor.Visible = mostrar;
             labelQtdAncor.Visible = mostrar;
             labelClasseAncor.Visible = mostrar;
             labelNormaAncor.Visible = mostrar;
@@ -247,6 +207,7 @@ namespace Gestor_de_Fases
             labelObsAncor.Visible = mostrar;
 
             cbDiametroAncor.Visible = mostrar;
+            cbCompAncor.Visible = mostrar;
             tbqtdAncor.Visible = mostrar;
             cbClasseAncor.Visible = mostrar;
             cbNormaAncor.Visible = mostrar;
@@ -254,19 +215,12 @@ namespace Gestor_de_Fases
             tbMarcaAncor.Visible = mostrar;
             obsAcor.Visible = mostrar;
 
-            ButtonAddAncor.Visible = mostrar;
-
-            labelCompAncor.Visible = mostrar && mostrarCompr;
-            cbCompAncor.Visible = mostrar && mostrarCompr;
+            ButtonAddAncor.Visible = mostrar;           
         }
 
-        private void BuchasOpen() => SetAncoragemVisibility(true, false);
+        private void VaraoeBuchasOpen() => SetAncoragemVisibility(true);
 
-        private void BuchasClose() => SetAncoragemVisibility(false);
-
-        private void VaraoOpen() => SetAncoragemVisibility(true, true);
-
-        private void VaraoClose() => SetAncoragemVisibility(false);               
+        private void VaraoeBuchasClose() => SetAncoragemVisibility(false);                   
 
         private void SetConjAcssVisibility(bool visible)
         {
@@ -312,6 +266,18 @@ namespace Gestor_de_Fases
             ButtonAddAcss.Location = new Point(1115, 220);
         }
 
-        
+        private void cbAncoragem_Click(object sender, EventArgs e)
+        {
+            cbConector.SelectedIndex = -1;
+            cbConjunto.SelectedIndex = -1;
+        }
+
+        private void ButtonAddAcss_Click(object sender, EventArgs e)
+        {
+            string um = tbPerfilAcss.Text;
+            string dois = tbNormalAcss.Text;
+
+            MessageBox.Show($"Acessório adicionado com sucesso {um} {dois}!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

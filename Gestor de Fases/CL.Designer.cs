@@ -98,10 +98,12 @@
             // 
             // Datematerialemobra
             // 
+            this.Datematerialemobra.BorderColor = System.Drawing.Color.White;
             this.Datematerialemobra.BorderRadius = 8;
             this.Datematerialemobra.Checked = true;
-            this.Datematerialemobra.FillColor = System.Drawing.Color.Silver;
-            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Datematerialemobra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datematerialemobra.ForeColor = System.Drawing.Color.White;
             this.Datematerialemobra.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Datematerialemobra.Location = new System.Drawing.Point(15, 40);
             this.Datematerialemobra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -487,7 +489,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1395, 390);
+            this.ClientSize = new System.Drawing.Size(1380, 320);
             this.Controls.Add(this.ButtonAddPerfilCP);
             this.Controls.Add(this.Pesoliquido);
             this.Controls.Add(this.guna2HtmlLabel10);
@@ -515,6 +517,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CL";
             this.Text = "CL";
+            this.Load += new System.EventHandler(this.CL_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

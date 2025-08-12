@@ -63,6 +63,16 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap folder_close {
+            get {
+                object obj = ResourceManager.GetObject("folder_close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap novopedido {
             get {
                 object obj = ResourceManager.GetObject("novopedido", resourceCulture);
@@ -76,6 +86,56 @@ namespace Gestor_de_Fases.Properties {
         internal static System.Drawing.Bitmap novopedido2 {
             get {
                 object obj = ResourceManager.GetObject("novopedido2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_folder {
+            get {
+                object obj = ResourceManager.GetObject("open_folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pdf1 {
+            get {
+                object obj = ResourceManager.GetObject("pdf1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pdf2 {
+            get {
+                object obj = ResourceManager.GetObject("pdf2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send1 {
+            get {
+                object obj = ResourceManager.GetObject("send1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send2 {
+            get {
+                object obj = ResourceManager.GetObject("send2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
