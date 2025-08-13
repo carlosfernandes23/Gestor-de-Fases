@@ -95,6 +95,20 @@
             // 
             // cbFamiliaMaterial
             // 
+            this.cbFamiliaMaterial.AutoCompleteCustomSource.AddRange(new string[] {
+            "Aluminio",
+            "Aluzinc",
+            "Cobre",
+            "Corten",
+            "Galvanizada",
+            "Gota",
+            "Inox",
+            "LAQ",
+            "Magnelis",
+            "Pre-Pintada",
+            "Xadrez",
+            "Zinco",
+            "Zincor"});
             this.cbFamiliaMaterial.BackColor = System.Drawing.Color.Transparent;
             this.cbFamiliaMaterial.BorderColor = System.Drawing.Color.Silver;
             this.cbFamiliaMaterial.BorderRadius = 8;
@@ -105,10 +119,25 @@
             this.cbFamiliaMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbFamiliaMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbFamiliaMaterial.ItemHeight = 30;
+            this.cbFamiliaMaterial.Items.AddRange(new object[] {
+            "Aluminio",
+            "Aluzinc",
+            "Cobre",
+            "Corten",
+            "Galvanizada",
+            "Gota",
+            "Inox",
+            "LAQ",
+            "Magnelis",
+            "Pre-Pintada",
+            "Xadrez",
+            "Zinco",
+            "Zincor"});
             this.cbFamiliaMaterial.Location = new System.Drawing.Point(18, 141);
             this.cbFamiliaMaterial.Name = "cbFamiliaMaterial";
             this.cbFamiliaMaterial.Size = new System.Drawing.Size(180, 36);
             this.cbFamiliaMaterial.TabIndex = 14;
+            this.cbFamiliaMaterial.SelectedIndexChanged += new System.EventHandler(this.cbFamiliaMaterial_SelectedIndexChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -278,9 +307,9 @@
             this.Pesoliquido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Pesoliquido.Location = new System.Drawing.Point(568, 236);
             this.Pesoliquido.Name = "Pesoliquido";
-            this.Pesoliquido.Size = new System.Drawing.Size(38, 20);
+            this.Pesoliquido.Size = new System.Drawing.Size(11, 20);
             this.Pesoliquido.TabIndex = 36;
-            this.Pesoliquido.Text = "Peso";
+            this.Pesoliquido.Text = "0";
             // 
             // ButtonAddPerfilCP
             // 
@@ -294,10 +323,11 @@
             this.ButtonAddPerfilCP.ForeColor = System.Drawing.Color.White;
             this.ButtonAddPerfilCP.Location = new System.Drawing.Point(683, 206);
             this.ButtonAddPerfilCP.Name = "ButtonAddPerfilCP";
-            this.ButtonAddPerfilCP.Size = new System.Drawing.Size(163, 56);
+            this.ButtonAddPerfilCP.Size = new System.Drawing.Size(170, 60);
             this.ButtonAddPerfilCP.TabIndex = 37;
             this.ButtonAddPerfilCP.Text = "Adicionar Chapa";
             this.ButtonAddPerfilCP.UseVisualStyleBackColor = false;
+            this.ButtonAddPerfilCP.Click += new System.EventHandler(this.ButtonAddPerfilCP_Click);
             // 
             // tbObs
             // 
@@ -323,6 +353,7 @@
             this.tbObs.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbObs.Size = new System.Drawing.Size(415, 35);
             this.tbObs.TabIndex = 123;
+            this.tbObs.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbEspessura
             // 
@@ -330,7 +361,7 @@
             this.tbEspessura.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbEspessura.BorderRadius = 10;
             this.tbEspessura.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbEspessura.DefaultText = "";
+            this.tbEspessura.DefaultText = "1";
             this.tbEspessura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbEspessura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbEspessura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
@@ -348,6 +379,7 @@
             this.tbEspessura.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbEspessura.Size = new System.Drawing.Size(150, 35);
             this.tbEspessura.TabIndex = 124;
+            this.tbEspessura.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbLargura
             // 
@@ -355,7 +387,7 @@
             this.tbLargura.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbLargura.BorderRadius = 10;
             this.tbLargura.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbLargura.DefaultText = "";
+            this.tbLargura.DefaultText = "1250";
             this.tbLargura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbLargura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbLargura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
@@ -373,6 +405,7 @@
             this.tbLargura.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbLargura.Size = new System.Drawing.Size(115, 35);
             this.tbLargura.TabIndex = 125;
+            this.tbLargura.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbQtd
             // 
@@ -380,7 +413,7 @@
             this.tbQtd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbQtd.BorderRadius = 10;
             this.tbQtd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbQtd.DefaultText = "";
+            this.tbQtd.DefaultText = "1";
             this.tbQtd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbQtd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbQtd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
@@ -398,6 +431,7 @@
             this.tbQtd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbQtd.Size = new System.Drawing.Size(65, 35);
             this.tbQtd.TabIndex = 126;
+            this.tbQtd.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbComp
             // 
@@ -405,7 +439,7 @@
             this.tbComp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbComp.BorderRadius = 10;
             this.tbComp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbComp.DefaultText = "";
+            this.tbComp.DefaultText = "4000";
             this.tbComp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbComp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbComp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
@@ -423,6 +457,7 @@
             this.tbComp.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbComp.Size = new System.Drawing.Size(115, 35);
             this.tbComp.TabIndex = 127;
+            this.tbComp.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbRal
             // 
@@ -448,6 +483,7 @@
             this.tbRal.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbRal.Size = new System.Drawing.Size(184, 36);
             this.tbRal.TabIndex = 128;
+            this.tbRal.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // CQ
             // 
@@ -482,6 +518,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CQ";
             this.Text = "CQ";
+            this.Load += new System.EventHandler(this.CQ_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

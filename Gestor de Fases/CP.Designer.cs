@@ -41,14 +41,17 @@
             this.cbcertificado = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labelface1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labelface2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonAddPerfilCP = new WiLBiT.WiLBiTButton();
             this.tbObs = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbQtd = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbComp = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbFace1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbFace2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbRalpre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelRalpre = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Pesoliquido = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // label4
@@ -68,7 +71,7 @@
             this.Datematerialemobra.BorderRadius = 8;
             this.Datematerialemobra.Checked = true;
             this.Datematerialemobra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datematerialemobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.Datematerialemobra.ForeColor = System.Drawing.Color.White;
             this.Datematerialemobra.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Datematerialemobra.Location = new System.Drawing.Point(15, 40);
@@ -95,7 +98,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(60, 170);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(107, 105);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(50, 20);
             this.guna2HtmlLabel2.TabIndex = 7;
@@ -106,7 +109,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(325, 170);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(467, 105);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(36, 20);
             this.guna2HtmlLabel3.TabIndex = 8;
@@ -117,7 +120,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(565, 170);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(818, 105);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(55, 20);
             this.guna2HtmlLabel4.TabIndex = 9;
@@ -128,7 +131,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(683, 170);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(980, 105);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(74, 20);
             this.guna2HtmlLabel5.TabIndex = 10;
@@ -146,10 +149,11 @@
             this.cbFamilia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbFamilia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbFamilia.ItemHeight = 30;
-            this.cbFamilia.Location = new System.Drawing.Point(15, 200);
+            this.cbFamilia.Location = new System.Drawing.Point(15, 134);
             this.cbFamilia.Name = "cbFamilia";
-            this.cbFamilia.Size = new System.Drawing.Size(165, 36);
+            this.cbFamilia.Size = new System.Drawing.Size(250, 36);
             this.cbFamilia.TabIndex = 12;
+            this.cbFamilia.SelectedIndexChanged += new System.EventHandler(this.cbFamilia_SelectedIndexChanged);
             // 
             // cbPerfil
             // 
@@ -163,10 +167,11 @@
             this.cbPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbPerfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbPerfil.ItemHeight = 30;
-            this.cbPerfil.Location = new System.Drawing.Point(185, 200);
+            this.cbPerfil.Location = new System.Drawing.Point(271, 134);
             this.cbPerfil.Name = "cbPerfil";
-            this.cbPerfil.Size = new System.Drawing.Size(320, 36);
+            this.cbPerfil.Size = new System.Drawing.Size(425, 36);
             this.cbPerfil.TabIndex = 13;
+            this.cbPerfil.SelectedIndexChanged += new System.EventHandler(this.cbPerfil_SelectedIndexChanged);
             // 
             // cbMaterial
             // 
@@ -180,9 +185,9 @@
             this.cbMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbMaterial.ItemHeight = 30;
-            this.cbMaterial.Location = new System.Drawing.Point(510, 200);
+            this.cbMaterial.Location = new System.Drawing.Point(702, 134);
             this.cbMaterial.Name = "cbMaterial";
-            this.cbMaterial.Size = new System.Drawing.Size(165, 36);
+            this.cbMaterial.Size = new System.Drawing.Size(267, 36);
             this.cbMaterial.TabIndex = 14;
             // 
             // cbcertificado
@@ -200,7 +205,7 @@
             this.cbcertificado.Items.AddRange(new object[] {
             "2,2",
             "3,1"});
-            this.cbcertificado.Location = new System.Drawing.Point(680, 200);
+            this.cbcertificado.Location = new System.Drawing.Point(975, 134);
             this.cbcertificado.Name = "cbcertificado";
             this.cbcertificado.Size = new System.Drawing.Size(85, 36);
             this.cbcertificado.StartIndex = 0;
@@ -212,7 +217,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(785, 170);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(30, 212);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(31, 20);
             this.guna2HtmlLabel6.TabIndex = 20;
@@ -223,33 +228,35 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(845, 170);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(112, 211);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(94, 20);
             this.guna2HtmlLabel7.TabIndex = 21;
             this.guna2HtmlLabel7.Text = "Comprimento";
             // 
-            // guna2HtmlLabel8
+            // labelface1
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(975, 170);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(70, 20);
-            this.guna2HtmlLabel8.TabIndex = 22;
-            this.guna2HtmlLabel8.Text = "Ral Face1";
+            this.labelface1.BackColor = System.Drawing.Color.Transparent;
+            this.labelface1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelface1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelface1.Location = new System.Drawing.Point(282, 211);
+            this.labelface1.Name = "labelface1";
+            this.labelface1.Size = new System.Drawing.Size(70, 20);
+            this.labelface1.TabIndex = 22;
+            this.labelface1.Text = "Ral Face1";
+            this.labelface1.Visible = false;
             // 
-            // guna2HtmlLabel9
+            // labelface2
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(1095, 170);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(70, 20);
-            this.guna2HtmlLabel9.TabIndex = 23;
-            this.guna2HtmlLabel9.Text = "Ral Face2";
+            this.labelface2.BackColor = System.Drawing.Color.Transparent;
+            this.labelface2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelface2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelface2.Location = new System.Drawing.Point(437, 212);
+            this.labelface2.Name = "labelface2";
+            this.labelface2.Size = new System.Drawing.Size(70, 20);
+            this.labelface2.TabIndex = 23;
+            this.labelface2.Text = "Ral Face2";
+            this.labelface2.Visible = false;
             // 
             // ButtonAddPerfilCP
             // 
@@ -261,12 +268,13 @@
             this.ButtonAddPerfilCP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddPerfilCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.ButtonAddPerfilCP.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddPerfilCP.Location = new System.Drawing.Point(1205, 196);
+            this.ButtonAddPerfilCP.Location = new System.Drawing.Point(649, 217);
             this.ButtonAddPerfilCP.Name = "ButtonAddPerfilCP";
-            this.ButtonAddPerfilCP.Size = new System.Drawing.Size(130, 40);
+            this.ButtonAddPerfilCP.Size = new System.Drawing.Size(170, 60);
             this.ButtonAddPerfilCP.TabIndex = 28;
             this.ButtonAddPerfilCP.Text = "Adicionar Perfil";
             this.ButtonAddPerfilCP.UseVisualStyleBackColor = false;
+            this.ButtonAddPerfilCP.Click += new System.EventHandler(this.ButtonAddPerfilCP_Click);
             // 
             // tbObs
             // 
@@ -292,6 +300,7 @@
             this.tbObs.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbObs.Size = new System.Drawing.Size(415, 40);
             this.tbObs.TabIndex = 123;
+            this.tbObs.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // tbQtd
             // 
@@ -309,7 +318,7 @@
             this.tbQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbQtd.ForeColor = System.Drawing.Color.Black;
             this.tbQtd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbQtd.Location = new System.Drawing.Point(770, 200);
+            this.tbQtd.Location = new System.Drawing.Point(15, 242);
             this.tbQtd.Name = "tbQtd";
             this.tbQtd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbQtd.PlaceholderText = "";
@@ -317,6 +326,10 @@
             this.tbQtd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.tbQtd.Size = new System.Drawing.Size(65, 35);
             this.tbQtd.TabIndex = 125;
+            this.tbQtd.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbQtd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbQtd_KeyPress);
+            this.tbQtd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbQtd_MouseClick);
+            this.tbQtd.Validating += new System.ComponentModel.CancelEventHandler(this.tbQtd_Validating);
             // 
             // tbComp
             // 
@@ -334,14 +347,16 @@
             this.tbComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbComp.ForeColor = System.Drawing.Color.Black;
             this.tbComp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbComp.Location = new System.Drawing.Point(840, 200);
+            this.tbComp.Location = new System.Drawing.Point(85, 242);
             this.tbComp.Name = "tbComp";
             this.tbComp.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbComp.PlaceholderText = "";
             this.tbComp.SelectedText = "";
             this.tbComp.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbComp.Size = new System.Drawing.Size(110, 35);
+            this.tbComp.Size = new System.Drawing.Size(154, 35);
             this.tbComp.TabIndex = 126;
+            this.tbComp.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbComp.Validated += new System.EventHandler(this.tbComp_Validated);
             // 
             // tbFace1
             // 
@@ -359,14 +374,16 @@
             this.tbFace1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbFace1.ForeColor = System.Drawing.Color.Black;
             this.tbFace1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbFace1.Location = new System.Drawing.Point(955, 200);
+            this.tbFace1.Location = new System.Drawing.Point(245, 241);
             this.tbFace1.Name = "tbFace1";
             this.tbFace1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbFace1.PlaceholderText = "";
             this.tbFace1.SelectedText = "";
             this.tbFace1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbFace1.Size = new System.Drawing.Size(120, 35);
+            this.tbFace1.Size = new System.Drawing.Size(150, 35);
             this.tbFace1.TabIndex = 127;
+            this.tbFace1.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbFace1.WordWrap = false;
             // 
             // tbFace2
             // 
@@ -384,14 +401,64 @@
             this.tbFace2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbFace2.ForeColor = System.Drawing.Color.Black;
             this.tbFace2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbFace2.Location = new System.Drawing.Point(1080, 200);
+            this.tbFace2.Location = new System.Drawing.Point(401, 242);
             this.tbFace2.Name = "tbFace2";
             this.tbFace2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbFace2.PlaceholderText = "";
             this.tbFace2.SelectedText = "";
             this.tbFace2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.tbFace2.Size = new System.Drawing.Size(120, 35);
+            this.tbFace2.Size = new System.Drawing.Size(150, 35);
             this.tbFace2.TabIndex = 128;
+            this.tbFace2.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbFace2.WordWrap = false;
+            // 
+            // tbRalpre
+            // 
+            this.tbRalpre.BackColor = System.Drawing.Color.White;
+            this.tbRalpre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbRalpre.BorderRadius = 10;
+            this.tbRalpre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRalpre.DefaultText = "";
+            this.tbRalpre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbRalpre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbRalpre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbRalpre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbRalpre.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbRalpre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbRalpre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbRalpre.ForeColor = System.Drawing.Color.Black;
+            this.tbRalpre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbRalpre.Location = new System.Drawing.Point(245, 242);
+            this.tbRalpre.Name = "tbRalpre";
+            this.tbRalpre.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbRalpre.PlaceholderText = "";
+            this.tbRalpre.SelectedText = "";
+            this.tbRalpre.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbRalpre.Size = new System.Drawing.Size(306, 35);
+            this.tbRalpre.TabIndex = 129;
+            this.tbRalpre.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // labelRalpre
+            // 
+            this.labelRalpre.BackColor = System.Drawing.Color.Transparent;
+            this.labelRalpre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelRalpre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelRalpre.Location = new System.Drawing.Point(304, 212);
+            this.labelRalpre.Name = "labelRalpre";
+            this.labelRalpre.Size = new System.Drawing.Size(179, 20);
+            this.labelRalpre.TabIndex = 130;
+            this.labelRalpre.Text = "Ral para chapa pré-pintada";
+            // 
+            // Pesoliquido
+            // 
+            this.Pesoliquido.BackColor = System.Drawing.Color.Transparent;
+            this.Pesoliquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.Pesoliquido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Pesoliquido.Location = new System.Drawing.Point(566, 256);
+            this.Pesoliquido.Name = "Pesoliquido";
+            this.Pesoliquido.Size = new System.Drawing.Size(38, 20);
+            this.Pesoliquido.TabIndex = 131;
+            this.Pesoliquido.Text = "Peso";
             // 
             // CP
             // 
@@ -399,14 +466,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 390);
+            this.Controls.Add(this.Pesoliquido);
+            this.Controls.Add(this.labelRalpre);
+            this.Controls.Add(this.tbRalpre);
             this.Controls.Add(this.tbFace2);
             this.Controls.Add(this.tbFace1);
             this.Controls.Add(this.tbComp);
             this.Controls.Add(this.tbQtd);
             this.Controls.Add(this.tbObs);
             this.Controls.Add(this.ButtonAddPerfilCP);
-            this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.guna2HtmlLabel8);
+            this.Controls.Add(this.labelface2);
+            this.Controls.Add(this.labelface1);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.cbcertificado);
@@ -443,13 +513,16 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbcertificado;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelface1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelface2;
         private WiLBiT.WiLBiTButton ButtonAddPerfilCP;
         private Guna.UI2.WinForms.Guna2TextBox tbObs;
         private Guna.UI2.WinForms.Guna2TextBox tbQtd;
         private Guna.UI2.WinForms.Guna2TextBox tbComp;
         private Guna.UI2.WinForms.Guna2TextBox tbFace1;
         private Guna.UI2.WinForms.Guna2TextBox tbFace2;
+        private Guna.UI2.WinForms.Guna2TextBox tbRalpre;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelRalpre;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Pesoliquido;
     }
 }

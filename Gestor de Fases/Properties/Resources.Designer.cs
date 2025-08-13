@@ -63,6 +63,26 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap css {
+            get {
+                object obj = ResourceManager.GetObject("css", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap css2 {
+            get {
+                object obj = ResourceManager.GetObject("css2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap folder_close {
             get {
                 object obj = ResourceManager.GetObject("folder_close", resourceCulture);
@@ -103,9 +123,9 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pdf1 {
+        internal static System.Drawing.Bitmap pdf111 {
             get {
-                object obj = ResourceManager.GetObject("pdf1", resourceCulture);
+                object obj = ResourceManager.GetObject("pdf111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +133,9 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pdf2 {
+        internal static System.Drawing.Bitmap pdf22 {
             get {
-                object obj = ResourceManager.GetObject("pdf2", resourceCulture);
+                object obj = ResourceManager.GetObject("pdf22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
