@@ -43,7 +43,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelInformacoes = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.labelobraview = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labelEstado = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labelDestino = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelClasseEx = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelConectado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TextBoxObra = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,6 +63,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelTodos = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.labelestado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelTool = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.cbOtherFolder = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cbFolderObra = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -102,7 +103,7 @@
             this.Panelmenu.BorderThickness = 1;
             this.Panelmenu.Controls.Add(this.PanelMenuPedido);
             this.Panelmenu.Controls.Add(this.guna2HtmlLabel2);
-            this.Panelmenu.Location = new System.Drawing.Point(15, 30);
+            this.Panelmenu.Location = new System.Drawing.Point(15, 28);
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(210, 100);
             this.Panelmenu.TabIndex = 1;
@@ -381,7 +382,7 @@
             this.PanelInformacoes.BorderRadius = 15;
             this.PanelInformacoes.BorderThickness = 1;
             this.PanelInformacoes.Controls.Add(this.labelobraview);
-            this.PanelInformacoes.Controls.Add(this.labelEstado);
+            this.PanelInformacoes.Controls.Add(this.labelDestino);
             this.PanelInformacoes.Controls.Add(this.labelClasseEx);
             this.PanelInformacoes.Controls.Add(this.labelConectado);
             this.PanelInformacoes.Controls.Add(this.TextBoxObra);
@@ -396,7 +397,7 @@
             this.PanelInformacoes.Controls.Add(this.labelDesignacao);
             this.PanelInformacoes.Controls.Add(this.labelCliente);
             this.PanelInformacoes.Controls.Add(this.labelNObra);
-            this.PanelInformacoes.Location = new System.Drawing.Point(230, 30);
+            this.PanelInformacoes.Location = new System.Drawing.Point(230, 28);
             this.PanelInformacoes.Name = "PanelInformacoes";
             this.PanelInformacoes.Size = new System.Drawing.Size(1140, 100);
             this.PanelInformacoes.TabIndex = 6;
@@ -413,17 +414,17 @@
             this.labelobraview.Text = "Obra";
             this.labelobraview.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelEstado
+            // labelDestino
             // 
-            this.labelEstado.BackColor = System.Drawing.Color.White;
-            this.labelEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelEstado.Location = new System.Drawing.Point(845, 72);
-            this.labelEstado.Name = "labelEstado";
-            this.labelEstado.Size = new System.Drawing.Size(3, 2);
-            this.labelEstado.TabIndex = 9;
-            this.labelEstado.Text = null;
-            this.labelEstado.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelDestino.BackColor = System.Drawing.Color.White;
+            this.labelDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelDestino.Location = new System.Drawing.Point(845, 72);
+            this.labelDestino.Name = "labelDestino";
+            this.labelDestino.Size = new System.Drawing.Size(3, 2);
+            this.labelDestino.TabIndex = 9;
+            this.labelDestino.Text = null;
+            this.labelDestino.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelClasseEx
             // 
@@ -432,9 +433,8 @@
             this.labelClasseEx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.labelClasseEx.Location = new System.Drawing.Point(1000, 40);
             this.labelClasseEx.Name = "labelClasseEx";
-            this.labelClasseEx.Size = new System.Drawing.Size(12, 23);
+            this.labelClasseEx.Size = new System.Drawing.Size(3, 2);
             this.labelClasseEx.TabIndex = 115;
-            this.labelClasseEx.Text = "2";
             // 
             // labelConectado
             // 
@@ -619,7 +619,7 @@
             this.PanelOrder.BorderThickness = 1;
             this.PanelOrder.Controls.Add(this.DataGridViewOrder);
             this.PanelOrder.Controls.Add(this.guna2HtmlLabel1);
-            this.PanelOrder.Location = new System.Drawing.Point(15, 485);
+            this.PanelOrder.Location = new System.Drawing.Point(15, 500);
             this.PanelOrder.Name = "PanelOrder";
             this.PanelOrder.Size = new System.Drawing.Size(1495, 415);
             this.PanelOrder.TabIndex = 7;
@@ -681,11 +681,24 @@
             this.guna2CustomGradientPanel2.BorderColor = System.Drawing.Color.Silver;
             this.guna2CustomGradientPanel2.BorderRadius = 15;
             this.guna2CustomGradientPanel2.BorderThickness = 1;
+            this.guna2CustomGradientPanel2.Controls.Add(this.labelestado);
             this.guna2CustomGradientPanel2.Controls.Add(this.PanelTodos);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(15, 140);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(15, 134);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1355, 335);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1355, 360);
             this.guna2CustomGradientPanel2.TabIndex = 9;
+            // 
+            // labelestado
+            // 
+            this.labelestado.BackColor = System.Drawing.Color.Transparent;
+            this.labelestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelestado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelestado.Location = new System.Drawing.Point(25, 335);
+            this.labelestado.Name = "labelestado";
+            this.labelestado.Size = new System.Drawing.Size(3, 2);
+            this.labelestado.TabIndex = 8;
+            this.labelestado.Text = null;
+            this.labelestado.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelTool
             // 
@@ -706,9 +719,9 @@
             this.PanelTool.Controls.Add(this.labelfolderobra);
             this.PanelTool.Controls.Add(this.labelCriarpdf);
             this.PanelTool.Controls.Add(this.ButtonGerarPdf);
-            this.PanelTool.Location = new System.Drawing.Point(1375, 30);
+            this.PanelTool.Location = new System.Drawing.Point(1375, 28);
             this.PanelTool.Name = "PanelTool";
-            this.PanelTool.Size = new System.Drawing.Size(135, 445);
+            this.PanelTool.Size = new System.Drawing.Size(135, 466);
             this.PanelTool.TabIndex = 10;
             // 
             // cbOtherFolder
@@ -721,7 +734,7 @@
             this.cbOtherFolder.CheckedState.FillColor = System.Drawing.Color.White;
             this.cbOtherFolder.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbOtherFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbOtherFolder.Location = new System.Drawing.Point(10, 416);
+            this.cbOtherFolder.Location = new System.Drawing.Point(10, 436);
             this.cbOtherFolder.Name = "cbOtherFolder";
             this.cbOtherFolder.Size = new System.Drawing.Size(122, 21);
             this.cbOtherFolder.TabIndex = 79;
@@ -742,7 +755,7 @@
             this.cbFolderObra.CheckedState.FillColor = System.Drawing.Color.White;
             this.cbFolderObra.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbFolderObra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbFolderObra.Location = new System.Drawing.Point(10, 395);
+            this.cbFolderObra.Location = new System.Drawing.Point(10, 415);
             this.cbFolderObra.Name = "cbFolderObra";
             this.cbFolderObra.Size = new System.Drawing.Size(119, 21);
             this.cbFolderObra.TabIndex = 78;
@@ -763,7 +776,7 @@
             this.buttonmoveCSS.ImageOffset = new System.Drawing.Point(0, 0);
             this.buttonmoveCSS.ImageRotate = 0F;
             this.buttonmoveCSS.ImageSize = new System.Drawing.Size(50, 50);
-            this.buttonmoveCSS.Location = new System.Drawing.Point(40, 345);
+            this.buttonmoveCSS.Location = new System.Drawing.Point(40, 365);
             this.buttonmoveCSS.Name = "buttonmoveCSS";
             this.buttonmoveCSS.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.css;
             this.buttonmoveCSS.PressedState.ImageSize = new System.Drawing.Size(50, 50);
@@ -776,7 +789,7 @@
             this.labelmoveCSS.BackColor = System.Drawing.Color.White;
             this.labelmoveCSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmoveCSS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmoveCSS.Location = new System.Drawing.Point(20, 320);
+            this.labelmoveCSS.Location = new System.Drawing.Point(20, 339);
             this.labelmoveCSS.Name = "labelmoveCSS";
             this.labelmoveCSS.Size = new System.Drawing.Size(84, 20);
             this.labelmoveCSS.TabIndex = 76;
@@ -787,7 +800,7 @@
             this.labelmovefiles.BackColor = System.Drawing.Color.White;
             this.labelmovefiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmovefiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefiles.Location = new System.Drawing.Point(10, 160);
+            this.labelmovefiles.Location = new System.Drawing.Point(10, 169);
             this.labelmovefiles.Name = "labelmovefiles";
             this.labelmovefiles.Size = new System.Drawing.Size(110, 20);
             this.labelmovefiles.TabIndex = 75;
@@ -803,7 +816,7 @@
             this.ButtonMovefiles.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonMovefiles.ImageRotate = 0F;
             this.ButtonMovefiles.ImageSize = new System.Drawing.Size(50, 50);
-            this.ButtonMovefiles.Location = new System.Drawing.Point(40, 190);
+            this.ButtonMovefiles.Location = new System.Drawing.Point(37, 195);
             this.ButtonMovefiles.Name = "ButtonMovefiles";
             this.ButtonMovefiles.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.send1;
             this.ButtonMovefiles.PressedState.ImageSize = new System.Drawing.Size(50, 50);
@@ -821,7 +834,7 @@
             this.ButtonFolderR.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonFolderR.ImageRotate = 0F;
             this.ButtonFolderR.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderR.Location = new System.Drawing.Point(40, 270);
+            this.ButtonFolderR.Location = new System.Drawing.Point(37, 280);
             this.ButtonFolderR.Name = "ButtonFolderR";
             this.ButtonFolderR.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
             this.ButtonFolderR.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -839,7 +852,7 @@
             this.ButtonFolderObra.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonFolderObra.ImageRotate = 0F;
             this.ButtonFolderObra.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderObra.Location = new System.Drawing.Point(40, 110);
+            this.ButtonFolderObra.Location = new System.Drawing.Point(40, 118);
             this.ButtonFolderObra.Name = "ButtonFolderObra";
             this.ButtonFolderObra.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
             this.ButtonFolderObra.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -852,7 +865,7 @@
             this.labelmovefolderR.BackColor = System.Drawing.Color.White;
             this.labelmovefolderR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmovefolderR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefolderR.Location = new System.Drawing.Point(40, 245);
+            this.labelmovefolderR.Location = new System.Drawing.Point(37, 255);
             this.labelmovefolderR.Name = "labelmovefolderR";
             this.labelmovefolderR.Size = new System.Drawing.Size(58, 20);
             this.labelmovefolderR.TabIndex = 71;
@@ -863,7 +876,7 @@
             this.labelfolderobra.BackColor = System.Drawing.Color.White;
             this.labelfolderobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelfolderobra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelfolderobra.Location = new System.Drawing.Point(20, 85);
+            this.labelfolderobra.Location = new System.Drawing.Point(20, 92);
             this.labelfolderobra.Name = "labelfolderobra";
             this.labelfolderobra.Size = new System.Drawing.Size(98, 20);
             this.labelfolderobra.TabIndex = 70;
@@ -874,7 +887,7 @@
             this.labelCriarpdf.BackColor = System.Drawing.Color.Transparent;
             this.labelCriarpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCriarpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCriarpdf.Location = new System.Drawing.Point(35, 10);
+            this.labelCriarpdf.Location = new System.Drawing.Point(35, 3);
             this.labelCriarpdf.Name = "labelCriarpdf";
             this.labelCriarpdf.Size = new System.Drawing.Size(69, 20);
             this.labelCriarpdf.TabIndex = 69;
@@ -890,7 +903,7 @@
             this.ButtonGerarPdf.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonGerarPdf.ImageRotate = 0F;
             this.ButtonGerarPdf.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonGerarPdf.Location = new System.Drawing.Point(40, 35);
+            this.ButtonGerarPdf.Location = new System.Drawing.Point(40, 29);
             this.ButtonGerarPdf.Name = "ButtonGerarPdf";
             this.ButtonGerarPdf.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.pdf22;
             this.ButtonGerarPdf.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -942,7 +955,7 @@
             this.Fechar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Fechar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
             this.Fechar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.Location = new System.Drawing.Point(1485, 3);
+            this.Fechar.Location = new System.Drawing.Point(1480, 3);
             this.Fechar.Name = "Fechar";
             this.Fechar.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.Fechar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
@@ -963,7 +976,7 @@
             this.Minimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Minimizar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
             this.Minimizar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.Location = new System.Drawing.Point(1455, 3);
+            this.Minimizar.Location = new System.Drawing.Point(1450, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.Minimizar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
@@ -988,7 +1001,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1525, 915);
+            this.ClientSize = new System.Drawing.Size(1525, 930);
             this.Controls.Add(this.Minimizar);
             this.Controls.Add(this.Fechar);
             this.Controls.Add(this.PanelTool);
@@ -1010,6 +1023,7 @@
             this.PanelOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewOrder)).EndInit();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.PerformLayout();
             this.PanelTool.ResumeLayout(false);
             this.PanelTool.PerformLayout();
             this.ResumeLayout(false);
@@ -1030,9 +1044,9 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelOrder;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelfase1000;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelfase1000;
         public Guna.UI2.WinForms.Guna2HtmlLabel labelfase750;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelfase500;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelfase500;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
@@ -1058,7 +1072,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelmoveCSS;
         private Guna.UI2.WinForms.Guna2CheckBox cbOtherFolder;
         public System.Windows.Forms.DataGridView DataGridViewOrder;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelEstado;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelDestino;
         private Guna.UI2.WinForms.Guna2ImageButton buttonmoveCSS;
         public Guna.UI2.WinForms.Guna2HtmlLabel labelobraview;
         private Guna.UI2.WinForms.Guna2DragControl MoverForm;
@@ -1069,6 +1083,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox Fechar;
         private Guna.UI2.WinForms.Guna2ControlBox Minimizar;
         private Guna.UI2.WinForms.Guna2BorderlessForm Borda;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelestado;
     }
 }
 

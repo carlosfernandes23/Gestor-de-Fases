@@ -244,11 +244,11 @@ namespace Gestor_de_Fases
             string Observacoes = tbObs.Text.Trim();
             if (Perfil == "")
             {
-                MessageBox.Show("O perfil não pode estar em branco ", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "O perfil não pode estar em branco ";
             }
             else if (Tipomaterial == "" || double.Parse(Tipomaterial) == 0)
             {
-                MessageBox.Show("A quantidade não pode ser 0 ou branco ", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "A quantidade não pode ser 0 ou branco";
             }
             else
             {

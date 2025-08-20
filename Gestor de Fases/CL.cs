@@ -51,17 +51,11 @@ namespace Gestor_de_Fases
             string quantidade = tbQtd.Text.Trim().Replace('.', ',');
             double peso = double.Parse(pesoLiquido) * double.Parse(comprimento) / 1000 * double.Parse(largura) / 1000 * double.Parse(Espessura) * double.Parse(quantidade);
             double area = (double.Parse(comprimento) / 1000) * (double.Parse(largura) / 1000) * double.Parse(quantidade);
-
             if (comprimento == "0" || largura == "0")
             {
-                MessageBox.Show(
-                    "O campo comprimento e largura são de preenchimento obrigatório.\nPor favor, coloque as medidas o mais próximo da realidade possível.",
-                    "Erro",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                F.labelestado.Text = "O campo comprimento e largura são de preenchimento obrigatório.\nPor favor, coloque as medidas o mais próximo da realidade possível."; 
                 return;
             }
-
             string familiaMaterial = cbFamiliaMaterial.Text.Trim();
             string certificado = cbcertificado.Text.Trim();
             string operacao = cbOperacao.Text.Trim();
@@ -74,11 +68,9 @@ namespace Gestor_de_Fases
             string ordemFabrico = "2." + noObra + "." + fase750 + "." + F.DataGridViewOrder.Rows.Count;
             string conjuntoPeca = "2." + noObra + "." + fase750 + "." + fase750 + "CJ" + linhaCONJ;
             string observacoes = tbObs.Text.Trim();
-
             string artigo = null;
             string destinatario = "CL";
             string maquina = "laser";
-
             BD d = new BD();
             string operacaocode = null;
             if (operacao == "Calandrada")

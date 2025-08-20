@@ -30,19 +30,19 @@ namespace Gestor_de_Fases
         }
         private void Form1_Load(object sender, EventArgs e)
         {            
-            this.Size = new Size(1525, 915); 
+            this.Size = new Size(1525, 930); 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             Panelmenu.Height = 100;
             PanelMenuPedido.Height = 50;
             DataGridViewOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGridViewOrder.MultiSelect = false; 
-            CarregarTabela();            
-
+            CarregarTabela();    
         }
         bool OBRAINSERIDA = false; private void buttonconectarobra_Click(object sender, EventArgs e)
         {
             Buscarobra();
+            Classeex();
         }               
         private void CarregarTabela()
         {          
@@ -159,11 +159,12 @@ namespace Gestor_de_Fases
                 {
                     return;
                 }
+                labelestado.Text = "";
                 Panelmenu.Height = 100;
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
-                labelEstado.Text = "CM - Armazem";
-                AbrirFormNoPainel(new CM());
+                labelDestino.Text = "CM - Armazem";
+                AbrirFormNoPainel(new CM(this));
             }
             else
             {
@@ -179,10 +180,11 @@ namespace Gestor_de_Fases
                 {
                     return;
                 }
+                labelestado.Text = "";
                 Panelmenu.Height = 100;
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
-                labelEstado.Text = "CP - Chapas e Perfilados";
+                labelDestino.Text = "CP - Chapas e Perfilados";
                 AbrirFormNoPainel(new CP(this));
             }
             else
@@ -199,11 +201,12 @@ namespace Gestor_de_Fases
                 {
                     return;
                 }
+                labelestado.Text = "";
                 Panelmenu.Height = 100;
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
                 AbrirFormNoPainel(new CQ(this));
-                labelEstado.Text = "CQ - Corte e Quinagem";
+                labelDestino.Text = "CQ - Corte e Quinagem";
             }
             else
             {
@@ -219,10 +222,11 @@ namespace Gestor_de_Fases
                 {
                     return;
                 }
+                labelestado.Text = "";
                 Panelmenu.Height = 100;
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
-                labelEstado.Text = "CL - Corte a Laser";
+                labelDestino.Text = "CL - Corte a Laser";
                 AbrirFormNoPainel(new CL(this));
             }
             else
@@ -239,11 +243,12 @@ namespace Gestor_de_Fases
                 {
                     return;
                 }
+                labelestado.Text = "";
                 Panelmenu.Height = 100;
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
                 AbrirFormNoPainel(new DAP(this));
-                labelEstado.Text = "DAP - Departamento de aprovisionamentos";
+                labelDestino.Text = "DAP - Departamento de aprovisionamentos";
             }
             else
             {
@@ -587,6 +592,26 @@ namespace Gestor_de_Fases
             }
 
         }
+        private void Classeex()
+        {
+            string nobra = labelNObra.Text.Trim();
+            string ano = "20" + nobra.Substring(0, 2);
+            string caminho = Path.Combine(
+                @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras",
+                ano,
+                nobra,
+                @"1.8 Projeto\1.8.2 Tekla\classeex.txt"
+            );
+            if (File.Exists(caminho))
+            {
+               string conteudo = File.ReadAllText(caminho).Trim();
+               labelClasseEx.Text = conteudo;                              
+            }
+            else
+            {
+                MessageBox.Show("Ficheiro classe Ex: " + caminho);
+            }
+        }
         private void CbFolderObra_CheckedChanged(object sender, EventArgs e)
         {
             if (cbFolderObra.Checked)
@@ -688,7 +713,6 @@ namespace Gestor_de_Fases
         private void ButtonMovefiles_Click(object sender, EventArgs e)
         {
         }
-
         
     }
 }

@@ -56,11 +56,7 @@ namespace Gestor_de_Fases
 
             if (comprimento == "0" || largura == "0")
             {
-                MessageBox.Show(
-                    "O campo comprimento e largura são de preenchimento obrigatório.\nPor favor, coloque as medidas o mais próximo da realidade possível.",
-                    "Erro",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                F.labelestado.Text = "O campo comprimento e largura são de preenchimento obrigatório.\nPor favor, coloque as medidas o mais próximo da realidade possível.";
                 return;
             }
 
@@ -133,7 +129,7 @@ namespace Gestor_de_Fases
             }
             else
             {
-                MessageBox.Show("Falta o ral para a chapa pré-pintada");
+                F.labelestado.Text = "Falta o ral para a chapa pré-pintada";
             }
         }
         private void cbFamiliaMaterial_SelectedIndexChanged(object sender, EventArgs e)

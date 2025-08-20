@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateBolts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBolts.Designer.cs">
+      <DependentUpon>UpdateBolts.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CL.resx">
       <DependentUpon>CL.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +141,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UpdateBolts.resx">
+      <DependentUpon>UpdateBolts.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ArtigoTeklaDataSet.xsc">
       <DependentUpon>ArtigoTeklaDataSet.xsd</DependentUpon>
     </None>
@@ -172,7 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CuoreUI.Winforms">
-      <Version>2025.7.18</Version>
+      <Version>2025.8.10</Version>
     </PackageReference>
     <PackageReference Include="Guna.UI2.WinForms">
       <Version>2.0.4.7</Version>

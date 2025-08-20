@@ -45,22 +45,22 @@ namespace Gestor_de_Fases
         {
             if (cbPerfil.Text.Trim() == "")
             {
-                MessageBox.Show("Por favor, selecione um Perfil.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "Por favor, selecione um Perfil.";
                 return;
             }
             else if (cbMaterial.Text.Trim() == "")
             {
-                MessageBox.Show("Por favor, selecione um Material.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "Por favor, selecione um Material.";
                 return;
             }
             else if (tbQtd.Text.Trim() == "" || tbQtd.Text.Trim() == "0")
             {
-                MessageBox.Show("Por favor, coloque as quantidesd maior que 0.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "Por favor, coloque as quantidesd maior que 0.";
                 return;
             }
             else if (tbComp.Text.Trim() == "")
             {
-                MessageBox.Show("Por favor, insira o comprimento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                F.labelestado.Text = "Por favor, insira o comprimento.";
                 return;
             }            
             string Perfil = cbPerfil.Text.Trim();
@@ -103,7 +103,6 @@ namespace Gestor_de_Fases
             linhaCONJ += 1;
             F.DataGridViewOrder.Rows.Add(fase750, fase750, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, material, "", certificado, comprimento, peso.ToString("0.##"), area, "", "", dataFormatada , artigo, destinatario, observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ral, "", "", "");
         }
-
         private void cbFamilia_SelectedIndexChanged(object sender, EventArgs e)
         {
             BD Connect = new BD();
@@ -164,7 +163,6 @@ namespace Gestor_de_Fases
             cbPerfil.SelectedIndex = 0;
             cbcertificado.SelectedIndex = 0;
         }
-
         private void cbPerfil_SelectedIndexChanged(object sender, EventArgs e)
         {
             BD d = new BD();
@@ -173,7 +171,6 @@ namespace Gestor_de_Fases
             Pesoliquido.Text = d.Procurarbdprepararacao("SELECT [Peso] FROM [ArtigoTekla].[dbo].[Perfilagem3] where perfil ='" + cbPerfil.Text + "'")[0];
             d.desligarbdprepararacao();
         }
-
         private void tbQtd_KeyPress(object sender, KeyPressEventArgs e)
         {
             int r = 0;
@@ -191,12 +188,10 @@ namespace Gestor_de_Fases
                 e.Handled = true;
             }
         }
-
         private void tbQtd_MouseClick(object sender, MouseEventArgs e)
         {
             ((Guna.UI2.WinForms.Guna2TextBox)sender).SelectAll();
         }
-
         private void tbQtd_Validating(object sender, CancelEventArgs e)
         {
            if (sender is Guna.UI2.WinForms.Guna2TextBox gunaTxt)
@@ -205,7 +200,6 @@ namespace Gestor_de_Fases
                     gunaTxt.Text = "1";
             }
         }
-
         private void tbComp_Validated(object sender, EventArgs e)
         {
            if (sender is Guna.UI2.WinForms.Guna2TextBox gunaTxt)
