@@ -42,7 +42,8 @@
             this.ButtonTakePrint = new WiLBiT.WiLBiTButton();
             this.cbA3 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cbA4 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.Print = new System.Windows.Forms.PictureBox();
+            this.lbnome = new CuoreUI.Controls.cuiListbox();
+            this.Print = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Print)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,9 +121,9 @@
             // labelNomeFile
             // 
             this.labelNomeFile.BackColor = System.Drawing.Color.Transparent;
-            this.labelNomeFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelNomeFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomeFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelNomeFile.Location = new System.Drawing.Point(13, 22);
+            this.labelNomeFile.Location = new System.Drawing.Point(413, 35);
             this.labelNomeFile.Name = "labelNomeFile";
             this.labelNomeFile.Size = new System.Drawing.Size(45, 22);
             this.labelNomeFile.TabIndex = 15;
@@ -135,15 +136,17 @@
             this.ButtonClean.BorderColor = System.Drawing.Color.DarkGray;
             this.ButtonClean.BorderRadius = 6;
             this.ButtonClean.BorderSize = 0;
-            this.ButtonClean.FlatAppearance.BorderSize = 0;
+            this.ButtonClean.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonClean.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.ButtonClean.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.ButtonClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonClean.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.ButtonClean.ForeColor = System.Drawing.Color.White;
-            this.ButtonClean.Location = new System.Drawing.Point(332, 9);
+            this.ButtonClean.ForeColor = System.Drawing.Color.Transparent;
+            this.ButtonClean.Location = new System.Drawing.Point(298, 12);
             this.ButtonClean.Name = "ButtonClean";
-            this.ButtonClean.Size = new System.Drawing.Size(104, 35);
+            this.ButtonClean.Size = new System.Drawing.Size(100, 35);
             this.ButtonClean.TabIndex = 30;
-            this.ButtonClean.Text = "Limpar";
+            this.ButtonClean.Text = "Limpar Print";
             this.ButtonClean.UseVisualStyleBackColor = false;
             this.ButtonClean.Click += new System.EventHandler(this.ButtonClean_Click);
             // 
@@ -153,11 +156,13 @@
             this.ButtonGerarOF.BorderColor = System.Drawing.Color.DarkGray;
             this.ButtonGerarOF.BorderRadius = 6;
             this.ButtonGerarOF.BorderSize = 0;
-            this.ButtonGerarOF.FlatAppearance.BorderSize = 0;
+            this.ButtonGerarOF.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonGerarOF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.ButtonGerarOF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.ButtonGerarOF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonGerarOF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.ButtonGerarOF.ForeColor = System.Drawing.Color.White;
-            this.ButtonGerarOF.Location = new System.Drawing.Point(511, 9);
+            this.ButtonGerarOF.ForeColor = System.Drawing.Color.Transparent;
+            this.ButtonGerarOF.Location = new System.Drawing.Point(617, 12);
             this.ButtonGerarOF.Name = "ButtonGerarOF";
             this.ButtonGerarOF.Size = new System.Drawing.Size(100, 35);
             this.ButtonGerarOF.TabIndex = 31;
@@ -171,15 +176,17 @@
             this.ButtonTakePrint.BorderColor = System.Drawing.Color.DarkGray;
             this.ButtonTakePrint.BorderRadius = 6;
             this.ButtonTakePrint.BorderSize = 0;
-            this.ButtonTakePrint.FlatAppearance.BorderSize = 0;
+            this.ButtonTakePrint.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonTakePrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.ButtonTakePrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.ButtonTakePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonTakePrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.ButtonTakePrint.ForeColor = System.Drawing.Color.White;
-            this.ButtonTakePrint.Location = new System.Drawing.Point(617, 9);
+            this.ButtonTakePrint.ForeColor = System.Drawing.Color.Transparent;
+            this.ButtonTakePrint.Location = new System.Drawing.Point(192, 12);
             this.ButtonTakePrint.Name = "ButtonTakePrint";
             this.ButtonTakePrint.Size = new System.Drawing.Size(100, 35);
             this.ButtonTakePrint.TabIndex = 32;
-            this.ButtonTakePrint.Text = "Print";
+            this.ButtonTakePrint.Text = "Tirar Print";
             this.ButtonTakePrint.UseVisualStyleBackColor = false;
             this.ButtonTakePrint.Click += new System.EventHandler(this.ButtonTakePrint_Click);
             // 
@@ -193,7 +200,7 @@
             this.cbA3.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.cbA3.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbA3.Location = new System.Drawing.Point(454, 30);
+            this.cbA3.Location = new System.Drawing.Point(567, 12);
             this.cbA3.Name = "cbA3";
             this.cbA3.Size = new System.Drawing.Size(44, 21);
             this.cbA3.TabIndex = 81;
@@ -214,7 +221,7 @@
             this.cbA4.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.cbA4.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.cbA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbA4.Location = new System.Drawing.Point(454, 9);
+            this.cbA4.Location = new System.Drawing.Point(517, 12);
             this.cbA4.Name = "cbA4";
             this.cbA4.Size = new System.Drawing.Size(44, 21);
             this.cbA4.TabIndex = 80;
@@ -225,18 +232,46 @@
             this.cbA4.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.cbA4.UseVisualStyleBackColor = false;
             // 
+            // lbnome
+            // 
+            this.lbnome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbnome.BackgroundColor = System.Drawing.Color.White;
+            this.lbnome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbnome.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lbnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbnome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.lbnome.ForegroundColor = System.Drawing.Color.DimGray;
+            this.lbnome.FormattingEnabled = true;
+            this.lbnome.ItemBackgroundColor = System.Drawing.Color.Empty;
+            this.lbnome.ItemHeight = 34;
+            this.lbnome.ItemHoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbnome.ItemHoverForegroundColor = System.Drawing.Color.DimGray;
+            this.lbnome.ItemRounding = 8;
+            this.lbnome.ItemSelectedBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.lbnome.Location = new System.Drawing.Point(12, 9);
+            this.lbnome.Name = "lbnome";
+            this.lbnome.OutlineColor = System.Drawing.Color.Silver;
+            this.lbnome.Rounding = new System.Windows.Forms.Padding(8);
+            this.lbnome.SelectedForegroundColor = System.Drawing.Color.White;
+            this.lbnome.Size = new System.Drawing.Size(167, 476);
+            this.lbnome.TabIndex = 83;
+            // 
             // Print
             // 
             this.Print.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Print.BackColor = System.Drawing.Color.Chocolate;
-            this.Print.Location = new System.Drawing.Point(12, 77);
+            this.Print.BackColor = System.Drawing.Color.Transparent;
+            this.Print.FillColor = System.Drawing.Color.Chocolate;
+            this.Print.ImageRotate = 0F;
+            this.Print.Location = new System.Drawing.Point(185, 63);
             this.Print.Name = "Print";
-            this.Print.Size = new System.Drawing.Size(776, 411);
+            this.Print.Size = new System.Drawing.Size(603, 425);
             this.Print.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Print.TabIndex = 82;
+            this.Print.TabIndex = 84;
             this.Print.TabStop = false;
+            this.Print.Click += new System.EventHandler(this.Print_Click);
             // 
             // labelnomeficheiro
             // 
@@ -246,6 +281,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.Print);
+            this.Controls.Add(this.lbnome);
             this.Controls.Add(this.cbA3);
             this.Controls.Add(this.cbA4);
             this.Controls.Add(this.ButtonTakePrint);
@@ -279,6 +315,7 @@
         private WiLBiT.WiLBiTButton ButtonClean;
         private Guna.UI2.WinForms.Guna2CheckBox cbA3;
         private Guna.UI2.WinForms.Guna2CheckBox cbA4;
-        private System.Windows.Forms.PictureBox Print;
+        public CuoreUI.Controls.cuiListbox lbnome;
+        private Guna.UI2.WinForms.Guna2PictureBox Print;
     }
 }

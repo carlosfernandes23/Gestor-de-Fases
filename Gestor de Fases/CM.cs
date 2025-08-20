@@ -1000,7 +1000,7 @@ namespace Gestor_de_Fases
                 if (obsNut.Checked)
                 { Observacoes = tbObs.Text.Trim(); }
                 else { Observacoes = ""; }
-                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", "2." + ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
+                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
             }
         }
         private void Washer()
@@ -1045,7 +1045,7 @@ namespace Gestor_de_Fases
                 if (obsWasher.Checked)
                 { Observacoes = tbObs.Text.Trim(); }
                 else { Observacoes = ""; }
-                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", "2." + ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
+                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
             }
         }
         private void Ancoragem()
@@ -1090,9 +1090,59 @@ namespace Gestor_de_Fases
                 if (obsAcor.Checked)
                 { Observacoes = tbObs.Text.Trim(); }
                 else { Observacoes = ""; }
-                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", "2." + ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
+                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Classe, ReqEspNorma, Certificado, "", "", "", "", "", dataFormatada, ArtigoInterno, "08", Observacoes, "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, "", "");
 
             }
+        }
+        private void Acessorios()
+        {
+            if (tbQtdAcss.Text.Trim() == "")
+            {
+                F.labelestado.Text = "Escreva uma quantidade";
+                return;
+            }
+            else if (tbPerfilAcss.Text.Trim() == "")
+            {
+                F.labelestado.Text = "Defina um Perfil";
+                return;
+            }
+            else if (tbNormalAcss.Text.Trim() == "")
+            {
+                F.labelestado.Text = "Defina uma Norma";
+                return;
+            }
+            else if (tbCompAcss.Text.Trim() == "")
+            {
+                F.labelestado.Text = "Defina um Comprimento";
+                return;
+            }            
+            else
+            {
+                linhaCONJ += 1;
+                string Quantidade = tbQtdAcss.Text.Trim();
+                string Certificado = cbCertificadoAcss.Text.Trim();
+                string dataFormatada = Datematerialemobra.Value.ToString("dd/MM/yyyy");
+                string Perfil = tbPerfilAcss.Text.Trim();
+                string ReqEspecial = tbReqEAcss.Text.Trim();
+                string Marca = tbMarcalAcss.Text.Trim();
+                string Norma = tbNormalAcss.Text.Trim();
+                string Comprimento = tbCompAcss.Text.Trim();
+                string fase1000 = F.labelfase1000.Text.Trim();
+                string noObra = F.labelNObra.Text.Trim();
+                string ordemFabrico = "2." + noObra + "." + fase1000 + "." + F.DataGridViewOrder.Rows.Count;
+                string conjuntoPeca = "2." + noObra + "." + fase1000 + "." + fase1000 + "CJ" + linhaCONJ;
+                string Observacoes = string.Empty;
+                string Artigo = string.Empty;
+                if (obsAcor.Checked)
+                { Observacoes = tbObs.Text.Trim(); }
+                else { Observacoes = ""; }
+
+                F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Perfil, ReqEspecial, Certificado, Comprimento, "", "", "", "", dataFormatada, Artigo, "08", "", "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, Norma, "");
+            }
+        }
+        private void Procurarartigo()
+        {
+
         }
         private void cbAncoragem_Click(object sender, EventArgs e)
         {
@@ -1140,11 +1190,8 @@ namespace Gestor_de_Fases
         }
         private void ButtonAddAcss_Click(object sender, EventArgs e)
         {
-            string um = tbPerfilAcss.Text;
-            string dois = tbNormalAcss.Text;
-
+            Acessorios();
         }
-
         private void ButtonAddConj_Click(object sender, EventArgs e)
         {
             Bolt();

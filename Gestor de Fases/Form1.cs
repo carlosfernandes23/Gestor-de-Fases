@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,13 +25,10 @@ namespace Gestor_de_Fases
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = "";
-            cbFolderObra.Checked = true;
-            cbFolderObra.CheckedChanged += CbFolderObra_CheckedChanged;
-            cbOtherFolder.CheckedChanged += CbOtherFolder_CheckedChanged;
         }
         private void Form1_Load(object sender, EventArgs e)
         {            
-            this.Size = new Size(1525, 930); 
+            this.Size = new Size(1515, 910); 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             Panelmenu.Height = 100;
@@ -248,7 +246,7 @@ namespace Gestor_de_Fases
                 PanelMenuPedido.Height = 50;
                 menuExpandido = !menuExpandido;
                 AbrirFormNoPainel(new DAP(this));
-                labelDestino.Text = "DAP - Departamento de aprovisionamentos";
+                labelDestino.Text = "DAP - Dep de aprovisionamentos";
             }
             else
             {
@@ -611,31 +609,7 @@ namespace Gestor_de_Fases
             {
                 MessageBox.Show("Ficheiro classe Ex: " + caminho);
             }
-        }
-        private void CbFolderObra_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbFolderObra.Checked)
-            {
-                cbOtherFolder.Checked = false;
-            }
-            else
-            {
-                if (!cbOtherFolder.Checked)
-                    cbFolderObra.Checked = true;
-            }
-        }
-        private void CbOtherFolder_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbOtherFolder.Checked)
-            {
-                cbFolderObra.Checked = false;
-            }
-            else
-            {
-                if (!cbFolderObra.Checked)
-                    cbFolderObra.Checked = true;
-            }
-        }
+        }      
         private void ButtonGerarPdf_Click(object sender, EventArgs e)
         {
             if (OBRAINSERIDA)
@@ -695,24 +669,424 @@ namespace Gestor_de_Fases
 
         }
         private void buttonmoveCSS_Click(object sender, EventArgs e)
-        {
-            if (cbFolderObra.Checked)
-            {
-                EnviaCssobrafolder();
-            }
-            else
-            {
-                EnviarCssOtherfolder();
-            }
+        {            
+          EnviarCssOtherfolder();            
         }
         private void ButtonFolderR_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("C:\\r");
 
         }
+        //private void ButtonMovefiles_Click(object sender, EventArgs e)
+        //{
+        //    string nome = null;
+        //    bool RESPOSTA = false;
+        //    ArrayList FICHEIROSEMFALTA = new ArrayList();
+        //    foreach (DataGridViewRow item in DataGridViewOrder.Rows)
+        //    {
+        //        try
+        //        {
+        //            if (item.Index != DataGridViewOrder.Rows.Count - 1)
+        //            {
+
+        //                nome = item.Cells[4].Value.ToString().Split('.')[1] + "." + item.Cells[4].Value.ToString().Split('.').Last();
+
+        //            }
+        //        }
+        //        catch (Exception)
+        //        {    }
+        //        try
+        //        {
+        //            if (!item.Cells[4].Value.ToString().ToUpper().Contains("H"))
+        //            {
+        //                if (!File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                {
+        //                    FICHEIROSEMFALTA.Add("2." + nome + ".pdf");
+        //                }
+        //            }
+        //        }
+        //        catch (Exception)
+        //        {      }
+        //    }
+        //    if (FICHEIROSEMFALTA.Count > 0)
+        //    {
+
+        //        string r = null;
+        //        foreach (var item in FICHEIROSEMFALTA)
+        //        {
+        //            r += item + " \n";
+        //        }
+        //        if (MessageBox.Show("Faltaram na pasta processo os ficheiros: " + Environment.NewLine + r + Environment.NewLine + "Deseja prosseguir mesmo assim ?", "Ficheiros em falta", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+        //        {
+        //            RESPOSTA = true;
+        //        }
+        //    }
+        //    if (FICHEIROSEMFALTA.Count == 0)
+        //    {
+        //        RESPOSTA = true;
+        //    }
+        //    FICHEIROSEMFALTA.Clear();
+        //    if (RESPOSTA == true)
+        //    {
+        //        foreach (DataGridViewRow item in DataGridViewOrder.Rows)
+        //        {
+        //            if (item.Index != DataGridViewOrder.Rows.Count - 1)
+        //            {
+        //                if (item.Cells[4].Value.ToString().Split('.').Count() == 3)
+        //                {
+        //                    nome = item.Cells[4].Value.ToString().Split('.')[1] + "." + item.Cells[4].Value.ToString().Split('.')[2];
+        //                }
+        //                else
+        //                {
+        //                    nome = item.Cells[4].Value.ToString().Split('.')[1] + "." + item.Cells[4].Value.ToString().Split('.')[3];
+        //                }
+        //                string nobra = labelNObra.Text.Trim();
+        //                string ano = "";
+        //                if (nobra.ToUpper().Contains("PT"))
+        //                {
+        //                    ano = nobra.Trim().ToUpper().Substring(2, 2);
+        //                }
+        //                else
+        //                {
+        //                    ano = nobra.ToUpper().Substring(0, 2);
+        //                }
+        //                string departamento = "";
+        //                string artigo = "";
+        //                string caminhocm = @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras\20" + ano + "\\" + nobra + @"\1.9 Gestão de fabrico\" + item.Cells[0].Value.ToString().Trim() + "\\20001\\";
+        //                string caminholaser = @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\11 Partilhada\20" + ano + "\\LASER\\" + nobra + "\\" + item.Cells[0].Value.ToString().Trim() + "\\" + item.Cells[9].Value.ToString().Trim() + "_" + item.Cells[10].Value.ToString().Trim() + "\\";
+        //                string caminhocq = @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\11 Partilhada\20" + ano + "\\CQ\\" + nobra + "\\" + item.Cells[0].Value.ToString().Trim() + "\\";
+        //                string caminhocp = @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\11 Partilhada\20" + ano + "\\CP\\" + nobra + "\\" + item.Cells[0].Value.ToString().Trim() + "\\";
+        //               try
+        //                {
+        //                    departamento = (string)item.Cells[20].Value;
+        //                }
+        //                catch (Exception)
+        //                {  }
+        //                try
+        //                {
+        //                    artigo = (string)item.Cells[2].Value;
+        //                }
+        //                catch (Exception)
+        //                {   }
+        //                /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //                if (artigo.Trim().ToUpper() == "CONJUNTO")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminhocm.Replace("20001", "20004")))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm.Replace("20001", "20004"));
+        //                        }
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20004") + "2." + nome + ".pdf");
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                    }
+        //                }
+        //                else if (artigo.Trim().ToUpper() == "PERFIL")
+        //                {
+        //                    try
+        //                    {
+        //                        if (item.Cells[22].Value.ToString().ToLower() == "corte e furação")
+        //                        {
+        //                            if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                            {
+        //                                if (!Directory.Exists(caminhocm.Replace("20001", "20003")))
+        //                                {
+        //                                    Directory.CreateDirectory(caminhocm.Replace("20001", "20003"));
+        //                                }
+        //                                File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20003") + "2." + nome + ".pdf");
+        //                            }
+        //                            else
+        //                            {
+        //                                FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                            }
+        //                        }
+        //                        else if (item.Cells[22].Value.ToString().ToLower() == "corte")
+        //                        {
+        //                            if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                            {
+        //                                if (!Directory.Exists(caminhocm.Replace("20001", "20002")))
+        //                                {
+        //                                    Directory.CreateDirectory(caminhocm.Replace("20001", "20002"));
+        //                                }
+        //                                File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20002") + "2." + nome + ".pdf");
+        //                            }
+        //                            else
+        //                            {
+        //                                FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                            }
+        //                        }
+        //                    }
+        //                    catch (Exception)
+        //                    {
+        //                        MessageBox.Show("Erro falta a operação na linha da peça " + item.Cells[4].Value.ToString());
+
+        //                    }
+
+        //                }
+        //                else if (departamento.Trim().ToUpper() == "DAP")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminhocm.Replace("20001", "20004")))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm.Replace("20001", "20004"));
+        //                        }
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20004") + "2." + nome + ".pdf");
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                    }
+        //                }
+        //                else if (departamento.Trim().ToUpper() == "CP")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminhocp))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocp);
+        //                        }
+        //                        if (!Directory.Exists(caminhocm.Replace("20001", "20004")))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm.Replace("20001", "20004"));
+        //                        }
+        //                        File.Copy("C:\\r\\2." + nome + ".pdf", caminhocp + nome + ".pdf");
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20004") + "2." + nome + ".pdf");
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                    }
+        //                }
+        //                else if (departamento.Trim().ToUpper() == "CP")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminhocp))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocp);
+        //                        }
+        //                        if (!Directory.Exists(caminhocm.Replace("20001", "20004")))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm.Replace("20001", "20004"));
+        //                        }
+        //                        File.Copy("C:\\r\\2." + nome + ".pdf", nome + ".pdf");
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm.Replace("20001", "20004") + "2." + nome + ".pdf");
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add(nome + ".pdf ");
+        //                    }
+        //                }
+        //                else if (departamento.Trim().ToUpper() == "CQ")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminhocq))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocq);
+        //                        }
+        //                        if (!Directory.Exists(caminhocm))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm);
+        //                        }
+        //                        File.Copy("C:\\r\\2." + nome + ".pdf", caminhocq + "2." + nome + ".pdf");
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm + "2." + nome + ".pdf");
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                    }
+        //                }
+        //                else if (departamento.Trim().ToUpper() == "CL")
+        //                {
+        //                    if (File.Exists("C:\\r\\2." + nome + ".pdf"))
+        //                    {
+        //                        if (!Directory.Exists(caminholaser))
+        //                        {
+        //                            Directory.CreateDirectory(caminholaser);
+        //                        }
+        //                        if (!Directory.Exists(caminhocm))
+        //                        {
+        //                            Directory.CreateDirectory(caminhocm);
+        //                        }
+        //                        File.Copy("C:\\r\\2." + nome + ".pdf", caminholaser + "2." + nome + ".pdf");
+        //                        File.Move("C:\\r\\2." + nome + ".pdf", caminhocm + "2." + nome + ".pdf");
+        //                        if (File.Exists("C:\\r\\2." + nome + ".dxf"))
+        //                        {
+        //                            File.Move("C:\\r\\2." + nome + ".dxf", caminholaser + "2." + nome + ".dxf");
+        //                        }
+        //                        else
+        //                        {
+        //                            FICHEIROSEMFALTA.Add("2." + nome + ".dxf ");
+        //                        }
+        //                    }
+        //                    else
+        //                    {
+        //                        FICHEIROSEMFALTA.Add("2." + nome + ".pdf ");
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        if (FICHEIROSEMFALTA.Count > 0)
+        //        {
+
+        //            string r = null;
+        //            foreach (var item1 in FICHEIROSEMFALTA)
+        //            {
+        //                r += item1 + " \n";
+        //            }
+        //            MessageBox.Show("Faltaram na pasta processo os ficheiros: " + Environment.NewLine + r, "Ficheiros em falta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        //        }
+        //    }
         private void ButtonMovefiles_Click(object sender, EventArgs e)
         {
+            EnviaCssobrafolder();
+            List<string> arquivosFaltando = new List<string>();
+            string pastaBase = @"C:\r\";
+            string ProcessarNome(string valor)
+            {
+                var partes = valor.Split('.');
+                if (partes.Length >= 3)
+                    return partes[1] + "." + partes.Last();
+                return valor;
+            }
+
+            void MoverArquivo(string arquivoOrigem, string pastaDestino)
+            {
+                if (!Directory.Exists(pastaDestino))
+                    Directory.CreateDirectory(pastaDestino);
+
+                if (File.Exists(arquivoOrigem))
+                    File.Move(arquivoOrigem, Path.Combine(pastaDestino, Path.GetFileName(arquivoOrigem)));
+                else
+                    arquivosFaltando.Add(Path.GetFileName(arquivoOrigem));
+            }
+
+            void CopiarArquivo(string arquivoOrigem, string pastaDestino)
+            {
+                if (!Directory.Exists(pastaDestino))
+                    Directory.CreateDirectory(pastaDestino);
+
+                if (File.Exists(arquivoOrigem))
+                    File.Copy(arquivoOrigem, Path.Combine(pastaDestino, Path.GetFileName(arquivoOrigem)), true);
+                else
+                    arquivosFaltando.Add(Path.GetFileName(arquivoOrigem));
+            }
+
+            foreach (DataGridViewRow row in DataGridViewOrder.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                string valor = row.Cells[4].Value?.ToString();
+                if (string.IsNullOrEmpty(valor)) continue;
+
+                string nome = ProcessarNome(valor);
+
+                if (!valor.ToUpper().Contains("H"))
+                {
+                    string arquivo = Path.Combine(pastaBase, "2." + nome + ".pdf");
+                    if (!File.Exists(arquivo))
+                        arquivosFaltando.Add("2." + nome + ".pdf");
+                }
+            }
+
+            if (arquivosFaltando.Count > 0)
+            {
+                string lista = string.Join(Environment.NewLine, arquivosFaltando);
+                if (MessageBox.Show("Faltaram os arquivos:" + Environment.NewLine + lista + Environment.NewLine + "Deseja prosseguir?", "Arquivos em falta", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) != DialogResult.Yes)
+                    return;
+            }
+
+            arquivosFaltando.Clear();
+
+            foreach (DataGridViewRow row in DataGridViewOrder.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                string valor = row.Cells[4].Value?.ToString();
+                if (string.IsNullOrEmpty(valor)) continue;
+
+                string nome = ProcessarNome(valor);
+                string nobra = labelNObra.Text.Trim();
+                string ano = nobra.ToUpper().Contains("PT") ? nobra.Substring(2, 2) : nobra.Substring(0, 2);
+
+                string caminhoBaseCM = Path.Combine(
+                    @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras",
+                    "20" + ano,
+                    nobra,
+                    "1.9 Gestão de fabrico",
+                    row.Cells[0].Value.ToString(),
+                    "20001");
+
+                string departamento = row.Cells[20].Value?.ToString()?.Trim().ToUpper() ?? "";
+                string artigo = row.Cells[2].Value?.ToString()?.Trim().ToUpper() ?? "";
+
+                string arquivoPDF = Path.Combine(pastaBase, "2." + nome + ".pdf");
+                string arquivoDXF = Path.Combine(pastaBase, "2." + nome + ".dxf");
+
+                if (!File.Exists(arquivoPDF) && !File.Exists(arquivoDXF))
+                {
+                    arquivosFaltando.Add("2." + nome + ".pdf/.dxf");
+                    continue;
+                }
+
+                switch (departamento)
+                {
+                    case "DAP":
+                    case "CONJUNTO":
+                        MoverArquivo(arquivoPDF, caminhoBaseCM.Replace("20001", "20004"));
+                        break;
+
+                    case "CP":
+                        string cpPath = Path.Combine(
+                            @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\11 Partilhada\20" + ano,
+                            "CP",
+                            nobra,
+                            row.Cells[0].Value.ToString());
+                        MoverArquivo(arquivoPDF, cpPath);
+                        break;
+
+                    case "CQ":
+                        string cqPath = Path.Combine(
+                            @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\11 Partilhada\20" + ano,
+                            "CQ",
+                            nobra,
+                            row.Cells[0].Value.ToString());
+                        MoverArquivo(arquivoPDF, cqPath);
+                        break;
+
+                    case "CL":
+                        string clPath = Path.Combine(caminhoBaseCM.Replace("20001", "20002"), "Corte");
+                        string clPathFuracao = Path.Combine(caminhoBaseCM.Replace("20001", "20003"), "Corte e furação");
+                        MoverArquivo(arquivoPDF, clPath);
+                        if (File.Exists(arquivoDXF))
+                            CopiarArquivo(arquivoDXF, clPathFuracao);
+                        break;
+
+                    case "PERFIL":
+                        string perfilPath = Path.Combine(caminhoBaseCM.Replace("20001", "20002"), "Corte");
+                        string perfilPathFuracao = Path.Combine(caminhoBaseCM.Replace("20001", "20003"), "Corte e furação");
+                        MoverArquivo(arquivoPDF, perfilPath);
+                        if (File.Exists(arquivoDXF))
+                            CopiarArquivo(arquivoDXF, perfilPathFuracao);
+                        break;
+
+                    default:
+                        MoverArquivo(arquivoPDF, caminhoBaseCM);
+                        break;
+                }
+            }
+
+            if (arquivosFaltando.Count > 0)
+            {
+                MessageBox.Show("Faltaram os arquivos: " + Environment.NewLine + string.Join(Environment.NewLine, arquivosFaltando), "Arquivos em falta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
-        
+
     }
 }

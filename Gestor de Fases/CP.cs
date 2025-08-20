@@ -55,7 +55,7 @@ namespace Gestor_de_Fases
             }
             else if (tbQtd.Text.Trim() == "" || tbQtd.Text.Trim() == "0")
             {
-                F.labelestado.Text = "Por favor, coloque as quantidesd maior que 0.";
+                F.labelestado.Text = "Por favor, coloque as quantidades maior que 0.";
                 return;
             }
             else if (tbComp.Text.Trim() == "")

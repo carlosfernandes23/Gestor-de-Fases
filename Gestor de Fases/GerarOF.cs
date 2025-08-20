@@ -29,6 +29,7 @@ namespace Gestor_de_Fases
             cbA4.Checked = true;
             cbA4.CheckedChanged += A4_CheckedChanged;
             cbA3.CheckedChanged += A3_CheckedChanged;
+            lbnome.Click += Click;
         }
 
         private void labelnomeficheiro_Load(object sender, EventArgs e)
@@ -42,6 +43,41 @@ namespace Gestor_de_Fases
             { 
                 MessageBox.Show("Tem de posicionar o cursor na célula com o nome que pretende atribuir o ficheiro."); 
                 this.Close();
+            }
+            Listbox();
+        }
+        private void Listbox()
+        {
+            lbnome.Items.Clear();
+            foreach (DataGridViewRow row in F.DataGridViewOrder.Rows)
+            {
+                if (row.Cells[4].Value != null)
+                {
+                    string nomeCompleto = row.Cells[4].Value.ToString();
+                    string nomeProcessado;
+
+                    if (nomeCompleto.Contains("."))
+                    {
+                        string[] partes = nomeCompleto.Split('.');
+                        nomeProcessado = partes[1] + "." + partes.Last();
+                    }
+                    else
+                    {
+                        nomeProcessado = nomeCompleto; 
+                    }
+                    lbnome.Items.Add(nomeProcessado);
+                }
+            }
+            if (lbnome.Items.Count > 0)
+            {
+                lbnome.SelectedIndex = 0; 
+            }
+        }
+        private void Click(object sender, EventArgs e)
+        {
+            if (lbnome.SelectedItem != null)
+            {
+                labelNomeFile.Text = lbnome.SelectedItem.ToString();
             }
         }
         protected void GerarPDF()
