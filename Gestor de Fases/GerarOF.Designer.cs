@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(labelnomeficheiro));
             this.Mover = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -44,6 +45,8 @@
             this.cbA4 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.lbnome = new CuoreUI.Controls.cuiListbox();
             this.Print = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tbnomeobjecto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Print)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +126,7 @@
             this.labelNomeFile.BackColor = System.Drawing.Color.Transparent;
             this.labelNomeFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomeFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelNomeFile.Location = new System.Drawing.Point(413, 35);
+            this.labelNomeFile.Location = new System.Drawing.Point(200, 60);
             this.labelNomeFile.Name = "labelNomeFile";
             this.labelNomeFile.Size = new System.Drawing.Size(45, 22);
             this.labelNomeFile.TabIndex = 15;
@@ -254,7 +257,7 @@
             this.lbnome.OutlineColor = System.Drawing.Color.Silver;
             this.lbnome.Rounding = new System.Windows.Forms.Padding(8);
             this.lbnome.SelectedForegroundColor = System.Drawing.Color.White;
-            this.lbnome.Size = new System.Drawing.Size(167, 476);
+            this.lbnome.Size = new System.Drawing.Size(167, 510);
             this.lbnome.TabIndex = 83;
             // 
             // Print
@@ -265,7 +268,7 @@
             this.Print.BackColor = System.Drawing.Color.Transparent;
             this.Print.FillColor = System.Drawing.Color.Chocolate;
             this.Print.ImageRotate = 0F;
-            this.Print.Location = new System.Drawing.Point(185, 63);
+            this.Print.Location = new System.Drawing.Point(185, 94);
             this.Print.Name = "Print";
             this.Print.Size = new System.Drawing.Size(603, 425);
             this.Print.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -273,13 +276,53 @@
             this.Print.TabStop = false;
             this.Print.Click += new System.EventHandler(this.Print_Click);
             // 
+            // tbnomeobjecto
+            // 
+            this.tbnomeobjecto.BackColor = System.Drawing.Color.Transparent;
+            this.tbnomeobjecto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbnomeobjecto.BorderRadius = 10;
+            this.tbnomeobjecto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbnomeobjecto.DefaultText = "Peça";
+            this.tbnomeobjecto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbnomeobjecto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbnomeobjecto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbnomeobjecto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbnomeobjecto.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbnomeobjecto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbnomeobjecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbnomeobjecto.ForeColor = System.Drawing.Color.Black;
+            this.tbnomeobjecto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbnomeobjecto.Location = new System.Drawing.Point(583, 53);
+            this.tbnomeobjecto.Name = "tbnomeobjecto";
+            this.tbnomeobjecto.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.tbnomeobjecto.PlaceholderText = "";
+            this.tbnomeobjecto.SelectedText = "";
+            this.tbnomeobjecto.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.tbnomeobjecto.Size = new System.Drawing.Size(205, 35);
+            this.tbnomeobjecto.TabIndex = 136;
+            this.tbnomeobjecto.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(451, 60);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(126, 22);
+            this.guna2HtmlLabel1.TabIndex = 137;
+            this.guna2HtmlLabel1.Text = "Nome do Objecto";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelnomeficheiro
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(800, 525);
+            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.tbnomeobjecto);
             this.Controls.Add(this.Print);
             this.Controls.Add(this.lbnome);
             this.Controls.Add(this.cbA3);
@@ -291,6 +334,7 @@
             this.Controls.Add(this.Minimizar);
             this.Controls.Add(this.Fechar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "labelnomeficheiro";
             this.TransparencyKey = System.Drawing.Color.Chocolate;
             this.Load += new System.EventHandler(this.labelnomeficheiro_Load);
@@ -317,5 +361,7 @@
         private Guna.UI2.WinForms.Guna2CheckBox cbA4;
         public CuoreUI.Controls.cuiListbox lbnome;
         private Guna.UI2.WinForms.Guna2PictureBox Print;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox tbnomeobjecto;
     }
 }

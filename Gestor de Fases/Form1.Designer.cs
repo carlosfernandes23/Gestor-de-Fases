@@ -42,8 +42,9 @@
             this.Buttonabrirpedido = new CuoreUI.Controls.cuiButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelInformacoes = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.labelGrauprep = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelobraview = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labelDestino = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelClasseEx = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelConectado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TextBoxObra = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,6 +59,7 @@
             this.labelDesignacao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelNObra = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labelDestino = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelOrder = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.DataGridViewOrder = new System.Windows.Forms.DataGridView();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,8 +67,9 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.labelestado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelTool = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.Minimizar = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Fechar = new Guna.UI2.WinForms.Guna2ControlBox();
             this.buttonmoveCSS = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.labelmoveCSS = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelmovefiles = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonMovefiles = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ButtonFolderR = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -80,10 +83,12 @@
             this.MoverPanelInfo = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MoverPanelTools = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MoverTabela = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.Fechar = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Minimizar = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Borda = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Moverdatagriend = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Panelmenu.SuspendLayout();
             this.PanelMenuPedido.SuspendLayout();
             this.PanelInformacoes.SuspendLayout();
@@ -102,7 +107,7 @@
             this.Panelmenu.BorderThickness = 1;
             this.Panelmenu.Controls.Add(this.PanelMenuPedido);
             this.Panelmenu.Controls.Add(this.guna2HtmlLabel2);
-            this.Panelmenu.Location = new System.Drawing.Point(7, 12);
+            this.Panelmenu.Location = new System.Drawing.Point(12, 12);
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(210, 100);
             this.Panelmenu.TabIndex = 1;
@@ -380,8 +385,9 @@
             this.PanelInformacoes.BorderColor = System.Drawing.Color.Silver;
             this.PanelInformacoes.BorderRadius = 15;
             this.PanelInformacoes.BorderThickness = 1;
+            this.PanelInformacoes.Controls.Add(this.labelGrauprep);
+            this.PanelInformacoes.Controls.Add(this.guna2HtmlLabel4);
             this.PanelInformacoes.Controls.Add(this.labelobraview);
-            this.PanelInformacoes.Controls.Add(this.labelDestino);
             this.PanelInformacoes.Controls.Add(this.labelClasseEx);
             this.PanelInformacoes.Controls.Add(this.labelConectado);
             this.PanelInformacoes.Controls.Add(this.TextBoxObra);
@@ -396,10 +402,32 @@
             this.PanelInformacoes.Controls.Add(this.labelDesignacao);
             this.PanelInformacoes.Controls.Add(this.labelCliente);
             this.PanelInformacoes.Controls.Add(this.labelNObra);
-            this.PanelInformacoes.Location = new System.Drawing.Point(222, 12);
+            this.PanelInformacoes.Location = new System.Drawing.Point(227, 12);
             this.PanelInformacoes.Name = "PanelInformacoes";
             this.PanelInformacoes.Size = new System.Drawing.Size(1140, 100);
             this.PanelInformacoes.TabIndex = 6;
+            // 
+            // labelGrauprep
+            // 
+            this.labelGrauprep.BackColor = System.Drawing.Color.Transparent;
+            this.labelGrauprep.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.labelGrauprep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelGrauprep.Location = new System.Drawing.Point(1000, 70);
+            this.labelGrauprep.Name = "labelGrauprep";
+            this.labelGrauprep.Size = new System.Drawing.Size(3, 2);
+            this.labelGrauprep.TabIndex = 118;
+            this.labelGrauprep.Text = null;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(845, 70);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(147, 22);
+            this.guna2HtmlLabel4.TabIndex = 117;
+            this.guna2HtmlLabel4.Text = "Grau de Preparação";
             // 
             // labelobraview
             // 
@@ -412,18 +440,6 @@
             this.labelobraview.TabIndex = 116;
             this.labelobraview.Text = "Obra";
             this.labelobraview.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelDestino
-            // 
-            this.labelDestino.BackColor = System.Drawing.Color.White;
-            this.labelDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelDestino.Location = new System.Drawing.Point(845, 72);
-            this.labelDestino.Name = "labelDestino";
-            this.labelDestino.Size = new System.Drawing.Size(3, 2);
-            this.labelDestino.TabIndex = 9;
-            this.labelDestino.Text = null;
-            this.labelDestino.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelClasseEx
             // 
@@ -612,6 +628,18 @@
             this.labelNObra.Text = null;
             this.labelNObra.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelDestino
+            // 
+            this.labelDestino.BackColor = System.Drawing.Color.White;
+            this.labelDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelDestino.Location = new System.Drawing.Point(1060, 335);
+            this.labelDestino.Name = "labelDestino";
+            this.labelDestino.Size = new System.Drawing.Size(3, 2);
+            this.labelDestino.TabIndex = 9;
+            this.labelDestino.Text = null;
+            this.labelDestino.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // PanelOrder
             // 
             this.PanelOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -621,9 +649,9 @@
             this.PanelOrder.BorderThickness = 1;
             this.PanelOrder.Controls.Add(this.DataGridViewOrder);
             this.PanelOrder.Controls.Add(this.guna2HtmlLabel1);
-            this.PanelOrder.Location = new System.Drawing.Point(7, 484);
+            this.PanelOrder.Location = new System.Drawing.Point(12, 484);
             this.PanelOrder.Name = "PanelOrder";
-            this.PanelOrder.Size = new System.Drawing.Size(1495, 415);
+            this.PanelOrder.Size = new System.Drawing.Size(1576, 415);
             this.PanelOrder.TabIndex = 7;
             // 
             // DataGridViewOrder
@@ -650,7 +678,7 @@
             this.DataGridViewOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.DataGridViewOrder.Location = new System.Drawing.Point(10, 30);
             this.DataGridViewOrder.Name = "DataGridViewOrder";
-            this.DataGridViewOrder.Size = new System.Drawing.Size(1465, 369);
+            this.DataGridViewOrder.Size = new System.Drawing.Size(1548, 369);
             this.DataGridViewOrder.TabIndex = 0;
             // 
             // guna2HtmlLabel1
@@ -684,8 +712,9 @@
             this.guna2CustomGradientPanel2.BorderRadius = 15;
             this.guna2CustomGradientPanel2.BorderThickness = 1;
             this.guna2CustomGradientPanel2.Controls.Add(this.labelestado);
+            this.guna2CustomGradientPanel2.Controls.Add(this.labelDestino);
             this.guna2CustomGradientPanel2.Controls.Add(this.PanelTodos);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(7, 118);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(12, 118);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1355, 360);
             this.guna2CustomGradientPanel2.TabIndex = 9;
@@ -709,10 +738,13 @@
             this.PanelTool.BorderColor = System.Drawing.Color.Silver;
             this.PanelTool.BorderRadius = 15;
             this.PanelTool.BorderThickness = 1;
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel7);
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel6);
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel5);
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel3);
             this.PanelTool.Controls.Add(this.Minimizar);
             this.PanelTool.Controls.Add(this.Fechar);
             this.PanelTool.Controls.Add(this.buttonmoveCSS);
-            this.PanelTool.Controls.Add(this.labelmoveCSS);
             this.PanelTool.Controls.Add(this.labelmovefiles);
             this.PanelTool.Controls.Add(this.ButtonMovefiles);
             this.PanelTool.Controls.Add(this.ButtonFolderR);
@@ -721,10 +753,51 @@
             this.PanelTool.Controls.Add(this.labelfolderobra);
             this.PanelTool.Controls.Add(this.labelCriarpdf);
             this.PanelTool.Controls.Add(this.ButtonGerarPdf);
-            this.PanelTool.Location = new System.Drawing.Point(1367, 12);
+            this.PanelTool.Location = new System.Drawing.Point(1372, 12);
             this.PanelTool.Name = "PanelTool";
-            this.PanelTool.Size = new System.Drawing.Size(135, 466);
+            this.PanelTool.Size = new System.Drawing.Size(216, 466);
             this.PanelTool.TabIndex = 10;
+            // 
+            // Minimizar
+            // 
+            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Minimizar.BackColor = System.Drawing.Color.Transparent;
+            this.Minimizar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Minimizar.BorderRadius = 6;
+            this.Minimizar.BorderThickness = 1;
+            this.Minimizar.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.Minimizar.FillColor = System.Drawing.Color.White;
+            this.Minimizar.HoverState.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.Minimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Minimizar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.Minimizar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Minimizar.Location = new System.Drawing.Point(151, 4);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.Minimizar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Minimizar.ShadowDecoration.Depth = 70;
+            this.Minimizar.Size = new System.Drawing.Size(25, 20);
+            this.Minimizar.TabIndex = 12;
+            // 
+            // Fechar
+            // 
+            this.Fechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Fechar.BackColor = System.Drawing.Color.Transparent;
+            this.Fechar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Fechar.BorderRadius = 6;
+            this.Fechar.BorderThickness = 1;
+            this.Fechar.FillColor = System.Drawing.Color.White;
+            this.Fechar.HoverState.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.Fechar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Fechar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.Fechar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Fechar.Location = new System.Drawing.Point(181, 4);
+            this.Fechar.Name = "Fechar";
+            this.Fechar.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.Fechar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.Fechar.ShadowDecoration.Depth = 70;
+            this.Fechar.Size = new System.Drawing.Size(25, 20);
+            this.Fechar.TabIndex = 11;
             // 
             // buttonmoveCSS
             // 
@@ -736,7 +809,7 @@
             this.buttonmoveCSS.ImageOffset = new System.Drawing.Point(0, 0);
             this.buttonmoveCSS.ImageRotate = 0F;
             this.buttonmoveCSS.ImageSize = new System.Drawing.Size(50, 50);
-            this.buttonmoveCSS.Location = new System.Drawing.Point(40, 406);
+            this.buttonmoveCSS.Location = new System.Drawing.Point(134, 336);
             this.buttonmoveCSS.Name = "buttonmoveCSS";
             this.buttonmoveCSS.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.css;
             this.buttonmoveCSS.PressedState.ImageSize = new System.Drawing.Size(50, 50);
@@ -744,23 +817,12 @@
             this.buttonmoveCSS.TabIndex = 77;
             this.buttonmoveCSS.Click += new System.EventHandler(this.buttonmoveCSS_Click);
             // 
-            // labelmoveCSS
-            // 
-            this.labelmoveCSS.BackColor = System.Drawing.Color.White;
-            this.labelmoveCSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelmoveCSS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmoveCSS.Location = new System.Drawing.Point(20, 380);
-            this.labelmoveCSS.Name = "labelmoveCSS";
-            this.labelmoveCSS.Size = new System.Drawing.Size(84, 20);
-            this.labelmoveCSS.TabIndex = 76;
-            this.labelmoveCSS.Text = "Ficheiro css";
-            // 
             // labelmovefiles
             // 
             this.labelmovefiles.BackColor = System.Drawing.Color.White;
             this.labelmovefiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmovefiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefiles.Location = new System.Drawing.Point(15, 218);
+            this.labelmovefiles.Location = new System.Drawing.Point(14, 191);
             this.labelmovefiles.Name = "labelmovefiles";
             this.labelmovefiles.Size = new System.Drawing.Size(110, 20);
             this.labelmovefiles.TabIndex = 75;
@@ -776,7 +838,7 @@
             this.ButtonMovefiles.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonMovefiles.ImageRotate = 0F;
             this.ButtonMovefiles.ImageSize = new System.Drawing.Size(50, 50);
-            this.ButtonMovefiles.Location = new System.Drawing.Point(40, 244);
+            this.ButtonMovefiles.Location = new System.Drawing.Point(134, 192);
             this.ButtonMovefiles.Name = "ButtonMovefiles";
             this.ButtonMovefiles.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.send1;
             this.ButtonMovefiles.PressedState.ImageSize = new System.Drawing.Size(50, 50);
@@ -794,7 +856,7 @@
             this.ButtonFolderR.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonFolderR.ImageRotate = 0F;
             this.ButtonFolderR.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderR.Location = new System.Drawing.Point(40, 321);
+            this.ButtonFolderR.Location = new System.Drawing.Point(134, 266);
             this.ButtonFolderR.Name = "ButtonFolderR";
             this.ButtonFolderR.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
             this.ButtonFolderR.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -812,7 +874,7 @@
             this.ButtonFolderObra.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonFolderObra.ImageRotate = 0F;
             this.ButtonFolderObra.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderObra.Location = new System.Drawing.Point(40, 156);
+            this.ButtonFolderObra.Location = new System.Drawing.Point(134, 116);
             this.ButtonFolderObra.Name = "ButtonFolderObra";
             this.ButtonFolderObra.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
             this.ButtonFolderObra.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -825,7 +887,7 @@
             this.labelmovefolderR.BackColor = System.Drawing.Color.White;
             this.labelmovefolderR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelmovefolderR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefolderR.Location = new System.Drawing.Point(37, 295);
+            this.labelmovefolderR.Location = new System.Drawing.Point(45, 291);
             this.labelmovefolderR.Name = "labelmovefolderR";
             this.labelmovefolderR.Size = new System.Drawing.Size(58, 20);
             this.labelmovefolderR.TabIndex = 71;
@@ -836,7 +898,7 @@
             this.labelfolderobra.BackColor = System.Drawing.Color.White;
             this.labelfolderobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelfolderobra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelfolderobra.Location = new System.Drawing.Point(20, 130);
+            this.labelfolderobra.Location = new System.Drawing.Point(19, 141);
             this.labelfolderobra.Name = "labelfolderobra";
             this.labelfolderobra.Size = new System.Drawing.Size(98, 20);
             this.labelfolderobra.TabIndex = 70;
@@ -847,11 +909,11 @@
             this.labelCriarpdf.BackColor = System.Drawing.Color.Transparent;
             this.labelCriarpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.labelCriarpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCriarpdf.Location = new System.Drawing.Point(35, 40);
+            this.labelCriarpdf.Location = new System.Drawing.Point(34, 56);
             this.labelCriarpdf.Name = "labelCriarpdf";
-            this.labelCriarpdf.Size = new System.Drawing.Size(69, 20);
+            this.labelCriarpdf.Size = new System.Drawing.Size(84, 20);
             this.labelCriarpdf.TabIndex = 69;
-            this.labelCriarpdf.Text = "Criar PDF";
+            this.labelCriarpdf.Text = "Criar PDF \'s";
             // 
             // ButtonGerarPdf
             // 
@@ -862,8 +924,8 @@
             this.ButtonGerarPdf.Image = global::Gestor_de_Fases.Properties.Resources.pdf111;
             this.ButtonGerarPdf.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonGerarPdf.ImageRotate = 0F;
-            this.ButtonGerarPdf.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonGerarPdf.Location = new System.Drawing.Point(40, 66);
+            this.ButtonGerarPdf.ImageSize = new System.Drawing.Size(45, 40);
+            this.ButtonGerarPdf.Location = new System.Drawing.Point(134, 41);
             this.ButtonGerarPdf.Name = "ButtonGerarPdf";
             this.ButtonGerarPdf.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.pdf22;
             this.ButtonGerarPdf.PressedState.ImageSize = new System.Drawing.Size(45, 45);
@@ -903,47 +965,6 @@
             this.MoverTabela.TargetControl = this.PanelOrder;
             this.MoverTabela.UseTransparentDrag = true;
             // 
-            // Fechar
-            // 
-            this.Fechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Fechar.BackColor = System.Drawing.Color.Transparent;
-            this.Fechar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.BorderRadius = 6;
-            this.Fechar.BorderThickness = 1;
-            this.Fechar.FillColor = System.Drawing.Color.White;
-            this.Fechar.HoverState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.Fechar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.Fechar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.Location = new System.Drawing.Point(100, 4);
-            this.Fechar.Name = "Fechar";
-            this.Fechar.PressedColor = System.Drawing.Color.WhiteSmoke;
-            this.Fechar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.ShadowDecoration.Depth = 70;
-            this.Fechar.Size = new System.Drawing.Size(25, 20);
-            this.Fechar.TabIndex = 11;
-            // 
-            // Minimizar
-            // 
-            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Minimizar.BackColor = System.Drawing.Color.Transparent;
-            this.Minimizar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.BorderRadius = 6;
-            this.Minimizar.BorderThickness = 1;
-            this.Minimizar.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.Minimizar.FillColor = System.Drawing.Color.White;
-            this.Minimizar.HoverState.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.Minimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.Minimizar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.Location = new System.Drawing.Point(70, 4);
-            this.Minimizar.Name = "Minimizar";
-            this.Minimizar.PressedColor = System.Drawing.Color.WhiteSmoke;
-            this.Minimizar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.ShadowDecoration.Depth = 70;
-            this.Minimizar.Size = new System.Drawing.Size(25, 20);
-            this.Minimizar.TabIndex = 12;
-            // 
             // Borda
             // 
             this.Borda.AnimateWindow = true;
@@ -962,12 +983,56 @@
             this.Moverdatagriend.TargetControl = this.DataGridViewOrder;
             this.Moverdatagriend.UseTransparentDrag = true;
             // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 115);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(33, 20);
+            this.guna2HtmlLabel3.TabIndex = 78;
+            this.guna2HtmlLabel3.Text = "Abrir";
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(19, 216);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(100, 20);
+            this.guna2HtmlLabel5.TabIndex = 79;
+            this.guna2HtmlLabel5.Text = "para as pastas";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(53, 265);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(33, 20);
+            this.guna2HtmlLabel6.TabIndex = 80;
+            this.guna2HtmlLabel6.Text = "Abrir";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(29, 351);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(83, 20);
+            this.guna2HtmlLabel7.TabIndex = 81;
+            this.guna2HtmlLabel7.Text = "Gravar Lista";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1515, 910);
+            this.ClientSize = new System.Drawing.Size(1600, 910);
             this.Controls.Add(this.PanelTool);
             this.Controls.Add(this.Panelmenu);
             this.Controls.Add(this.PanelOrder);
@@ -1022,7 +1087,7 @@
         private WiLBiT.WiLBiTButton buttonconectarobra;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxObra;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelConectado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelClasseEx;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelClasseEx;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelTool;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelmovefiles;
         private Guna.UI2.WinForms.Guna2ImageButton ButtonMovefiles;
@@ -1032,7 +1097,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelfolderobra;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelCriarpdf;
         private Guna.UI2.WinForms.Guna2ImageButton ButtonGerarPdf;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelmoveCSS;
         public System.Windows.Forms.DataGridView DataGridViewOrder;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelDestino;
         private Guna.UI2.WinForms.Guna2ImageButton buttonmoveCSS;
@@ -1047,6 +1111,12 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm Borda;
         public Guna.UI2.WinForms.Guna2HtmlLabel labelestado;
         private Guna.UI2.WinForms.Guna2DragControl Moverdatagriend;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelGrauprep;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
     }
 }
 

@@ -1065,6 +1065,7 @@
             // 
             // tbPerfilAcss
             // 
+            this.tbPerfilAcss.AcceptsReturn = true;
             this.tbPerfilAcss.BackColor = System.Drawing.Color.White;
             this.tbPerfilAcss.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbPerfilAcss.BorderRadius = 10;

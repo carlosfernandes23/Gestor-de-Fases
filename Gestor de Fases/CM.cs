@@ -31,6 +31,7 @@ namespace Gestor_de_Fases
             cbAncoragem.SelectedIndex = -1;
             cbConector.SelectedIndex = -1;
             CloseAll();
+            Procurarartigo();
         }
         private void CloseAll()
         {
@@ -1110,12 +1111,7 @@ namespace Gestor_de_Fases
             {
                 F.labelestado.Text = "Defina uma Norma";
                 return;
-            }
-            else if (tbCompAcss.Text.Trim() == "")
-            {
-                F.labelestado.Text = "Defina um Comprimento";
-                return;
-            }            
+            }                    
             else
             {
                 linhaCONJ += 1;
@@ -1132,7 +1128,7 @@ namespace Gestor_de_Fases
                 string ordemFabrico = "2." + noObra + "." + fase1000 + "." + F.DataGridViewOrder.Rows.Count;
                 string conjuntoPeca = "2." + noObra + "." + fase1000 + "." + fase1000 + "CJ" + linhaCONJ;
                 string Observacoes = string.Empty;
-                string Artigo = string.Empty;
+                string Artigo = ARTIGO;
                 if (obsAcor.Checked)
                 { Observacoes = tbObs.Text.Trim(); }
                 else { Observacoes = ""; }
@@ -1140,9 +1136,23 @@ namespace Gestor_de_Fases
                 F.DataGridViewOrder.Rows.Add(fase1000, fase1000, "Chapa", ordemFabrico, conjuntoPeca, 0, "", "", Quantidade, Perfil, Perfil, ReqEspecial, Certificado, Comprimento, "", "", "", "", dataFormatada, Artigo, "08", "", "Opção 8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", Marca, Norma, "");
             }
         }
+        string ARTIGO = null;
         private void Procurarartigo()
         {
+            List<string> lista1 = new List<string>();
+            List<string> lista2 = new List<string>();
+            BD Connet = new BD();
+            Connet.ligarbd();
+            lista1 = Connet.Procurarbd("SELECT [Artigo] FROM [PRIOFELIZ].[dbo].[MT_ViewArtigoUnidades]WHERE ARTIGO LIKE 'MPC%' AND [Descricao]='" + "Acessorios" + "'");
+            Connet.desligarbd();
+            ARTIGO = lista1.First();
+            Connet.ligarbdprepararacao();
+            lista2 = Connet.Procurarbdprepararacao("SELECT PERFIL FROM [ArtigoTekla].[dbo].[Perfilagem3] WHERE ARTIGO ='" + ARTIGO + "' AND DEST='08'");
+            Connet.desligarbdprepararacao();
 
+            Connet.ligarbdprepararacao();
+            lista2 = Connet.Procurarbdprepararacao("SELECT marca FROM [ArtigoTekla].[dbo].[Perfilagem3] WHERE ARTIGO ='" + lista1.First() + "' AND DEST='08'");
+            Connet.desligarbdprepararacao();                       
         }
         private void cbAncoragem_Click(object sender, EventArgs e)
         {
