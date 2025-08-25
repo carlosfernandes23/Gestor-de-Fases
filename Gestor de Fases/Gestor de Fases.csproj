@@ -227,10 +227,28 @@
     <None Include="Resources\send2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-profile-96 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-butterfly-48.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\css.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\css2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

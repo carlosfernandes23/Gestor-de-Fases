@@ -282,7 +282,7 @@
             this.tbnomeobjecto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.tbnomeobjecto.BorderRadius = 10;
             this.tbnomeobjecto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbnomeobjecto.DefaultText = "Peça";
+            this.tbnomeobjecto.DefaultText = "Conjunto";
             this.tbnomeobjecto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbnomeobjecto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbnomeobjecto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
@@ -336,6 +336,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "labelnomeficheiro";
+            this.Text = " ";
             this.TransparencyKey = System.Drawing.Color.Chocolate;
             this.Load += new System.EventHandler(this.labelnomeficheiro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Print)).EndInit();

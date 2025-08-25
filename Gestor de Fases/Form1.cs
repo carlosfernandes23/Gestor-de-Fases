@@ -9,7 +9,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
@@ -26,6 +28,13 @@ namespace Gestor_de_Fases
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = "";
+            string user = Environment.UserName;
+            string formatado = user.Replace(".", " ");
+            string resultado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(formatado);
+            labeluser.Text = resultado;
+            DateTime horaAtual = DateTime.Now;
+            string saudacao = ObterSaudacao(horaAtual);
+            labelSaudacao.Text = saudacao;
         }
         private void Form1_Load(object sender, EventArgs e)
         {            
@@ -36,7 +45,15 @@ namespace Gestor_de_Fases
             PanelMenuPedido.Height = 50;
             DataGridViewOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGridViewOrder.MultiSelect = false; 
-            CarregarTabela();    
+            Userpic.Click += Abrirstettings;
+            CarregarTabela();           
+            LimparPasta();
+            foreach (DataGridViewColumn coluna in DataGridViewOrder.Columns)
+            {
+                coluna.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+            DataGridViewOrder.ColumnHeaderMouseClick += ColumnHeaderMouseClick;
+            DataGridViewOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         bool OBRAINSERIDA = false; private void buttonconectarobra_Click(object sender, EventArgs e)
         {
@@ -912,7 +929,68 @@ namespace Gestor_de_Fases
                 string conteudoGrau = File.ReadAllText(caminhoGrau).Trim();
                 labelGrauprep.Text = conteudoGrau;
             }
-        }      
+        }
+        private void LimparPasta()
+        {
+            string path = @"C:\r";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+                return;
+            }
+
+            if (Directory.Exists(path))
+            {
+                foreach (string file in Directory.GetFiles(path))
+                {
+                    try
+                    {
+                        File.Delete(file);
+                    }
+                    catch (Exception)
+                    {           }
+                }
+                foreach (string dir in Directory.GetDirectories(path))
+                {
+                    try
+                    {
+                        Directory.Delete(dir, true); 
+                    }
+                    catch (Exception)
+                    {      }
+                }
+            }
+        }
+        static string ObterSaudacao(DateTime hora)
+        {
+            if (hora.Hour >= 0 && hora.Hour < 13)
+            {
+                return "Bom Dia";
+            }
+            else if (hora.Hour >= 13 && hora.Hour < 18)
+            {
+                return "Boa Tarde";
+            }
+            else if (hora.Hour == 18 && hora.Minute <= 30)
+            {
+                return "Boa Tarde";
+            }
+            else
+            {
+                return "Boa Noite";
+            }
+        }
+        private void Abrirstettings(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo("ms-settings:yourinfo") { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir as configurações: " + ex.Message);
+            }
+        }               
         private void ButtonGerarPdf_Click(object sender, EventArgs e)
         {
             if (OBRAINSERIDA)
@@ -929,32 +1007,42 @@ namespace Gestor_de_Fases
         }
         private void ButtonFolderObra_Click(object sender, EventArgs e)
         {
-            string nobra = labelNObra.Text.Trim();
-            int ano = 0;
-
-            if (nobra.Length >= 4)
+            if (OBRAINSERIDA)
             {
-                string anoStr = nobra.StartsWith("PT", StringComparison.OrdinalIgnoreCase)
-                    ? nobra.Substring(2, 2)
-                    : nobra.Substring(0, 2);
+                string nobra = labelNObra.Text.Trim();
+                int ano = 0;
 
-                if (!int.TryParse("20" + anoStr, out ano))
+                if (nobra.Length >= 4)
                 {
-                    ano = 0;
+                    string anoStr = nobra.StartsWith("PT", StringComparison.OrdinalIgnoreCase)
+                        ? nobra.Substring(2, 2)
+                        : nobra.Substring(0, 2);
+
+                    if (!int.TryParse("20" + anoStr, out ano))
+                    {
+                        ano = 0;
+                    }
                 }
-            }
-            if (ano > 0)
-            {
-                string caminho = Path.Combine(
-                    @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras",
-                    ano.ToString(),
-                    nobra,
-                    "1.9 Gestão de fabrico"
-                );
 
-                if (Directory.Exists(caminho))
+                if (ano > 0)
                 {
-                    Process.Start(caminho);
+                    string caminho = Path.Combine(
+                        @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras",
+                        ano.ToString(),
+                        nobra,
+                        "1.9 Gestão de fabrico"
+                    );
+
+                    if (Directory.Exists(caminho))
+                    {
+                        Process.Start(caminho);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Número da Obra errado." + Environment.NewLine +
+                                        "P.f. Insira o número da obra corretamente e tente de novo.",
+                                        "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
@@ -965,15 +1053,21 @@ namespace Gestor_de_Fases
             }
             else
             {
-                MessageBox.Show("Número da Obra errado." + Environment.NewLine +
-                                "P.f. Insira o número da obra corretamente e tente de novo.",
-                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o número da obra antes de pesquisar.",
+                                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
         }
         private void buttonmoveCSS_Click(object sender, EventArgs e)
-        {            
-          EnviarCssOtherfolder();            
+        {
+            if (DataGridViewOrder.Rows.Count >= 2 )
+            {
+                EnviarCssOtherfolder();
+            }
+            else
+            {
+                MessageBox.Show("Atenção , a lista está sem Conteudo!",
+                                "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void ButtonFolderR_Click(object sender, EventArgs e)
         {
@@ -982,9 +1076,97 @@ namespace Gestor_de_Fases
         }      
         private void ButtonMovefiles_Click(object sender, EventArgs e)
         {
-            EnviaCssobrafolder();
-            MoverficheirospastaR();
-        }                 
+            if (OBRAINSERIDA)
+            {
+                EnviaCssobrafolder();
+                MoverficheirospastaR();
 
+                System.Threading.Tasks.Task.Delay(2000).Wait();
+                AppAbrirPrimavera primaveraHandler = new AppAbrirPrimavera();
+                primaveraHandler.AbrirPrimaveira();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira o número da obra antes de pesquisar.",
+                                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewOrder.Columns[e.ColumnIndex].SortMode = DataGridViewColumnSortMode.NotSortable;
+        }
+        public void buttonAbrirPrimavera_Click(object sender, EventArgs e)
+        {
+            AppAbrirPrimavera primaveraHandler = new AppAbrirPrimavera();
+            primaveraHandler.AbrirPrimaveira();
+        }
+        public class AppAbrirPrimavera
+        {
+            [DllImport("user32.dll")]
+            public static extern bool SetForegroundWindow(IntPtr hWnd);
+
+            [DllImport("user32.dll")]
+            public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+            const int SW_RESTORE = 9;
+
+            public void AbrirPrimaveira()
+            {
+                try
+                {
+                    string nomeProcesso = "Erp100EV";
+                    string appPath = @"C:\Program Files (x86)\PRIMAVERA_EVO\SG100\Apl\Erp100EV.exe";
+
+                    Process[] processos = Process.GetProcessesByName(nomeProcesso);
+
+                    if (processos.Length > 0)
+                    {
+                        Process processoExistente = processos[0];
+
+                        IntPtr hWnd = processoExistente.MainWindowHandle;
+
+                        if (hWnd != IntPtr.Zero)
+                        {
+                            ShowWindow(hWnd, SW_RESTORE);
+                            SetForegroundWindow(hWnd);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Primavera já está aberto, mas não foi possível aceder à janela principal.");
+                        }
+                    }
+                    else
+                    {
+                        if (System.IO.File.Exists(appPath))
+                        {
+                            Process processoNovo = Process.Start(appPath);
+
+                            Thread.Sleep(1000);
+
+                            IntPtr hWnd = processoNovo.MainWindowHandle;
+
+                            if (hWnd != IntPtr.Zero)
+                            {
+                                ShowWindow(hWnd, SW_RESTORE);
+                                SetForegroundWindow(hWnd);
+                            }
+                            else
+                            {
+                                //MessageBox.Show("Primavera iniciado, mas não foi possível aceder à janela principal.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("O Primavera não foi encontrado no PC.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao tentar abrir o Primavera: " + ex.Message);
+                }
+            }
+        }
+               
     }
 }

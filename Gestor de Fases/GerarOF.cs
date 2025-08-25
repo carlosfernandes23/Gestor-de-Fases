@@ -253,7 +253,7 @@ namespace Gestor_de_Fases
                 image.ScaleToFit(1500f, 650f);
                 image.SetAbsolutePosition(100, 120);
 
-                //pdfContentByte.AddImage(image);
+                pdfContentByte.AddImage(image);
                 stamper.Close();
             }
         }
@@ -351,7 +351,7 @@ namespace Gestor_de_Fases
                 pdfContentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, Designacao.Replace("Designação -", "").ToUpper().Substring(0, b), 905, 50, 0);
 
                 pdfContentByte.SetFontAndSize(fontNormal, 10);
-                pdfContentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, Objeto, 1305, 90, 0);
+                pdfContentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, Objeto, 905, 90, 0);
 
                 pdfContentByte.SetFontAndSize(fontBold, 8);
                 pdfContentByte.ShowTextAligned(PdfContentByte.ALIGN_CENTER, NomeDesenho, 780, 95, 0);
@@ -429,6 +429,7 @@ namespace Gestor_de_Fases
                     }
                     MessageBox.Show("Ficheiro " + labelNomeFile.Text + " criado com sucesso.");
                 }
+                Print.Image = null;
             }
             else
             {
@@ -460,10 +461,7 @@ namespace Gestor_de_Fases
             Print.Image = Imagem;
         }
         private void ButtonClean_Click(object sender, EventArgs e)
-        {
-            Print.Image = null;
-
-        }
+        { Print.Image = null; }
         private void A4_CheckedChanged(object sender, EventArgs e)
         {
             if (cbA4.Checked)

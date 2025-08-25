@@ -64,11 +64,16 @@
             this.DataGridViewOrder = new System.Windows.Forms.DataGridView();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelTodos = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.PanelTools = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.labelestado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelTool = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.Minimizar = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Fechar = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.buttonAbrirPrimavera = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.buttonmoveCSS = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labelmovefiles = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonMovefiles = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -78,6 +83,8 @@
             this.labelfolderobra = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelCriarpdf = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ButtonGerarPdf = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.Minimizar = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Fechar = new Guna.UI2.WinForms.Guna2ControlBox();
             this.MoverForm = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MoverPanelmenu = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MoverPanelInfo = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -85,17 +92,22 @@
             this.MoverTabela = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.Borda = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Moverdatagriend = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PanelUser = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.labelSaudacao = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labeluser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Userpic = new System.Windows.Forms.PictureBox();
+            this.MoverPainelUser = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.MoverPainelFerrmaentas = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.MoverPainelTodos = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.Panelmenu.SuspendLayout();
             this.PanelMenuPedido.SuspendLayout();
             this.PanelInformacoes.SuspendLayout();
             this.PanelOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewOrder)).BeginInit();
-            this.guna2CustomGradientPanel2.SuspendLayout();
+            this.PanelTools.SuspendLayout();
             this.PanelTool.SuspendLayout();
+            this.PanelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Userpic)).BeginInit();
             this.SuspendLayout();
             // 
             // Panelmenu
@@ -107,7 +119,7 @@
             this.Panelmenu.BorderThickness = 1;
             this.Panelmenu.Controls.Add(this.PanelMenuPedido);
             this.Panelmenu.Controls.Add(this.guna2HtmlLabel2);
-            this.Panelmenu.Location = new System.Drawing.Point(12, 12);
+            this.Panelmenu.Location = new System.Drawing.Point(8, 8);
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(210, 100);
             this.Panelmenu.TabIndex = 1;
@@ -402,7 +414,7 @@
             this.PanelInformacoes.Controls.Add(this.labelDesignacao);
             this.PanelInformacoes.Controls.Add(this.labelCliente);
             this.PanelInformacoes.Controls.Add(this.labelNObra);
-            this.PanelInformacoes.Location = new System.Drawing.Point(227, 12);
+            this.PanelInformacoes.Location = new System.Drawing.Point(223, 8);
             this.PanelInformacoes.Name = "PanelInformacoes";
             this.PanelInformacoes.Size = new System.Drawing.Size(1140, 100);
             this.PanelInformacoes.TabIndex = 6;
@@ -649,13 +661,14 @@
             this.PanelOrder.BorderThickness = 1;
             this.PanelOrder.Controls.Add(this.DataGridViewOrder);
             this.PanelOrder.Controls.Add(this.guna2HtmlLabel1);
-            this.PanelOrder.Location = new System.Drawing.Point(12, 484);
+            this.PanelOrder.Location = new System.Drawing.Point(8, 480);
             this.PanelOrder.Name = "PanelOrder";
             this.PanelOrder.Size = new System.Drawing.Size(1576, 415);
             this.PanelOrder.TabIndex = 7;
             // 
             // DataGridViewOrder
             // 
+            this.DataGridViewOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
             this.DataGridViewOrder.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DataGridViewOrder.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -666,7 +679,8 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridViewOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewOrder.ColumnHeadersHeight = 50;
+            this.DataGridViewOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
@@ -678,7 +692,7 @@
             this.DataGridViewOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.DataGridViewOrder.Location = new System.Drawing.Point(10, 30);
             this.DataGridViewOrder.Name = "DataGridViewOrder";
-            this.DataGridViewOrder.Size = new System.Drawing.Size(1548, 369);
+            this.DataGridViewOrder.Size = new System.Drawing.Size(1560, 369);
             this.DataGridViewOrder.TabIndex = 0;
             // 
             // guna2HtmlLabel1
@@ -704,20 +718,20 @@
             this.PanelTodos.Size = new System.Drawing.Size(1343, 325);
             this.PanelTodos.TabIndex = 8;
             // 
-            // guna2CustomGradientPanel2
+            // PanelTools
             // 
-            this.guna2CustomGradientPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CustomGradientPanel2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2CustomGradientPanel2.BorderRadius = 15;
-            this.guna2CustomGradientPanel2.BorderThickness = 1;
-            this.guna2CustomGradientPanel2.Controls.Add(this.labelestado);
-            this.guna2CustomGradientPanel2.Controls.Add(this.labelDestino);
-            this.guna2CustomGradientPanel2.Controls.Add(this.PanelTodos);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(12, 118);
-            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1355, 360);
-            this.guna2CustomGradientPanel2.TabIndex = 9;
+            this.PanelTools.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelTools.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PanelTools.BorderColor = System.Drawing.Color.Silver;
+            this.PanelTools.BorderRadius = 15;
+            this.PanelTools.BorderThickness = 1;
+            this.PanelTools.Controls.Add(this.labelestado);
+            this.PanelTools.Controls.Add(this.labelDestino);
+            this.PanelTools.Controls.Add(this.PanelTodos);
+            this.PanelTools.Location = new System.Drawing.Point(8, 114);
+            this.PanelTools.Name = "PanelTools";
+            this.PanelTools.Size = new System.Drawing.Size(1355, 360);
+            this.PanelTools.TabIndex = 9;
             // 
             // labelestado
             // 
@@ -738,12 +752,13 @@
             this.PanelTool.BorderColor = System.Drawing.Color.Silver;
             this.PanelTool.BorderRadius = 15;
             this.PanelTool.BorderThickness = 1;
+            this.PanelTool.Controls.Add(this.buttonAbrirPrimavera);
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel12);
+            this.PanelTool.Controls.Add(this.guna2HtmlLabel8);
             this.PanelTool.Controls.Add(this.guna2HtmlLabel7);
             this.PanelTool.Controls.Add(this.guna2HtmlLabel6);
             this.PanelTool.Controls.Add(this.guna2HtmlLabel5);
             this.PanelTool.Controls.Add(this.guna2HtmlLabel3);
-            this.PanelTool.Controls.Add(this.Minimizar);
-            this.PanelTool.Controls.Add(this.Fechar);
             this.PanelTool.Controls.Add(this.buttonmoveCSS);
             this.PanelTool.Controls.Add(this.labelmovefiles);
             this.PanelTool.Controls.Add(this.ButtonMovefiles);
@@ -753,10 +768,229 @@
             this.PanelTool.Controls.Add(this.labelfolderobra);
             this.PanelTool.Controls.Add(this.labelCriarpdf);
             this.PanelTool.Controls.Add(this.ButtonGerarPdf);
-            this.PanelTool.Location = new System.Drawing.Point(1372, 12);
+            this.PanelTool.Location = new System.Drawing.Point(1368, 84);
             this.PanelTool.Name = "PanelTool";
-            this.PanelTool.Size = new System.Drawing.Size(216, 466);
+            this.PanelTool.Size = new System.Drawing.Size(216, 390);
             this.PanelTool.TabIndex = 10;
+            // 
+            // buttonAbrirPrimavera
+            // 
+            this.buttonAbrirPrimavera.BackColor = System.Drawing.Color.White;
+            this.buttonAbrirPrimavera.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.buttonAbrirPrimavera.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.primavera_icon;
+            this.buttonAbrirPrimavera.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonAbrirPrimavera.Image = global::Gestor_de_Fases.Properties.Resources.primavera_icon;
+            this.buttonAbrirPrimavera.ImageOffset = new System.Drawing.Point(0, 0);
+            this.buttonAbrirPrimavera.ImageRotate = 0F;
+            this.buttonAbrirPrimavera.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonAbrirPrimavera.Location = new System.Drawing.Point(135, 335);
+            this.buttonAbrirPrimavera.Name = "buttonAbrirPrimavera";
+            this.buttonAbrirPrimavera.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.primavera_icon_1;
+            this.buttonAbrirPrimavera.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonAbrirPrimavera.Size = new System.Drawing.Size(55, 45);
+            this.buttonAbrirPrimavera.TabIndex = 84;
+            this.buttonAbrirPrimavera.Click += new System.EventHandler(this.buttonAbrirPrimavera_Click);
+            // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(15, 355);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(112, 20);
+            this.guna2HtmlLabel12.TabIndex = 83;
+            this.guna2HtmlLabel12.Text = "Primavera/Cegid";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(50, 330);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(33, 20);
+            this.guna2HtmlLabel8.TabIndex = 82;
+            this.guna2HtmlLabel8.Text = "Abrir";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(35, 285);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(83, 20);
+            this.guna2HtmlLabel7.TabIndex = 81;
+            this.guna2HtmlLabel7.Text = "Gravar Lista";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(62, 215);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(33, 20);
+            this.guna2HtmlLabel6.TabIndex = 80;
+            this.guna2HtmlLabel6.Text = "Abrir";
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(20, 170);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(100, 20);
+            this.guna2HtmlLabel5.TabIndex = 79;
+            this.guna2HtmlLabel5.Text = "para as pastas";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(55, 70);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(33, 20);
+            this.guna2HtmlLabel3.TabIndex = 78;
+            this.guna2HtmlLabel3.Text = "Abrir";
+            // 
+            // buttonmoveCSS
+            // 
+            this.buttonmoveCSS.BackColor = System.Drawing.Color.White;
+            this.buttonmoveCSS.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.buttonmoveCSS.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.csv;
+            this.buttonmoveCSS.HoverState.ImageSize = new System.Drawing.Size(50, 45);
+            this.buttonmoveCSS.Image = global::Gestor_de_Fases.Properties.Resources.csv;
+            this.buttonmoveCSS.ImageOffset = new System.Drawing.Point(0, 0);
+            this.buttonmoveCSS.ImageRotate = 0F;
+            this.buttonmoveCSS.ImageSize = new System.Drawing.Size(50, 45);
+            this.buttonmoveCSS.Location = new System.Drawing.Point(137, 275);
+            this.buttonmoveCSS.Name = "buttonmoveCSS";
+            this.buttonmoveCSS.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.csv1;
+            this.buttonmoveCSS.PressedState.ImageSize = new System.Drawing.Size(50, 45);
+            this.buttonmoveCSS.Size = new System.Drawing.Size(52, 52);
+            this.buttonmoveCSS.TabIndex = 77;
+            this.buttonmoveCSS.Click += new System.EventHandler(this.buttonmoveCSS_Click);
+            // 
+            // labelmovefiles
+            // 
+            this.labelmovefiles.BackColor = System.Drawing.Color.White;
+            this.labelmovefiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelmovefiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelmovefiles.Location = new System.Drawing.Point(15, 145);
+            this.labelmovefiles.Name = "labelmovefiles";
+            this.labelmovefiles.Size = new System.Drawing.Size(110, 20);
+            this.labelmovefiles.TabIndex = 75;
+            this.labelmovefiles.Text = "Mover Ficheiros";
+            // 
+            // ButtonMovefiles
+            // 
+            this.ButtonMovefiles.BackColor = System.Drawing.Color.White;
+            this.ButtonMovefiles.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonMovefiles.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.send2;
+            this.ButtonMovefiles.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonMovefiles.Image = global::Gestor_de_Fases.Properties.Resources.send2;
+            this.ButtonMovefiles.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonMovefiles.ImageRotate = 0F;
+            this.ButtonMovefiles.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonMovefiles.Location = new System.Drawing.Point(135, 145);
+            this.ButtonMovefiles.Name = "ButtonMovefiles";
+            this.ButtonMovefiles.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.send1;
+            this.ButtonMovefiles.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonMovefiles.Size = new System.Drawing.Size(55, 45);
+            this.ButtonMovefiles.TabIndex = 74;
+            this.ButtonMovefiles.Click += new System.EventHandler(this.ButtonMovefiles_Click);
+            // 
+            // ButtonFolderR
+            // 
+            this.ButtonFolderR.BackColor = System.Drawing.Color.White;
+            this.ButtonFolderR.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonFolderR.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
+            this.ButtonFolderR.HoverState.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderR.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
+            this.ButtonFolderR.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonFolderR.ImageRotate = 0F;
+            this.ButtonFolderR.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderR.Location = new System.Drawing.Point(135, 210);
+            this.ButtonFolderR.Name = "ButtonFolderR";
+            this.ButtonFolderR.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
+            this.ButtonFolderR.PressedState.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderR.Size = new System.Drawing.Size(55, 45);
+            this.ButtonFolderR.TabIndex = 73;
+            this.ButtonFolderR.Click += new System.EventHandler(this.ButtonFolderR_Click);
+            // 
+            // ButtonFolderObra
+            // 
+            this.ButtonFolderObra.BackColor = System.Drawing.Color.White;
+            this.ButtonFolderObra.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonFolderObra.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
+            this.ButtonFolderObra.HoverState.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderObra.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
+            this.ButtonFolderObra.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonFolderObra.ImageRotate = 0F;
+            this.ButtonFolderObra.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderObra.Location = new System.Drawing.Point(135, 75);
+            this.ButtonFolderObra.Name = "ButtonFolderObra";
+            this.ButtonFolderObra.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
+            this.ButtonFolderObra.PressedState.ImageSize = new System.Drawing.Size(45, 45);
+            this.ButtonFolderObra.Size = new System.Drawing.Size(55, 45);
+            this.ButtonFolderObra.TabIndex = 72;
+            this.ButtonFolderObra.Click += new System.EventHandler(this.ButtonFolderObra_Click);
+            // 
+            // labelmovefolderR
+            // 
+            this.labelmovefolderR.BackColor = System.Drawing.Color.White;
+            this.labelmovefolderR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelmovefolderR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelmovefolderR.Location = new System.Drawing.Point(50, 240);
+            this.labelmovefolderR.Name = "labelmovefolderR";
+            this.labelmovefolderR.Size = new System.Drawing.Size(58, 20);
+            this.labelmovefolderR.TabIndex = 71;
+            this.labelmovefolderR.Text = "Pasta :\\r";
+            // 
+            // labelfolderobra
+            // 
+            this.labelfolderobra.BackColor = System.Drawing.Color.White;
+            this.labelfolderobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelfolderobra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelfolderobra.Location = new System.Drawing.Point(25, 95);
+            this.labelfolderobra.Name = "labelfolderobra";
+            this.labelfolderobra.Size = new System.Drawing.Size(98, 20);
+            this.labelfolderobra.TabIndex = 70;
+            this.labelfolderobra.Text = "Pasta da Obra";
+            // 
+            // labelCriarpdf
+            // 
+            this.labelCriarpdf.BackColor = System.Drawing.Color.Transparent;
+            this.labelCriarpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.labelCriarpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelCriarpdf.Location = new System.Drawing.Point(35, 20);
+            this.labelCriarpdf.Name = "labelCriarpdf";
+            this.labelCriarpdf.Size = new System.Drawing.Size(84, 20);
+            this.labelCriarpdf.TabIndex = 69;
+            this.labelCriarpdf.Text = "Criar PDF \'s";
+            // 
+            // ButtonGerarPdf
+            // 
+            this.ButtonGerarPdf.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonGerarPdf.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonGerarPdf.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.pdf111;
+            this.ButtonGerarPdf.HoverState.ImageSize = new System.Drawing.Size(50, 45);
+            this.ButtonGerarPdf.Image = global::Gestor_de_Fases.Properties.Resources.pdf111;
+            this.ButtonGerarPdf.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonGerarPdf.ImageRotate = 0F;
+            this.ButtonGerarPdf.ImageSize = new System.Drawing.Size(50, 45);
+            this.ButtonGerarPdf.Location = new System.Drawing.Point(137, 8);
+            this.ButtonGerarPdf.Name = "ButtonGerarPdf";
+            this.ButtonGerarPdf.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.pdf22;
+            this.ButtonGerarPdf.PressedState.ImageSize = new System.Drawing.Size(50, 45);
+            this.ButtonGerarPdf.Size = new System.Drawing.Size(52, 52);
+            this.ButtonGerarPdf.TabIndex = 68;
+            this.ButtonGerarPdf.UseTransparentBackground = true;
+            this.ButtonGerarPdf.Click += new System.EventHandler(this.ButtonGerarPdf_Click);
             // 
             // Minimizar
             // 
@@ -771,7 +1005,7 @@
             this.Minimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Minimizar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
             this.Minimizar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Minimizar.Location = new System.Drawing.Point(151, 4);
+            this.Minimizar.Location = new System.Drawing.Point(155, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.Minimizar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
@@ -791,148 +1025,13 @@
             this.Fechar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Fechar.HoverState.IconColor = System.Drawing.Color.WhiteSmoke;
             this.Fechar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.Fechar.Location = new System.Drawing.Point(181, 4);
+            this.Fechar.Location = new System.Drawing.Point(185, 3);
             this.Fechar.Name = "Fechar";
             this.Fechar.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.Fechar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.Fechar.ShadowDecoration.Depth = 70;
             this.Fechar.Size = new System.Drawing.Size(25, 20);
             this.Fechar.TabIndex = 11;
-            // 
-            // buttonmoveCSS
-            // 
-            this.buttonmoveCSS.BackColor = System.Drawing.Color.White;
-            this.buttonmoveCSS.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.buttonmoveCSS.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.css2;
-            this.buttonmoveCSS.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.buttonmoveCSS.Image = global::Gestor_de_Fases.Properties.Resources.css2;
-            this.buttonmoveCSS.ImageOffset = new System.Drawing.Point(0, 0);
-            this.buttonmoveCSS.ImageRotate = 0F;
-            this.buttonmoveCSS.ImageSize = new System.Drawing.Size(50, 50);
-            this.buttonmoveCSS.Location = new System.Drawing.Point(134, 336);
-            this.buttonmoveCSS.Name = "buttonmoveCSS";
-            this.buttonmoveCSS.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.css;
-            this.buttonmoveCSS.PressedState.ImageSize = new System.Drawing.Size(50, 50);
-            this.buttonmoveCSS.Size = new System.Drawing.Size(55, 45);
-            this.buttonmoveCSS.TabIndex = 77;
-            this.buttonmoveCSS.Click += new System.EventHandler(this.buttonmoveCSS_Click);
-            // 
-            // labelmovefiles
-            // 
-            this.labelmovefiles.BackColor = System.Drawing.Color.White;
-            this.labelmovefiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelmovefiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefiles.Location = new System.Drawing.Point(14, 191);
-            this.labelmovefiles.Name = "labelmovefiles";
-            this.labelmovefiles.Size = new System.Drawing.Size(110, 20);
-            this.labelmovefiles.TabIndex = 75;
-            this.labelmovefiles.Text = "Mover Ficheiros";
-            // 
-            // ButtonMovefiles
-            // 
-            this.ButtonMovefiles.BackColor = System.Drawing.Color.White;
-            this.ButtonMovefiles.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ButtonMovefiles.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.send2;
-            this.ButtonMovefiles.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.ButtonMovefiles.Image = global::Gestor_de_Fases.Properties.Resources.send2;
-            this.ButtonMovefiles.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ButtonMovefiles.ImageRotate = 0F;
-            this.ButtonMovefiles.ImageSize = new System.Drawing.Size(50, 50);
-            this.ButtonMovefiles.Location = new System.Drawing.Point(134, 192);
-            this.ButtonMovefiles.Name = "ButtonMovefiles";
-            this.ButtonMovefiles.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.send1;
-            this.ButtonMovefiles.PressedState.ImageSize = new System.Drawing.Size(50, 50);
-            this.ButtonMovefiles.Size = new System.Drawing.Size(55, 45);
-            this.ButtonMovefiles.TabIndex = 74;
-            this.ButtonMovefiles.Click += new System.EventHandler(this.ButtonMovefiles_Click);
-            // 
-            // ButtonFolderR
-            // 
-            this.ButtonFolderR.BackColor = System.Drawing.Color.White;
-            this.ButtonFolderR.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ButtonFolderR.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
-            this.ButtonFolderR.HoverState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderR.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
-            this.ButtonFolderR.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ButtonFolderR.ImageRotate = 0F;
-            this.ButtonFolderR.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderR.Location = new System.Drawing.Point(134, 266);
-            this.ButtonFolderR.Name = "ButtonFolderR";
-            this.ButtonFolderR.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
-            this.ButtonFolderR.PressedState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderR.Size = new System.Drawing.Size(55, 45);
-            this.ButtonFolderR.TabIndex = 73;
-            this.ButtonFolderR.Click += new System.EventHandler(this.ButtonFolderR_Click);
-            // 
-            // ButtonFolderObra
-            // 
-            this.ButtonFolderObra.BackColor = System.Drawing.Color.White;
-            this.ButtonFolderObra.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ButtonFolderObra.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
-            this.ButtonFolderObra.HoverState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderObra.Image = global::Gestor_de_Fases.Properties.Resources.folder_close;
-            this.ButtonFolderObra.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ButtonFolderObra.ImageRotate = 0F;
-            this.ButtonFolderObra.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderObra.Location = new System.Drawing.Point(134, 116);
-            this.ButtonFolderObra.Name = "ButtonFolderObra";
-            this.ButtonFolderObra.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.open_folder;
-            this.ButtonFolderObra.PressedState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonFolderObra.Size = new System.Drawing.Size(55, 45);
-            this.ButtonFolderObra.TabIndex = 72;
-            this.ButtonFolderObra.Click += new System.EventHandler(this.ButtonFolderObra_Click);
-            // 
-            // labelmovefolderR
-            // 
-            this.labelmovefolderR.BackColor = System.Drawing.Color.White;
-            this.labelmovefolderR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelmovefolderR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelmovefolderR.Location = new System.Drawing.Point(45, 291);
-            this.labelmovefolderR.Name = "labelmovefolderR";
-            this.labelmovefolderR.Size = new System.Drawing.Size(58, 20);
-            this.labelmovefolderR.TabIndex = 71;
-            this.labelmovefolderR.Text = "Pasta :\\r";
-            // 
-            // labelfolderobra
-            // 
-            this.labelfolderobra.BackColor = System.Drawing.Color.White;
-            this.labelfolderobra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelfolderobra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelfolderobra.Location = new System.Drawing.Point(19, 141);
-            this.labelfolderobra.Name = "labelfolderobra";
-            this.labelfolderobra.Size = new System.Drawing.Size(98, 20);
-            this.labelfolderobra.TabIndex = 70;
-            this.labelfolderobra.Text = "Pasta da Obra";
-            // 
-            // labelCriarpdf
-            // 
-            this.labelCriarpdf.BackColor = System.Drawing.Color.Transparent;
-            this.labelCriarpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelCriarpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.labelCriarpdf.Location = new System.Drawing.Point(34, 56);
-            this.labelCriarpdf.Name = "labelCriarpdf";
-            this.labelCriarpdf.Size = new System.Drawing.Size(84, 20);
-            this.labelCriarpdf.TabIndex = 69;
-            this.labelCriarpdf.Text = "Criar PDF \'s";
-            // 
-            // ButtonGerarPdf
-            // 
-            this.ButtonGerarPdf.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonGerarPdf.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ButtonGerarPdf.HoverState.Image = global::Gestor_de_Fases.Properties.Resources.pdf111;
-            this.ButtonGerarPdf.HoverState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonGerarPdf.Image = global::Gestor_de_Fases.Properties.Resources.pdf111;
-            this.ButtonGerarPdf.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ButtonGerarPdf.ImageRotate = 0F;
-            this.ButtonGerarPdf.ImageSize = new System.Drawing.Size(45, 40);
-            this.ButtonGerarPdf.Location = new System.Drawing.Point(134, 41);
-            this.ButtonGerarPdf.Name = "ButtonGerarPdf";
-            this.ButtonGerarPdf.PressedState.Image = global::Gestor_de_Fases.Properties.Resources.pdf22;
-            this.ButtonGerarPdf.PressedState.ImageSize = new System.Drawing.Size(45, 45);
-            this.ButtonGerarPdf.Size = new System.Drawing.Size(55, 45);
-            this.ButtonGerarPdf.TabIndex = 68;
-            this.ButtonGerarPdf.UseTransparentBackground = true;
-            this.ButtonGerarPdf.Click += new System.EventHandler(this.ButtonGerarPdf_Click);
             // 
             // MoverForm
             // 
@@ -983,61 +1082,88 @@
             this.Moverdatagriend.TargetControl = this.DataGridViewOrder;
             this.Moverdatagriend.UseTransparentDrag = true;
             // 
-            // guna2HtmlLabel3
+            // PanelUser
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 115);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(33, 20);
-            this.guna2HtmlLabel3.TabIndex = 78;
-            this.guna2HtmlLabel3.Text = "Abrir";
+            this.PanelUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelUser.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PanelUser.BorderColor = System.Drawing.Color.Silver;
+            this.PanelUser.BorderRadius = 15;
+            this.PanelUser.BorderThickness = 1;
+            this.PanelUser.Controls.Add(this.labelSaudacao);
+            this.PanelUser.Controls.Add(this.labeluser);
+            this.PanelUser.Controls.Add(this.Userpic);
+            this.PanelUser.Controls.Add(this.Minimizar);
+            this.PanelUser.Controls.Add(this.Fechar);
+            this.PanelUser.Location = new System.Drawing.Point(1368, 8);
+            this.PanelUser.Name = "PanelUser";
+            this.PanelUser.Size = new System.Drawing.Size(216, 72);
+            this.PanelUser.TabIndex = 2;
             // 
-            // guna2HtmlLabel5
+            // labelSaudacao
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(19, 216);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(100, 20);
-            this.guna2HtmlLabel5.TabIndex = 79;
-            this.guna2HtmlLabel5.Text = "para as pastas";
+            this.labelSaudacao.BackColor = System.Drawing.Color.Transparent;
+            this.labelSaudacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaudacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labelSaudacao.Location = new System.Drawing.Point(60, 15);
+            this.labelSaudacao.Name = "labelSaudacao";
+            this.labelSaudacao.Size = new System.Drawing.Size(3, 2);
+            this.labelSaudacao.TabIndex = 120;
+            this.labelSaudacao.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2HtmlLabel6
+            // labeluser
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(53, 265);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(33, 20);
-            this.guna2HtmlLabel6.TabIndex = 80;
-            this.guna2HtmlLabel6.Text = "Abrir";
+            this.labeluser.BackColor = System.Drawing.Color.Transparent;
+            this.labeluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labeluser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.labeluser.Location = new System.Drawing.Point(60, 40);
+            this.labeluser.Name = "labeluser";
+            this.labeluser.Size = new System.Drawing.Size(37, 22);
+            this.labeluser.TabIndex = 119;
+            this.labeluser.Text = "User";
+            this.labeluser.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2HtmlLabel7
+            // Userpic
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(29, 351);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(83, 20);
-            this.guna2HtmlLabel7.TabIndex = 81;
-            this.guna2HtmlLabel7.Text = "Gravar Lista";
+            this.Userpic.BackColor = System.Drawing.Color.Transparent;
+            this.Userpic.Image = global::Gestor_de_Fases.Properties.Resources.icon;
+            this.Userpic.InitialImage = global::Gestor_de_Fases.Properties.Resources.icon;
+            this.Userpic.Location = new System.Drawing.Point(2, 8);
+            this.Userpic.Name = "Userpic";
+            this.Userpic.Size = new System.Drawing.Size(55, 55);
+            this.Userpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Userpic.TabIndex = 13;
+            this.Userpic.TabStop = false;
+            // 
+            // MoverPainelUser
+            // 
+            this.MoverPainelUser.DockIndicatorTransparencyValue = 0.6D;
+            this.MoverPainelUser.TargetControl = this.PanelUser;
+            this.MoverPainelUser.UseTransparentDrag = true;
+            // 
+            // MoverPainelFerrmaentas
+            // 
+            this.MoverPainelFerrmaentas.DockIndicatorTransparencyValue = 0.6D;
+            this.MoverPainelFerrmaentas.TargetControl = this.PanelTool;
+            this.MoverPainelFerrmaentas.UseTransparentDrag = true;
+            // 
+            // MoverPainelTodos
+            // 
+            this.MoverPainelTodos.DockIndicatorTransparencyValue = 0.6D;
+            this.MoverPainelTodos.TargetControl = this.PanelTodos;
+            this.MoverPainelTodos.UseTransparentDrag = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1600, 910);
+            this.ClientSize = new System.Drawing.Size(1590, 910);
+            this.Controls.Add(this.PanelUser);
             this.Controls.Add(this.PanelTool);
             this.Controls.Add(this.Panelmenu);
             this.Controls.Add(this.PanelOrder);
             this.Controls.Add(this.PanelInformacoes);
-            this.Controls.Add(this.guna2CustomGradientPanel2);
+            this.Controls.Add(this.PanelTools);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -1051,10 +1177,13 @@
             this.PanelOrder.ResumeLayout(false);
             this.PanelOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewOrder)).EndInit();
-            this.guna2CustomGradientPanel2.ResumeLayout(false);
-            this.guna2CustomGradientPanel2.PerformLayout();
+            this.PanelTools.ResumeLayout(false);
+            this.PanelTools.PerformLayout();
             this.PanelTool.ResumeLayout(false);
             this.PanelTool.PerformLayout();
+            this.PanelUser.ResumeLayout(false);
+            this.PanelUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Userpic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1083,7 +1212,7 @@
         public Guna.UI2.WinForms.Guna2HtmlLabel labelCliente;
         public Guna.UI2.WinForms.Guna2HtmlLabel labelNObra;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelTodos;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelTools;
         private WiLBiT.WiLBiTButton buttonconectarobra;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxObra;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelConectado;
@@ -1117,6 +1246,16 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelUser;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labelSaudacao;
+        public Guna.UI2.WinForms.Guna2HtmlLabel labeluser;
+        private System.Windows.Forms.PictureBox Userpic;
+        private Guna.UI2.WinForms.Guna2DragControl MoverPainelUser;
+        private Guna.UI2.WinForms.Guna2DragControl MoverPainelFerrmaentas;
+        private Guna.UI2.WinForms.Guna2DragControl MoverPainelTodos;
+        public Guna.UI2.WinForms.Guna2ImageButton buttonAbrirPrimavera;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
 }
 

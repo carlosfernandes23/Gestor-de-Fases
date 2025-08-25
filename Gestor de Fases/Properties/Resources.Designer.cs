@@ -63,9 +63,9 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap css {
+        internal static System.Drawing.Bitmap csv {
             get {
-                object obj = ResourceManager.GetObject("css", resourceCulture);
+                object obj = ResourceManager.GetObject("csv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap css2 {
+        internal static System.Drawing.Bitmap csv1 {
             get {
-                object obj = ResourceManager.GetObject("css2", resourceCulture);
+                object obj = ResourceManager.GetObject("csv1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,16 @@ namespace Gestor_de_Fases.Properties {
         internal static System.Drawing.Bitmap folder_close {
             get {
                 object obj = ResourceManager.GetObject("folder_close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon {
+            get {
+                object obj = ResourceManager.GetObject("icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +146,26 @@ namespace Gestor_de_Fases.Properties {
         internal static System.Drawing.Bitmap pdf22 {
             get {
                 object obj = ResourceManager.GetObject("pdf22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap primavera_icon {
+            get {
+                object obj = ResourceManager.GetObject("primavera_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap primavera_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("primavera_icon_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

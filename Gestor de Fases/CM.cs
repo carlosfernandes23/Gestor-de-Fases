@@ -1066,7 +1066,7 @@ namespace Gestor_de_Fases
                 F.labelestado.Text = "Selecione uma Classe ";
                 return;
             }
-            else if (cbNormaAncor.Text.Trim() == "" || tbNorma.Text.Trim() == "")
+            else if (cbNormaAncor.Text.Trim() == "")
             {
                 F.labelestado.Text = "Selecione uma Norma ";
                 return;
