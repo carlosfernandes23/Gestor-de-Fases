@@ -20,7 +20,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Gestor_de_Fases
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -35,18 +35,27 @@ namespace Gestor_de_Fases
             DateTime horaAtual = DateTime.Now;
             string saudacao = ObterSaudacao(horaAtual);
             labelSaudacao.Text = saudacao;
+
+            ButtonGerarPdf.Click += ButtonGerarPdf_Click;
+            ButtonFolderObra.Click += ButtonFolderObra_Click;
+            ButtonFolderR.Click += ButtonFolderR_Click;
+            ButtonMovefiles.Click += ButtonMovefiles_Click;
+            buttonAbrirPrimavera.Click += buttonAbrirPrimavera_Click;
+            buttonmoveCSS.Click += buttonmoveCSS_Click;
         }
         private void Form1_Load(object sender, EventArgs e)
-        {            
-            this.Size = new Size(1600, 910); 
+        {
+            this.Size = new Size(1540, 910);
+            this.MaximumSize = new Size(1540, 910);
+            this.MinimumSize = new Size(1540, 910);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+
             Panelmenu.Height = 100;
             PanelMenuPedido.Height = 50;
             DataGridViewOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DataGridViewOrder.MultiSelect = false; 
+            DataGridViewOrder.MultiSelect = false;
             Userpic.Click += Abrirstettings;
-            CarregarTabela();           
+            CarregarTabela();
             LimparPasta();
             foreach (DataGridViewColumn coluna in DataGridViewOrder.Columns)
             {
@@ -54,7 +63,7 @@ namespace Gestor_de_Fases
             }
             DataGridViewOrder.ColumnHeaderMouseClick += ColumnHeaderMouseClick;
             DataGridViewOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-        }
+        }         
         bool OBRAINSERIDA = false; private void buttonconectarobra_Click(object sender, EventArgs e)
         {
             if (TextBoxObra.Text.Length < 8)
@@ -62,15 +71,15 @@ namespace Gestor_de_Fases
                 MessageBox.Show("O código da obra deve ter pelo menos 8 dígitos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TextBoxObra.Focus();
                 return;
-            } 
+            }
             else
             {
                 Buscarobra();
                 ClasseexeGrauprep();
-            }               
-        }               
+            }
+        }
         private void CarregarTabela()
-        {          
+        {
             string[] colunas = {
                 "Fase", "Lote", "Artigo", "Ordem de fabrico", "Conjunto/Peça", "Revisão",
                 "Referência cliente", "Id quantificação", "Qt.", "Perfil", "Classe",
@@ -120,7 +129,15 @@ namespace Gestor_de_Fases
                 var info = inicio.BuscarObra(obra);
                 labelobraview.Text = "Obra - ";
                 labelNObra.Text = obra;
-                labelDesignacao.Text = "Designação - " + info.Designacao;
+                string prefixo = "Designação - ";
+                string textoOriginal = info.Designacao ?? ""; 
+                int maxLen = 60 - prefixo.Length;
+                if (maxLen < 0) maxLen = 0; 
+                string textoLimitado = textoOriginal.Length > maxLen
+                    ? textoOriginal.Substring(0, maxLen)
+                    : textoOriginal;
+
+                labelDesignacao.Text = prefixo + textoLimitado;
                 labelCliente.Text = "Cliente - " + info.Cliente;
                 labelfase500.Text = info.Fase250;
                 labelfase750.Text = info.Fase750;
@@ -153,13 +170,13 @@ namespace Gestor_de_Fases
             if (OBRAINSERIDA)
             {
                 if (menuExpandido)
-                {                   
+                {
                     PanelMenuPedido.Height = 50;
                     Panelmenu.Height = 100;
 
                 }
                 else
-                {                    
+                {
                     PanelMenuPedido.Height = 200;
                     Panelmenu.Height = 250;
                 }
@@ -230,7 +247,7 @@ namespace Gestor_de_Fases
                 MessageBox.Show("Por favor, insira o número da obra antes de pesquisar.",
                                 "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }     
+        }
         private void ButtonCQ_Click(object sender, EventArgs e)
         {
             if (OBRAINSERIDA)
@@ -320,14 +337,14 @@ namespace Gestor_de_Fases
                 if (resultado == DialogResult.Yes)
                 {
                     DataGridViewOrder.Rows.Clear();
-                    return true; 
+                    return true;
                 }
                 else
                 {
-                    return false; 
+                    return false;
                 }
             }
-            return true; 
+            return true;
         }
         private void EnviaCssobrafolder()
         {
@@ -360,7 +377,7 @@ namespace Gestor_de_Fases
                     }
                 }
                 catch (Exception)
-                {         }
+                { }
             }
             List<string> nova = new List<string>();
             nova.AddRange(l.Distinct());
@@ -411,7 +428,7 @@ namespace Gestor_de_Fases
                         }
                     }
                     catch (Exception)
-                    {          }
+                    { }
                 }
                 numerodelinhas.Add(item + ";" + numero);
             }
@@ -614,7 +631,7 @@ namespace Gestor_de_Fases
                     MessageBox.Show("Dados exportados com sucesso", "exportação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-        }      
+        }
         private void MoverficheirospastaR()
         {
             string nome = null;
@@ -915,8 +932,8 @@ namespace Gestor_de_Fases
             );
             if (File.Exists(caminhoclasse))
             {
-               string conteudoClasse = File.ReadAllText(caminhoclasse).Trim();
-               labelClasseEx.Text = conteudoClasse;                              
+                string conteudoClasse = File.ReadAllText(caminhoclasse).Trim();
+                labelClasseEx.Text = conteudoClasse;
             }
             string caminhoGrau = Path.Combine(
                 @"\\Marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\1 Obras",
@@ -948,16 +965,16 @@ namespace Gestor_de_Fases
                         File.Delete(file);
                     }
                     catch (Exception)
-                    {           }
+                    { }
                 }
                 foreach (string dir in Directory.GetDirectories(path))
                 {
                     try
                     {
-                        Directory.Delete(dir, true); 
+                        Directory.Delete(dir, true);
                     }
                     catch (Exception)
-                    {      }
+                    { }
                 }
             }
         }
@@ -990,7 +1007,7 @@ namespace Gestor_de_Fases
             {
                 MessageBox.Show("Não foi possível abrir as configurações: " + ex.Message);
             }
-        }               
+        }
         private void ButtonGerarPdf_Click(object sender, EventArgs e)
         {
             if (OBRAINSERIDA)
@@ -1059,7 +1076,7 @@ namespace Gestor_de_Fases
         }
         private void buttonmoveCSS_Click(object sender, EventArgs e)
         {
-            if (DataGridViewOrder.Rows.Count >= 2 )
+            if (DataGridViewOrder.Rows.Count >= 2)
             {
                 EnviarCssOtherfolder();
             }
@@ -1073,7 +1090,7 @@ namespace Gestor_de_Fases
         {
             System.Diagnostics.Process.Start("C:\\r");
 
-        }      
+        }
         private void ButtonMovefiles_Click(object sender, EventArgs e)
         {
             if (OBRAINSERIDA)
@@ -1115,58 +1132,47 @@ namespace Gestor_de_Fases
                 try
                 {
                     string nomeProcesso = "Erp100EV";
-                    string appPath = @"C:\Program Files (x86)\PRIMAVERA_EVO\SG100\Apl\Erp100EV.exe";
+                    string appPath1 = @"C:\Program Files (x86)\PRIMAVERA_EVO\SG100\Apl\Erp100EV.exe"; 
+                    string appPath2 = @"C:\Program Files\PRIMAVERA\SG100\Apl\Erp100EV.exe";
+                    string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    string caminhoAtalho = Path.Combine(desktopPath, "PRIMAVERA Evolution - ERP.lnk");
+                    Process[] processos = Process.GetProcessesByName(nomeProcesso);                                        
+                    string caminhoParaAbrir = null;
 
-                    Process[] processos = Process.GetProcessesByName(nomeProcesso);
-
-                    if (processos.Length > 0)
+                    if (System.IO.File.Exists(appPath1))
+                        caminhoParaAbrir = appPath1;
+                    else if (System.IO.File.Exists(appPath2))
+                        caminhoParaAbrir = appPath2;
+                    else if (System.IO.File.Exists(caminhoAtalho))
+                        caminhoParaAbrir = caminhoAtalho;
+                    if (caminhoParaAbrir != null)
                     {
-                        Process processoExistente = processos[0];
+                        Process processoNovo = Process.Start(caminhoParaAbrir);
+                        Thread.Sleep(1000);
 
-                        IntPtr hWnd = processoExistente.MainWindowHandle;
+                        IntPtr hWnd = processoNovo.MainWindowHandle;
 
                         if (hWnd != IntPtr.Zero)
                         {
                             ShowWindow(hWnd, SW_RESTORE);
                             SetForegroundWindow(hWnd);
                         }
-                        else
-                        {
-                            MessageBox.Show("Primavera já está aberto, mas não foi possível aceder à janela principal.");
-                        }
                     }
                     else
                     {
-                        if (System.IO.File.Exists(appPath))
-                        {
-                            Process processoNovo = Process.Start(appPath);
-
-                            Thread.Sleep(1000);
-
-                            IntPtr hWnd = processoNovo.MainWindowHandle;
-
-                            if (hWnd != IntPtr.Zero)
-                            {
-                                ShowWindow(hWnd, SW_RESTORE);
-                                SetForegroundWindow(hWnd);
-                            }
-                            else
-                            {
-                                //MessageBox.Show("Primavera iniciado, mas não foi possível aceder à janela principal.");
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("O Primavera não foi encontrado no PC.");
-                        }
-                    }
+                        MessageBox.Show("O Primavera não foi encontrado no PC.");
+                    }                    
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao tentar abrir o Primavera: " + ex.Message);
                 }
+               }
             }
-        }
-               
+
+       
+
+
+
     }
 }

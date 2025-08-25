@@ -103,6 +103,16 @@ namespace Gestor_de_Fases.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_opened_folder_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_opened_folder_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap novopedido {
             get {
                 object obj = ResourceManager.GetObject("novopedido", resourceCulture);
