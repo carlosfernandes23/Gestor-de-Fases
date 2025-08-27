@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,20 +52,23 @@ namespace Gestor_de_Fases
                 Fase750 = CalcularProximaFase(caminho, 749),
                 Fase1000 = CalcularProximaFase(caminho, 999)
             };
-        }
+        }       
 
         private string CalcularProximaFase(string caminho, int inicio)
         {
             int f = inicio;
             string fase;
+            var nomesDePasta = Directory.GetDirectories(caminho)
+                                        .Select(Path.GetFileName)
+                                        .ToList();
             do
             {
                 f++;
                 fase = f.ToString("000");
-            } while (System.IO.Directory.Exists(caminho + fase));
-
+            } while (nomesDePasta.Any(nome => nome.StartsWith(fase, StringComparison.OrdinalIgnoreCase)));
             return fase;
         }
+
     }
 
     public class ObraInfo

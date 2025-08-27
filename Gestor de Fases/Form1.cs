@@ -353,7 +353,8 @@ namespace Gestor_de_Fases
             string Nobra = labelNObra.Text.ToUpper().Trim();
             string Designacao = labelDesignacao.Text.Trim();
             string Cliente = labelCliente.Text.Trim();
-            string classeex = labelClasseEx.Text.Trim();
+            string classeex = labelClasseEx != null ? labelClasseEx.Text : "";
+            string classeexSafe = string.IsNullOrEmpty(classeex) ? "" : classeex.Trim();
 
             string ano = null;
             if (labelNObra.Text.ToLower().Contains("pt"))
@@ -449,7 +450,7 @@ namespace Gestor_de_Fases
                 output[2] = Cliente.Replace("Cliente -", "Cliente:;");
                 output[3] = "Nº Obra:;" + Nobra;
                 output[4] = "Data:;" + DateTime.Now.ToShortDateString();
-                output[5] = "Classe de Execução:;" + classeex;
+                output[5] = "Classe de Execução:;" + classeexSafe;
                 output[6] = "Observações;" /*+ textBox1.Text*/ + ";;;;;;;;;;;;;" + pesototal + ";" + areatotal;
                 output[7] += columnNames;
                 int a = 0;
@@ -515,7 +516,8 @@ namespace Gestor_de_Fases
             string Nobra = labelNObra.Text.ToUpper().Trim();
             string Designacao = labelDesignacao.Text.Trim();
             string Cliente = labelCliente.Text.Trim();
-            string classeex = labelClasseEx.Text.Trim();
+            string classeex = labelClasseEx != null ? labelClasseEx.Text : "";
+            string classeexSafe = string.IsNullOrEmpty(classeex) ? "" : classeex.Trim();
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             DialogResult result = fbd.ShowDialog();
 
@@ -571,7 +573,7 @@ namespace Gestor_de_Fases
                     output[3] = "Nº Obra:;" + Nobra;
                     output[4] = "Data:;" + DateTime.Now.ToShortDateString();
                     output[4] = "Data:;" + DateTime.Now.ToShortDateString();
-                    output[5] = "Classe de Execução:;" + classeex;
+                    output[5] = "Classe de Execução:;" + classeexSafe;
                     output[6] = "Observações;" + /*textBox1.Text +*/ ";;;;;;;;;;;;;" + pesototal + ";" + areatotal;
                     output[7] += columnNames;
                     int a = 0;
@@ -1092,21 +1094,14 @@ namespace Gestor_de_Fases
 
         }
         private void ButtonMovefiles_Click(object sender, EventArgs e)
-        {
-            if (OBRAINSERIDA)
-            {
+        {            
                 EnviaCssobrafolder();
                 MoverficheirospastaR();
 
                 System.Threading.Tasks.Task.Delay(2000).Wait();
                 AppAbrirPrimavera primaveraHandler = new AppAbrirPrimavera();
                 primaveraHandler.AbrirPrimaveira();
-            }
-            else
-            {
-                MessageBox.Show("Por favor, insira o número da obra antes de pesquisar.",
-                                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            
         }
         private void ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
