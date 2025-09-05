@@ -45,9 +45,9 @@ namespace Gestor_de_Fases
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(1540, 910);
-            this.MaximumSize = new Size(1540, 910);
-            this.MinimumSize = new Size(1540, 910);
+            this.Size = new Size(1540, 740);
+            this.MaximumSize = new Size(1540, 740);
+            this.MinimumSize = new Size(1540, 740);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
             Panelmenu.Height = 100;

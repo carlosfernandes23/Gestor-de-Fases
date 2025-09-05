@@ -102,6 +102,8 @@
             // 
             // Panelmenu
             // 
+            this.Panelmenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panelmenu.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Panelmenu.BorderColor = System.Drawing.Color.Silver;
             this.Panelmenu.BorderRadius = 15;
@@ -381,8 +383,8 @@
             // 
             // PanelInformacoes
             // 
-            this.PanelInformacoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PanelInformacoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelInformacoes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PanelInformacoes.BorderColor = System.Drawing.Color.Silver;
             this.PanelInformacoes.BorderRadius = 15;
@@ -644,7 +646,8 @@
             // 
             // PanelOrder
             // 
-            this.PanelOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PanelOrder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelOrder.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PanelOrder.BorderColor = System.Drawing.Color.Silver;
             this.PanelOrder.BorderRadius = 15;
@@ -653,7 +656,7 @@
             this.PanelOrder.Controls.Add(this.guna2HtmlLabel1);
             this.PanelOrder.Location = new System.Drawing.Point(8, 480);
             this.PanelOrder.Name = "PanelOrder";
-            this.PanelOrder.Size = new System.Drawing.Size(1520, 415);
+            this.PanelOrder.Size = new System.Drawing.Size(1520, 251);
             this.PanelOrder.TabIndex = 7;
             // 
             // DataGridViewOrder
@@ -682,7 +685,7 @@
             this.DataGridViewOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
             this.DataGridViewOrder.Location = new System.Drawing.Point(10, 30);
             this.DataGridViewOrder.Name = "DataGridViewOrder";
-            this.DataGridViewOrder.Size = new System.Drawing.Size(1496, 369);
+            this.DataGridViewOrder.Size = new System.Drawing.Size(1496, 205);
             this.DataGridViewOrder.TabIndex = 0;
             // 
             // guna2HtmlLabel1
@@ -710,6 +713,8 @@
             // 
             // PanelTools
             // 
+            this.PanelTools.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTools.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PanelTools.BorderColor = System.Drawing.Color.Silver;
             this.PanelTools.BorderRadius = 15;
@@ -736,7 +741,8 @@
             // 
             // PanelTool
             // 
-            this.PanelTool.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelTool.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTool.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PanelTool.BorderColor = System.Drawing.Color.Silver;
             this.PanelTool.BorderRadius = 15;
@@ -1148,7 +1154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1540, 910);
+            this.ClientSize = new System.Drawing.Size(1540, 740);
             this.Controls.Add(this.PanelTool);
             this.Controls.Add(this.Panelmenu);
             this.Controls.Add(this.PanelOrder);
