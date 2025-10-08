@@ -24,7 +24,8 @@ namespace Gestor_de_Fases
             F = formInicio;         
         }
         private void CM_Load(object sender, EventArgs e)
-        {                       
+        {
+            Datematerialemobra.Value = DateTime.Now;
             CarregarNormasConjunto();
             CarregarNormasConector();
             cbConjunto.SelectedIndex = -1;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DAP));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Datematerialemobra = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,6 +62,14 @@
             this.labelKmporM = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tbpeso = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbArea = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Buttoneditfamilia = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TextboxPerfil = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ButtonReqEsp = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TextBoxReqEsp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ButtonEspessura = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TextBoxEspessura = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ButtonMaterial = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TextBoxMaterial = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -113,9 +122,11 @@
             this.cbTipoPerfil.FocusedState.BorderColor = System.Drawing.Color.Silver;
             this.cbTipoPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbTipoPerfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.cbTipoPerfil.FormattingEnabled = true;
             this.cbTipoPerfil.ItemHeight = 30;
             this.cbTipoPerfil.Location = new System.Drawing.Point(25, 148);
             this.cbTipoPerfil.Name = "cbTipoPerfil";
+            this.cbTipoPerfil.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.cbTipoPerfil.Size = new System.Drawing.Size(320, 36);
             this.cbTipoPerfil.TabIndex = 16;
             this.cbTipoPerfil.SelectedIndexChanged += new System.EventHandler(this.cbTipoPerfil_SelectedIndexChanged);
@@ -145,6 +156,7 @@
             this.cbPerfil.ItemHeight = 30;
             this.cbPerfil.Location = new System.Drawing.Point(351, 148);
             this.cbPerfil.Name = "cbPerfil";
+            this.cbPerfil.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.cbPerfil.Size = new System.Drawing.Size(213, 36);
             this.cbPerfil.TabIndex = 17;
             this.cbPerfil.SelectedIndexChanged += new System.EventHandler(this.cbPerfil_SelectedIndexChanged);
@@ -605,12 +617,194 @@
             this.tbArea.TabIndex = 134;
             this.tbArea.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // Buttoneditfamilia
+            // 
+            this.Buttoneditfamilia.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Buttoneditfamilia.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.Buttoneditfamilia.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.Buttoneditfamilia.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Buttoneditfamilia.ImageRotate = 0F;
+            this.Buttoneditfamilia.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Location = new System.Drawing.Point(542, 116);
+            this.Buttoneditfamilia.Name = "Buttoneditfamilia";
+            this.Buttoneditfamilia.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.Buttoneditfamilia.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Size = new System.Drawing.Size(22, 22);
+            this.Buttoneditfamilia.TabIndex = 136;
+            this.Buttoneditfamilia.Click += new System.EventHandler(this.Buttoneditfamilia_Click);
+            // 
+            // TextboxPerfil
+            // 
+            this.TextboxPerfil.BackColor = System.Drawing.Color.White;
+            this.TextboxPerfil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextboxPerfil.BorderRadius = 10;
+            this.TextboxPerfil.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextboxPerfil.DefaultText = "";
+            this.TextboxPerfil.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextboxPerfil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextboxPerfil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextboxPerfil.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextboxPerfil.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextboxPerfil.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextboxPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextboxPerfil.ForeColor = System.Drawing.Color.Black;
+            this.TextboxPerfil.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextboxPerfil.Location = new System.Drawing.Point(351, 148);
+            this.TextboxPerfil.Name = "TextboxPerfil";
+            this.TextboxPerfil.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextboxPerfil.PlaceholderText = "";
+            this.TextboxPerfil.SelectedText = "";
+            this.TextboxPerfil.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextboxPerfil.Size = new System.Drawing.Size(213, 36);
+            this.TextboxPerfil.TabIndex = 137;
+            this.TextboxPerfil.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextboxPerfil.WordWrap = false;
+            // 
+            // ButtonReqEsp
+            // 
+            this.ButtonReqEsp.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonReqEsp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.ButtonReqEsp.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonReqEsp.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.ButtonReqEsp.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonReqEsp.ImageRotate = 0F;
+            this.ButtonReqEsp.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonReqEsp.Location = new System.Drawing.Point(323, 204);
+            this.ButtonReqEsp.Name = "ButtonReqEsp";
+            this.ButtonReqEsp.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.ButtonReqEsp.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonReqEsp.Size = new System.Drawing.Size(22, 22);
+            this.ButtonReqEsp.TabIndex = 138;
+            this.ButtonReqEsp.Click += new System.EventHandler(this.ButtonReqEsp_Click);
+            // 
+            // TextBoxReqEsp
+            // 
+            this.TextBoxReqEsp.AcceptsReturn = true;
+            this.TextBoxReqEsp.BackColor = System.Drawing.Color.White;
+            this.TextBoxReqEsp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxReqEsp.BorderRadius = 10;
+            this.TextBoxReqEsp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxReqEsp.DefaultText = "";
+            this.TextBoxReqEsp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxReqEsp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxReqEsp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxReqEsp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxReqEsp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxReqEsp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxReqEsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextBoxReqEsp.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxReqEsp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxReqEsp.Location = new System.Drawing.Point(25, 235);
+            this.TextBoxReqEsp.Name = "TextBoxReqEsp";
+            this.TextBoxReqEsp.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxReqEsp.PlaceholderText = "";
+            this.TextBoxReqEsp.SelectedText = "";
+            this.TextBoxReqEsp.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxReqEsp.Size = new System.Drawing.Size(319, 35);
+            this.TextBoxReqEsp.TabIndex = 139;
+            this.TextBoxReqEsp.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxReqEsp.WordWrap = false;
+            // 
+            // ButtonEspessura
+            // 
+            this.ButtonEspessura.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonEspessura.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.ButtonEspessura.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonEspessura.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.ButtonEspessura.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonEspessura.ImageRotate = 0F;
+            this.ButtonEspessura.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonEspessura.Location = new System.Drawing.Point(700, 204);
+            this.ButtonEspessura.Name = "ButtonEspessura";
+            this.ButtonEspessura.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.ButtonEspessura.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonEspessura.Size = new System.Drawing.Size(22, 22);
+            this.ButtonEspessura.TabIndex = 140;
+            this.ButtonEspessura.Click += new System.EventHandler(this.ButtonEspessura_Click);
+            // 
+            // TextBoxEspessura
+            // 
+            this.TextBoxEspessura.BackColor = System.Drawing.Color.White;
+            this.TextBoxEspessura.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxEspessura.BorderRadius = 10;
+            this.TextBoxEspessura.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxEspessura.DefaultText = "";
+            this.TextBoxEspessura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxEspessura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxEspessura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxEspessura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxEspessura.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxEspessura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxEspessura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextBoxEspessura.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxEspessura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxEspessura.Location = new System.Drawing.Point(546, 237);
+            this.TextBoxEspessura.Name = "TextBoxEspessura";
+            this.TextBoxEspessura.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxEspessura.PlaceholderText = "";
+            this.TextBoxEspessura.SelectedText = "";
+            this.TextBoxEspessura.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxEspessura.Size = new System.Drawing.Size(165, 35);
+            this.TextBoxEspessura.TabIndex = 141;
+            this.TextBoxEspessura.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxEspessura.WordWrap = false;
+            // 
+            // ButtonMaterial
+            // 
+            this.ButtonMaterial.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ButtonMaterial.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.ButtonMaterial.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonMaterial.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.ButtonMaterial.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ButtonMaterial.ImageRotate = 0F;
+            this.ButtonMaterial.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonMaterial.Location = new System.Drawing.Point(932, 116);
+            this.ButtonMaterial.Name = "ButtonMaterial";
+            this.ButtonMaterial.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.ButtonMaterial.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.ButtonMaterial.Size = new System.Drawing.Size(22, 22);
+            this.ButtonMaterial.TabIndex = 142;
+            this.ButtonMaterial.Click += new System.EventHandler(this.ButtonMaterial_Click);
+            // 
+            // TextBoxMaterial
+            // 
+            this.TextBoxMaterial.AcceptsReturn = true;
+            this.TextBoxMaterial.BackColor = System.Drawing.Color.White;
+            this.TextBoxMaterial.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxMaterial.BorderRadius = 10;
+            this.TextBoxMaterial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxMaterial.DefaultText = "";
+            this.TextBoxMaterial.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxMaterial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxMaterial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxMaterial.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxMaterial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxMaterial.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextBoxMaterial.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaterial.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxMaterial.Location = new System.Drawing.Point(788, 148);
+            this.TextBoxMaterial.Name = "TextBoxMaterial";
+            this.TextBoxMaterial.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxMaterial.PlaceholderText = "";
+            this.TextBoxMaterial.SelectedText = "";
+            this.TextBoxMaterial.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxMaterial.Size = new System.Drawing.Size(166, 35);
+            this.TextBoxMaterial.TabIndex = 143;
+            this.TextBoxMaterial.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxMaterial.WordWrap = false;
+            // 
             // DAP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1380, 320);
+            this.Controls.Add(this.ButtonMaterial);
+            this.Controls.Add(this.ButtonEspessura);
+            this.Controls.Add(this.ButtonReqEsp);
+            this.Controls.Add(this.Buttoneditfamilia);
             this.Controls.Add(this.tbArea);
             this.Controls.Add(this.tbpeso);
             this.Controls.Add(this.labelKmporM);
@@ -644,6 +838,10 @@
             this.Controls.Add(this.Datematerialemobra);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbMaterial2);
+            this.Controls.Add(this.TextboxPerfil);
+            this.Controls.Add(this.TextBoxReqEsp);
+            this.Controls.Add(this.TextBoxEspessura);
+            this.Controls.Add(this.TextBoxMaterial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DAP";
             this.Text = "DAP";
@@ -687,5 +885,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelKmporM;
         private Guna.UI2.WinForms.Guna2TextBox tbpeso;
         private Guna.UI2.WinForms.Guna2TextBox tbArea;
+        private Guna.UI2.WinForms.Guna2ImageButton Buttoneditfamilia;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxPerfil;
+        private Guna.UI2.WinForms.Guna2ImageButton ButtonReqEsp;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxReqEsp;
+        private Guna.UI2.WinForms.Guna2ImageButton ButtonEspessura;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxEspessura;
+        private Guna.UI2.WinForms.Guna2ImageButton ButtonMaterial;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxMaterial;
     }
 }

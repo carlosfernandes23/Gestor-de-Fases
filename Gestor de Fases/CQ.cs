@@ -60,12 +60,18 @@ namespace Gestor_de_Fases
                 return;
             }
 
-            string familiaMaterial = cbFamiliaMaterial.Text.Trim();
+            string familiaMaterial = cbFamiliaMaterial.Visible
+                            ? cbFamiliaMaterial.Text.Trim()
+                            : TextBoxfamilia.Text.Trim();
+
             string certificado = cbcertificado.Text.Trim();
             string operacao = cbOperacao.Text.Trim();
             string fase750 = F.labelfase750.Text.Trim();
             string noObra = F.labelNObra.Text.Trim();
-            string Material = cbMaterial.Text.Trim();
+
+            string Material = cbMaterial.Visible
+                           ? cbMaterial.Text.Trim()
+                           : TextBoxmaterial.Text.Trim();
             string dataFormatada = Datematerialemobra.Value.ToString("dd/MM/yyyy");
             string Perfil = "CHAX" + Espessura;
             string ral = tbRal.Text.Trim();
@@ -223,6 +229,37 @@ namespace Gestor_de_Fases
             {
                 if (gunaTxt.Text.Trim() == "")
                     gunaTxt.Text = "0";
+            }
+        }
+
+        private void Buttoneditfamilia_Click(object sender, EventArgs e)
+        {
+            if (cbFamiliaMaterial.Visible)
+            {
+                cbFamiliaMaterial.Visible = false;
+                TextBoxfamilia.Visible = true;
+                cbFamiliaMaterial.SelectedIndex = -1;
+            }
+            else
+            {
+                cbFamiliaMaterial.Visible = true;
+                TextBoxfamilia.Visible = false;
+                cbFamiliaMaterial.SelectedIndex = 6;
+            }
+        }
+
+        private void Buttoneditmaterial_Click(object sender, EventArgs e)
+        {
+            if (cbMaterial.Visible)
+            {
+                cbMaterial.Visible = false;
+                TextBoxmaterial.Visible = true;
+                cbFamiliaMaterial.SelectedIndex = -1;
+            }
+            else
+            {
+                cbMaterial.Visible = true;
+                TextBoxmaterial.Visible = false;
             }
         }
     }

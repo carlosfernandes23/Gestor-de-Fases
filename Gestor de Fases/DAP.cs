@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
 using static System.Windows.Forms.MonthCalendar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace Gestor_de_Fases
 {
@@ -24,6 +27,7 @@ namespace Gestor_de_Fases
         }
         private void DAP_Load(object sender, EventArgs e)
         {
+            Datematerialemobra.Value = DateTime.Now;
             SearchArtigo();
             cbEsppExtInt.Validating += SetDefaultIfEmpty;
             tbpeso.Validated += SetDefaultIfEmpty;
@@ -32,6 +36,7 @@ namespace Gestor_de_Fases
             tbQtd.Validated += SetDefaultIfEmpty;
             cbcertificado.SelectedIndex = 1;
             tbComp.KeyPress += KeyPress;
+                        
         }
         private void SearchArtigo()
         {
@@ -228,28 +233,32 @@ namespace Gestor_de_Fases
         private void ButtonAddPerfilDap_Click(object sender, EventArgs e)
         {
             string Tipoperfil = cbTipoPerfil.Text.Trim();
-            string Perfil = cbPerfil.Text.Trim();
+            string Perfil = cbPerfil.Visible
+                ? cbPerfil.Text.Trim()
+                : TextboxPerfil.Text.Trim();
             string Tipomaterial = cbTipoMaterial.Text.Trim();
-            string Material = cbMaterial.Text.Trim();
+            string Material = cbMaterial.Visible
+               ? cbMaterial.Text.Trim()
+               : TextBoxMaterial.Text.Trim();
             string Material2 = cbMaterial2.Text.Trim();
             string Pesotb = tbpeso.Text.Trim();
             string Areatb = tbArea.Text.Trim();
             string Comprimento = tbComp.Text.Trim().Replace('.', ',');
             string Quantidade = tbQtd.Text.Trim().Replace('.', ',');
-            string ExpInteExt = cbEsppExtInt.Text.Trim();
+            string ExpInteExt = cbEsppExtInt.Visible
+                ? cbEsppExtInt.Text.Trim()
+                : TextBoxEspessura.Text.Trim();
             string RalExt = tbRalext.Text.Trim();
             string RalInt = tbRalint.Text.Trim();
-            string Reqespeciais = cbReqEs.Text.Trim();
+            string Reqespeciais = cbReqEs.Visible
+                ? cbReqEs.Text.Trim()
+                : TextBoxReqEsp.Text.Trim();
             string Certificado = cbcertificado.Text.Trim();
             string Observacoes = tbObs.Text.Trim();
             if (Perfil == "")
             {
                 F.labelestado.Text = "O perfil não pode estar em branco ";
-            }
-            else if (Tipomaterial == "" || double.Parse(Tipomaterial) == 0)
-            {
-                F.labelestado.Text = "A quantidade não pode ser 0 ou branco";
-            }
+            }            
             else
             {
                 List<string> procura = new List<string>();
@@ -380,7 +389,69 @@ namespace Gestor_de_Fases
                 }
             }
         }
-                      
 
+        private void Buttoneditfamilia_Click(object sender, EventArgs e)
+        {
+            if (cbPerfil.Visible)
+            {
+                cbPerfil.Visible = false;
+                TextboxPerfil.Visible = true;
+                cbPerfil.SelectedIndex = -1;
+            }
+            else
+            {
+                cbPerfil.Visible = true;
+                TextboxPerfil.Visible = false;
+                cbPerfil.SelectedIndex = 6;
+            }
+        }
+
+        private void ButtonReqEsp_Click(object sender, EventArgs e)
+        {
+            if (cbReqEs.Visible)
+            {
+                cbReqEs.Visible = false;
+                TextBoxReqEsp.Visible = true;
+                cbReqEs.SelectedIndex = -1;
+            }
+            else
+            {
+                cbReqEs.Visible = true;
+                TextBoxReqEsp.Visible = false;
+                cbReqEs.SelectedIndex = 6;
+            }
+        }
+
+        private void ButtonEspessura_Click(object sender, EventArgs e)
+        {
+            if (cbEsppExtInt.Visible)
+            {
+                cbEsppExtInt.Visible = false;
+                TextBoxEspessura.Visible = true;
+                cbEsppExtInt.SelectedIndex = -1;
+            }
+            else
+            {
+                cbEsppExtInt.Visible = true;
+                TextBoxEspessura.Visible = false;
+                cbEsppExtInt.SelectedIndex = 6;
+            }
+        }
+
+        private void ButtonMaterial_Click(object sender, EventArgs e)
+        {
+            if (cbMaterial.Visible)
+            {
+                cbMaterial.Visible = false;
+                TextBoxMaterial.Visible = true;
+                cbMaterial.SelectedIndex = -1;
+            }
+            else
+            {
+                cbMaterial.Visible = true;
+                TextBoxMaterial.Visible = false;
+                cbMaterial.SelectedIndex = 6;
+            }
+        }
     }
 }

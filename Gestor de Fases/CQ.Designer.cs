@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CQ));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Datematerialemobra = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,6 +53,10 @@
             this.tbQtd = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbComp = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbRal = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Buttoneditfamilia = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.Buttoneditmaterial = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TextBoxfamilia = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxmaterial = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -485,12 +490,102 @@
             this.tbRal.TabIndex = 128;
             this.tbRal.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // Buttoneditfamilia
+            // 
+            this.Buttoneditfamilia.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Buttoneditfamilia.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.Buttoneditfamilia.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.Buttoneditfamilia.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Buttoneditfamilia.ImageRotate = 0F;
+            this.Buttoneditfamilia.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Location = new System.Drawing.Point(176, 113);
+            this.Buttoneditfamilia.Name = "Buttoneditfamilia";
+            this.Buttoneditfamilia.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.Buttoneditfamilia.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditfamilia.Size = new System.Drawing.Size(22, 22);
+            this.Buttoneditfamilia.TabIndex = 136;
+            this.Buttoneditfamilia.Click += new System.EventHandler(this.Buttoneditfamilia_Click);
+            // 
+            // Buttoneditmaterial
+            // 
+            this.Buttoneditmaterial.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Buttoneditmaterial.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.Buttoneditmaterial.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditmaterial.Image = global::Gestor_de_Fases.Properties.Resources.pencil_2;
+            this.Buttoneditmaterial.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Buttoneditmaterial.ImageRotate = 0F;
+            this.Buttoneditmaterial.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditmaterial.Location = new System.Drawing.Point(371, 109);
+            this.Buttoneditmaterial.Name = "Buttoneditmaterial";
+            this.Buttoneditmaterial.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.Buttoneditmaterial.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.Buttoneditmaterial.Size = new System.Drawing.Size(22, 22);
+            this.Buttoneditmaterial.TabIndex = 137;
+            this.Buttoneditmaterial.Click += new System.EventHandler(this.Buttoneditmaterial_Click);
+            // 
+            // TextBoxfamilia
+            // 
+            this.TextBoxfamilia.BackColor = System.Drawing.Color.White;
+            this.TextBoxfamilia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxfamilia.BorderRadius = 10;
+            this.TextBoxfamilia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxfamilia.DefaultText = "";
+            this.TextBoxfamilia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxfamilia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxfamilia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxfamilia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxfamilia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxfamilia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxfamilia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextBoxfamilia.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxfamilia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxfamilia.Location = new System.Drawing.Point(18, 141);
+            this.TextBoxfamilia.Name = "TextBoxfamilia";
+            this.TextBoxfamilia.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxfamilia.PlaceholderText = "";
+            this.TextBoxfamilia.SelectedText = "";
+            this.TextBoxfamilia.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxfamilia.Size = new System.Drawing.Size(180, 36);
+            this.TextBoxfamilia.TabIndex = 138;
+            this.TextBoxfamilia.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxfamilia.WordWrap = false;
+            // 
+            // TextBoxmaterial
+            // 
+            this.TextBoxmaterial.BackColor = System.Drawing.Color.White;
+            this.TextBoxmaterial.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxmaterial.BorderRadius = 10;
+            this.TextBoxmaterial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxmaterial.DefaultText = "";
+            this.TextBoxmaterial.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxmaterial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxmaterial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxmaterial.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxmaterial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxmaterial.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxmaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TextBoxmaterial.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxmaterial.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxmaterial.Location = new System.Drawing.Point(213, 141);
+            this.TextBoxmaterial.Name = "TextBoxmaterial";
+            this.TextBoxmaterial.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.TextBoxmaterial.PlaceholderText = "";
+            this.TextBoxmaterial.SelectedText = "";
+            this.TextBoxmaterial.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            this.TextBoxmaterial.Size = new System.Drawing.Size(180, 36);
+            this.TextBoxmaterial.TabIndex = 139;
+            this.TextBoxmaterial.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxmaterial.WordWrap = false;
+            // 
             // CQ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1380, 320);
+            this.Controls.Add(this.Buttoneditmaterial);
+            this.Controls.Add(this.Buttoneditfamilia);
             this.Controls.Add(this.tbRal);
             this.Controls.Add(this.tbComp);
             this.Controls.Add(this.tbQtd);
@@ -515,6 +610,8 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.Datematerialemobra);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.TextBoxfamilia);
+            this.Controls.Add(this.TextBoxmaterial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CQ";
             this.Text = "CQ";
@@ -549,5 +646,9 @@
         private Guna.UI2.WinForms.Guna2TextBox tbQtd;
         private Guna.UI2.WinForms.Guna2TextBox tbComp;
         private Guna.UI2.WinForms.Guna2TextBox tbRal;
+        private Guna.UI2.WinForms.Guna2ImageButton Buttoneditfamilia;
+        private Guna.UI2.WinForms.Guna2ImageButton Buttoneditmaterial;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxfamilia;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxmaterial;
     }
 }
