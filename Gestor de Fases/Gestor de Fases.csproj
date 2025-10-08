@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ofelizgroup_logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -252,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-opened-folder-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ofelizgroup_logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

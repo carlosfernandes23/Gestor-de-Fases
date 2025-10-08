@@ -73,7 +73,7 @@ namespace Gestor_de_Fases
                            ? cbMaterial.Text.Trim()
                            : TextBoxmaterial.Text.Trim();
             string dataFormatada = Datematerialemobra.Value.ToString("dd/MM/yyyy");
-            string Perfil = "CHAX" + Espessura;
+            string Perfil = "CHA" + Espessura;
             string ral = tbRal.Text.Trim();
             string ordemFabrico = "2." + noObra + "." + fase750 + "." + F.DataGridViewOrder.Rows.Count;
             string conjuntoPeca = "2." + noObra + "." + fase750 + "." + fase750 + "CJ" + linhaCONJ;
